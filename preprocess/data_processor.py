@@ -2,8 +2,7 @@ import datetime
 from elasticsearch import helpers
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-from utils.db_client import milvus_client
-from utils.db_client import es_client
+from utils.db_client import get_miluvs_client, get_es_client
 from utils.get_text_embedding import get_text_embedding
 from utils.logger import logger
 from file_parser import FileParser
@@ -31,6 +30,8 @@ class DataProcessor(object):
 
     @staticmethod
     def text_embedding(texts):
+        # calc embeddings 
+        # return [ids, source_metadata, origin_content, embedding] to store
         _ids = []
         sources = []
         contents = []
@@ -50,6 +51,7 @@ class DataProcessor(object):
 
     @staticmethod
     def es_data_insert(datas, file_type):
+        es_client = get_es_client()
         if datas:
             action = ({
                 "_index": "docs",
@@ -69,6 +71,7 @@ class DataProcessor(object):
 
     @staticmethod
     def milvus_data_insert(datas):
+        milvus_client = get_miluvs_client("docs_qa")
         insert_result = milvus_client.insert(datas)
         milvus_client.flush()
         # 将collection加载至内存
@@ -84,4 +87,4 @@ class DataProcessor(object):
 
 
 if __name__ == '__main__':
-    DataProcessor(file_path='../files/dengyue.txt').data_insert()
+    DataProcessor(file_path='../data/files/gdp.txt').data_insert()
