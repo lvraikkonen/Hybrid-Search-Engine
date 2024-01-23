@@ -6,14 +6,11 @@ from pymilvus import (
     DataType,
     Collection,
 )
+from pymilvus import utility
 from elasticsearch import Elasticsearch
 
 # 连接Elasticsearch
-es_client = Elasticsearch([{'host': 'localhost', 'port': 9200}])
-
-# 连接Milvus
-
-milvus_client = Collection("docs_qa")
+es_client = Elasticsearch("http://localhost:9200")
 
 
 def initialize_es(index_name):
@@ -55,13 +52,13 @@ def initialize_es(index_name):
 
 def initialize_vector_store_milvus(collection_name):
     connections.connect("default", host="localhost", port="19530")
-    # milvus_client = Collection(collection_name)
-    # 创建一个collection
+    # Create a collection
     fields = [
         FieldSchema(name="pk", dtype=DataType.INT64, is_primary=True, auto_id=False),
-        FieldSchema(name="source", dtype=DataType.VARCHAR, max_length=100),
-        FieldSchema(name="text", dtype=DataType.VARCHAR, max_length=1000),
-        FieldSchema(name="embeddings", dtype=DataType.FLOAT_VECTOR, dim=1536)   # 5120 for baichuan, 1536 for openai
+        FieldSchema(name="source", dtype=DataType.VARCHAR, max_length=100, description="source file metadata"),
+        FieldSchema(name="text", dtype=DataType.VARCHAR, max_length=1000, description="raw text"),
+        FieldSchema(name="embeddings", dtype=DataType.FLOAT_VECTOR, dim=1536,
+                    description="store embedding of text array")
     ]
     schema = CollectionSchema(fields, "vector db for docs qa")
     docs_milvus = Collection(collection_name, schema)
@@ -80,13 +77,22 @@ def initialize_vector_store_milvus(collection_name):
 def get_es_client():
     return es_client
 
-def get_miluvs_client(collection_name):
+
+def get_milvus_client(collection_name):
     connections.connect("default", host="localhost", port="19530")
     return Collection(collection_name)
 
-if __name__ == '__main__':
-    index_name = 'docs'
-    initialize_es(index_name)
 
-    vector_collection = "docs_qa"
-    initialize_vector_store_milvus(vector_collection)
+if __name__ == '__main__':
+    pass
+    # index_name = 'docs'
+    # initialize_es(index_name)
+
+    # vector_collection = "docs_qa"
+    # connections.connect("default", host="localhost", port="19530")
+    # # drop existing collection
+    # utility.drop_collection(vector_collection)
+    #
+    # initialize_vector_store_milvus(vector_collection)
+    # collection = Collection(vector_collection)
+    # print(collection.schema)

@@ -169,3 +169,7 @@ data/storage0/
 .idea/
 
 volumes/
+.DS_Store
+docker-compose/elasticsearch/config/
+docker-compose/elasticsearch/data/
+docker-compose/elasticsearch/plugins/

@@ -9,7 +9,7 @@ import uvicorn
 
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'docx'}
-UPLOAD_FILE_PATH = './data/files'
+UPLOAD_FILE_PATH = '/Users/lvshuo/Desktop/Hybrid-Search-Engine/data/files'
 
 upload_dir = Path(UPLOAD_FILE_PATH)
 
@@ -39,6 +39,7 @@ app = FastAPI()
 
 if not os.path.isdir(upload_dir):
     os.makedirs(upload_dir)
+
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
@@ -76,12 +77,13 @@ async def upload_files(files: List[UploadFile] = File(..., description="Upload f
             )
         else:
             return JSONResponse(
-            content={
-                "error_message": f"File format {file_format} currently NOT Supported yet."
-            },
-            status_code=404,
-            headers=RESET_HEADERS
-        )
+                content={
+                    "error_message": f"File format {file_format} currently NOT Supported yet."
+                },
+                status_code=404,
+                headers=RESET_HEADERS
+            )
+
     return JSONResponse(content={
         "message": return_val,
         "success": True,

@@ -2,6 +2,7 @@ import logging
 import math
 import os
 
+
 def size_converter(byte_size: int) -> str:
     """Gets the current memory consumed and converts it to human friendly format.
 

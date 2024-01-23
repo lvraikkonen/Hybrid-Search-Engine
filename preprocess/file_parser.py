@@ -36,7 +36,7 @@ class FileParser(object):
         return documents
 
     def parse(self):
-        logger.info(f'parse file: {self.file_path}')
+        logger.info(f'parsing file: {self.file_path}')
         if self.file_content:
             return self.string_loader(), 'string'
         else:
