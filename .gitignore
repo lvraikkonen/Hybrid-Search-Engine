@@ -173,3 +173,6 @@ volumes/
 docker-compose/elasticsearch/config/
 docker-compose/elasticsearch/data/
 docker-compose/elasticsearch/plugins/
+
+data/*.json
+data/*.csv

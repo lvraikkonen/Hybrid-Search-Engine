@@ -15,7 +15,7 @@ class CustomBM25Retriever(BaseRetriever):
     def __init__(self, top_k) -> None:
         """Init params."""
         super().__init__()
-        self.es_client = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+        self.es_client = Elasticsearch("http://localhost:9200")
         self.top_k = top_k
 
     def _retrieve(self, query: QueryType) -> List[NodeWithScore]:
@@ -34,7 +34,7 @@ class CustomBM25Retriever(BaseRetriever):
             },
             "size": self.top_k
         }
-        search_result = self.es_client.search(index='docs', body=dsl)
+        search_result = self.es_client.search(index='docs_qa', body=dsl)
         if search_result['hits']['hits']:
             for record in search_result['hits']['hits']:
                 text = record['_source']['content']
@@ -49,6 +49,6 @@ class CustomBM25Retriever(BaseRetriever):
 if __name__ == '__main__':
     from pprint import pprint
     custom_bm25_retriever = CustomBM25Retriever(top_k=3)
-    query = "半导体制造设备市场日本占多少份额？"
+    query = "给你机会你也不中用啊"
     t_result = custom_bm25_retriever.retrieve(str_or_query_bundle=query)
     pprint(t_result)

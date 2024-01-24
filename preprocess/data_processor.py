@@ -57,18 +57,18 @@ class DataProcessor(object):
         es_client = get_es_client()
         if datas:
             action = ({
-                "_index": "docs",
-                "_type": "_doc",
+                "_index": "docs_qa",
                 "_source": {
-                    "source": datas[1][i],
-                    "cont_id": datas[0][i],
-                    "content": datas[2][i],
+                    "source": datas[1][i],  # file source metadata
+                    "cont_id": datas[0][i],  # content id
+                    "content": datas[2][i],  # raw content data
                     "file_type": file_type,
                     "insert_time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 }
             } for i in range(len(datas[0])))
+            # use the bulk helper which can index Elasticsearch documents from iterators or generators.
             helpers.bulk(es_client, action)
-            logger.info("insert data to es")
+            logger.info("Docs data have inserted into elasticsearch")
         else:
             logger.info("no insert data!")
 
@@ -85,7 +85,7 @@ class DataProcessor(object):
         documents, file_type = self.text_loader()
         texts = self.text_spliter(documents)
         datas = self.text_embedding(texts)
-        # self.es_data_insert(datas, file_type)
+        self.es_data_insert(datas, file_type)
         self.milvus_data_insert(datas)
 
 

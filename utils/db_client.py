@@ -84,15 +84,17 @@ def get_milvus_client(collection_name):
 
 
 if __name__ == '__main__':
-    pass
-    # index_name = 'docs'
+    # index_name = 'docs_qa'
     # initialize_es(index_name)
 
-    # vector_collection = "docs_qa"
-    # connections.connect("default", host="localhost", port="19530")
-    # # drop existing collection
-    # utility.drop_collection(vector_collection)
+    vector_collection = "docs_qa"
+    connections.connect("default", host="localhost", port="19530")
+    # # # drop existing collection
+    # # utility.drop_collection(vector_collection)
     #
     # initialize_vector_store_milvus(vector_collection)
     # collection = Collection(vector_collection)
     # print(collection.schema)
+
+    collection = Collection(vector_collection)
+    print(f"There are {collection.num_entities} entities in Milvus.")
