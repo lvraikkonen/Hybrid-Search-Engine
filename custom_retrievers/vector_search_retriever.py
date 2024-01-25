@@ -8,36 +8,55 @@ from llama_index.retrievers import BaseRetriever
 from llama_index.indices.query.schema import QueryType
 
 from preprocess.get_text_id_mapping import text_node_id_mapping
-from utils.build_embedding import EmbeddingCache
+
+from utils.db_client import get_milvus_client
+from utils.get_text_embedding import get_text_embedding
+from config.config_parser import (
+    MILVUS_SIZE, MILVUS_THRESHOLD, RERANK_TOP_N
+)
 
 
 class VectorSearchRetriever(BaseRetriever):
-    def __init__(self, top_k, faiss_index, query_rewrite=False) -> None:
+    def __init__(self, collection_name, top_k, query_rewrite=False) -> None:
         super().__init__()
+        self.collection_name = collection_name
         self.top_k = top_k
-        self.faiss_index = faiss_index
-        self.queries_embedding_dict, self.corpus_embedding, self.corpus = EmbeddingCache().load(query_write=query_rewrite)
-        # add vector
-        self.faiss_index.add(self.corpus_embedding)
+        self.milvus_client = get_milvus_client(self.collection_name)
 
-    def _retrieve(self, query: QueryType) -> List[NodeWithScore]:
-        if isinstance(query, str):
-            query = QueryBundle(query)
+    def _retrieve(self, query: QueryBundle) -> List[NodeWithScore]:
+        if isinstance(query, QueryBundle):
+            query_str = query.query_str
         else:
-            query = query
+            query_str = query
 
         result = []
-        # vector search
-        if query.query_str in self.queries_embedding_dict:
-            query_embedding = self.queries_embedding_dict[query.query_str]
-        else:
-            query_embedding = EmbeddingCache().get_openai_embedding(req_text=query.query_str)
-        distances, doc_indices = self.faiss_index.search(np.array([query_embedding]), self.top_k)
+        vector_to_search = [get_text_embedding(query_str)]
+        search_params = {
+            "metric_type": "IP",  # or COSINE
+            "params": {"nprobe": 10},
+        }
+        # vector search with output raw text and source-metadata
+        search_result = self.milvus_client.search(
+            vector_to_search,
+            "embeddings",  # queried field
+            search_params,
+            limit=MILVUS_SIZE,
+            output_fields=["text", "source"]
+        )
+        
+        # filter by similarity score
+        # filtered_result = [(_.entity.get('text'), _.entity.get('source'))
+        #         for _, dist in zip(search_result[0], search_result[0].distances) if dist > MILVUS_THRESHOLD]
 
-        for i, sent_index in enumerate(doc_indices.tolist()[0]):
-            text = self.corpus[sent_index]
-            node_with_score = NodeWithScore(node=TextNode(text=text, id_=text_node_id_mapping[text]),
-                                            score=distances.tolist()[0][i])
+        for _, dist in zip(search_result[0], search_result[0].distances):
+            text = _.entity.get('text')
+            score = dist
+            source = _.entity.get('source')
+            node_with_score = NodeWithScore(
+                node=TextNode(text=text),
+                id_=text_node_id_mapping[text],
+                score=score
+            )
             result.append(node_with_score)
 
         return result
@@ -45,10 +64,7 @@ class VectorSearchRetriever(BaseRetriever):
 
 if __name__ == '__main__':
     from pprint import pprint
-    from faiss import IndexFlatIP
-    faiss_index = IndexFlatIP(1536)
-    vector_search_retriever = VectorSearchRetriever(top_k=3, faiss_index=faiss_index)
-    query = "半导体制造设备市场美国占多少份额？"
+    vector_search_retriever = VectorSearchRetriever(collection_name="docs_qa", top_k=3)
+    query = "中国队亚洲杯成绩如何"
     t_result = vector_search_retriever.retrieve(str_or_query_bundle=query)
     pprint(t_result)
-    faiss_index.reset()
