@@ -137,6 +137,6 @@ if __name__ == '__main__':
     # llm1 = OpenAILLM.get_gpt_4()
     # chat_response = llm1.get_response(prompt="你好~")  # llm1.call(messages=messages, stream=False)
     # print(chat_response)
-    embed_model = OpenAILLM.get_embedding_model_v2()
-    embeddings = embed_model.create_embeddings(input_text="你好")
+    embed_model_v3_small = OpenAILLM.get_embedding_model_v3_small()
+    embeddings = embed_model_v3_small.create_embeddings(input_text="你好")
     print(embeddings)
