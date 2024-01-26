@@ -118,17 +118,25 @@ class OpenAILLM(AnLLM):
     @classmethod
     def get_gpt_4_1106_preview(cls):
         return cls(model="gpt-4-1106-preview")
+    
+    @classmethod
+    def get_gpt_4_0125_preview(cls):
+        return cls(model="gpt-4-0125-preview")
 
     @classmethod
-    def get_embedding_model(cls):
+    def get_embedding_model_v2(cls):
         return cls(model="text-embedding-ada-002")
+    
+    @classmethod
+    def get_embedding_model_v3_small(cls):
+        return cls(model="text-embedding-3-small")
 
 
 if __name__ == '__main__':
     messages = [{"role": "system", "content": SYSTEM_ROLE}, {"role": "user", "content": "你好~"}]
-    llm1 = OpenAILLM.get_gpt_4()
-    chat_response = llm1.get_response(prompt="你好~")  # llm1.call(messages=messages, stream=False)
-    print(chat_response)
-    embed_model = OpenAILLM.get_embedding_model()
+    # llm1 = OpenAILLM.get_gpt_4()
+    # chat_response = llm1.get_response(prompt="你好~")  # llm1.call(messages=messages, stream=False)
+    # print(chat_response)
+    embed_model = OpenAILLM.get_embedding_model_v2()
     embeddings = embed_model.create_embeddings(input_text="你好")
     print(embeddings)
