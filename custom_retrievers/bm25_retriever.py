@@ -5,7 +5,6 @@ from llama_index.schema import TextNode
 from llama_index import QueryBundle
 from llama_index.schema import NodeWithScore
 from llama_index.retrievers import BaseRetriever
-from llama_index.indices.query.schema import QueryType
 
 from preprocess.get_text_id_mapping import text_node_id_mapping
 
@@ -18,18 +17,13 @@ class CustomBM25Retriever(BaseRetriever):
         self.es_client = Elasticsearch("http://localhost:9200")
         self.top_k = top_k
 
-    def _retrieve(self, query: QueryType) -> List[NodeWithScore]:
-        if isinstance(query, str):
-            query = QueryBundle(query)
-        else:
-            query = query
-
+    def _retrieve(self, query_bundle: QueryBundle) -> List[NodeWithScore]:
         result = []
         # 查询数据(全文搜索)
         dsl = {
             'query': {
                 'match': {
-                    'content': query.query_str
+                    'content': query_bundle.query_str
                 }
             },
             "size": self.top_k
@@ -38,8 +32,7 @@ class CustomBM25Retriever(BaseRetriever):
         if search_result['hits']['hits']:
             for record in search_result['hits']['hits']:
                 text = record['_source']['content']
-                node_with_score = NodeWithScore(node=TextNode(text=text,
-                                                id_=text_node_id_mapping[text]),
+                node_with_score = NodeWithScore(node=TextNode(text=text, id_=text_node_id_mapping[text]),
                                                 score=record['_score'])
                 result.append(node_with_score)
 

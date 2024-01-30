@@ -5,7 +5,14 @@ from typing import List
 from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, RedirectResponse
 import os
 import traceback
+
+from retry import retry
+from openai import OpenAI
+
+from config.config_parser import OPENAI_API_KEY
+
 from pathlib import Path
+from sentence_transformers import SentenceTransformer
 from utils.file_utils import size_converter
 from utils.logger import logger
 from pydantic import BaseModel
@@ -15,6 +22,11 @@ import uvicorn
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'docx'}
 UPLOAD_FILE_PATH = '/Users/lvshuo/Desktop/Hybrid-Search-Engine/data/files'
+
+
+class Sentence(BaseModel):
+    text: str   
+
 
 upload_dir = Path(UPLOAD_FILE_PATH)
 
@@ -50,6 +62,11 @@ if not os.path.isdir(upload_dir):
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
+
+
+@app.get('/')
+def index():
+    return 'hello world!'
 
 
 @app.post("/api/upload-files", tags=['Upload files to directory'])
@@ -126,5 +143,97 @@ async def qa_chat(prompt: str):
     return return_data
 
 
+# text embedding service
+@app.post('/embedding')
+@retry(exceptions=Exception, tries=3, max_delay=60)
+def get_embedding(sentence: Sentence, model_name='text-embedding-ada-002'):
+    input_text = sentence.text.replace("\n", " ")
+    if model_name in ['text-embedding-ada-002', 'text-embedding-3-small']:
+        model = model_name
+
+        client = OpenAI(api_key=OPENAI_API_KEY)
+
+        response = client.embeddings.create(
+            model=model,
+            input=input_text,
+            encoding_format="float"
+        )
+        result = {
+            "text": sentence.text,
+            "dimensions": len(response.data[0].embedding),
+            "embedding": response.data[0].embedding
+        }
+    elif model_name in ['bge-large-zh-v1.5']:
+        model = SentenceTransformer('BAAI/bge-large-zh-v1.5')
+        embedding = model.encode(input_text, normalize_embeddings=True).tolist()
+        result = {"text": sentence.text, "dimensions": len(embedding), "embedding": embedding}
+    
+    return result
+
+
+################# Rerank module ###############
+
+import os
+import time
+from operator import itemgetter
+from random import randint
+import cohere
+from typing import List, Tuple
+
+from FlagEmbedding import FlagReranker
+
+from dotenv import load_dotenv
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+
+class QuerySuite(BaseModel):
+    query: str
+    passages: List[str]
+    top_k: int = 3
+
+
+# Using Cohere Rerank service
+cohere_client = cohere.Client(api_key=COHERE_API_KEY)
+
+def get_cohere_rerank_result(query: str, docs: List[str], top_n) -> List[Tuple]:
+    time.sleep(randint(1, 10))
+
+    results = cohere_client.rerank(
+        model="rerank-multilingual-v2.0",
+        query=query,
+        documents=docs,
+        top_n=top_n
+    )
+
+    # return top_n nodes text with relevence score
+    return [(hit.document['text'], hit.relevance_score) for hit in results]
+
+
+def get_bge_rerank_result(query: str, docs: List[str], top_n) -> List[Tuple]:
+    query_suite = QuerySuite(
+        query=query,
+        passages=docs
+    )
+
+    bge_reranker = FlagReranker('BAAI/bge-reranker-large', use_fp16=True) # Setting use_fp16 to True speeds up computation with a slight performance degradation
+
+    scores = bge_reranker.compute_score([[query_suite.query, passage] for passage in query_suite.passages])
+
+    if isinstance(scores, List):
+        similiarity_dict = {passage: scores[i] for i, passage in enumerate(query_suite.passages)}
+    else:
+        similarity_dict = {passage: scores for i, passage in enumerate(query_suite.passages)}
+    
+    sorted_similarity_dict = sorted(similarity_dict.items(), key=itemgetter(1), reverse=True) # sorted by score
+    result = {}
+    for j in range(query_suite.top_k):
+        result[sorted_similarity_dict[j][0]] = sorted_similarity_dict[j][1]
+    
+    # return top_n nodes text with relevence score
+    return [(passage, score) for passage, score in result.items()]
+
+
 if __name__ == "__main__":
-    uvicorn.run(app, port=8000)
+    uvicorn.run(app, port=50072)

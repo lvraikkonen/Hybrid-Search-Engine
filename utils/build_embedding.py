@@ -1,32 +1,43 @@
 import os
-import time
 import json
 import numpy as np
-from retry import retry
 from tqdm import tqdm
-from utils.get_text_embedding import get_text_embedding
+from utils.get_text_embedding import (
+    get_text_embedding_ada_v2,
+    get_text_embedding_v3,
+    get_bge_embedding
+)
 
 
-class EmbeddingCache():
+def build_with_context(embedding_model: str, context_type: str):
+    with open("../data/doc_qa_dataset.json", "r", encoding="utf-8") as f:
+        content = json.loads(f.read())
+    queries = list(content[context_type].values())
+    query_num = len(queries)
+    if embedding_model == 'text-embedding-ada-002':
+        embedding_fn, dimensions = get_text_embedding_ada_v2, 1536
+    elif embedding_model == 'text-embedding-3-small':
+        embedding_fn, dimensions = get_text_embedding_v3, 1024
+    elif embedding_model == 'local_bge_zh-v1.5':
+        embedding_fn, dimensions = get_bge_embedding, 1024
+
+    embedding_data = np.empty(shape=[query_num, dimensions])
+    for i in tqdm(range(query_num), desc="generate embedding"):
+        embedding_data[i] = embedding_fn(queries[i])
+    np.save(f"../data/{context_type}_{embedding_model}.npy", embedding_data)
+
+
+class EmbeddingCache:
     """
     Generate embedding cache
     """
     def __init__(self, embedding_provider = "OpenAI"):
         self.embedding_provider = embedding_provider # default using text-embedding-ada-002 from OpenAI
 
-    def build_with_context(self, context_type: str):
-        with open("../data/doc_qa_test.json", "r", encoding="utf-8") as f:
-            content = json.loads(f.read())
-        queries = list(content[context_type].values())
-        query_num = len(queries)
-        embedding_data = np.empty(shape=[query_num, 1536]) # 1536 is for text-embedding-ada-002
-        for i in tqdm(range(query_num), desc="generate embedding"):
-            embedding_data[i] = self.get_bge_embedding(queries[i])
-        np.save(f"../data/{context_type}_bge_base_ft_embedding.npy", embedding_data)
-
-    def build(self):
-        self.build_with_context("queries")
-        self.build_with_context("corpus")
+    @staticmethod
+    def build():
+        build_with_context("text-embedding-ada-002", "queries")
+        build_with_context("text-embedding-ada-002", "corpus")
 
     @staticmethod
     def load(query_write=False):

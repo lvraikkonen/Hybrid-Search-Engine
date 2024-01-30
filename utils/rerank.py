@@ -17,6 +17,7 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 
+
 class QuerySuite(BaseModel):
     query: str
     passages: List[str]
@@ -25,6 +26,7 @@ class QuerySuite(BaseModel):
 
 # Using Cohere Rerank service
 cohere_client = cohere.Client(api_key=COHERE_API_KEY)
+
 
 def get_cohere_rerank_result(query: str, docs: List[str], top_n) -> List[Tuple]:
     time.sleep(randint(1, 10))

@@ -1,7 +1,7 @@
 import cohere
 
 from utils.db_client import get_milvus_client, get_es_client
-from utils.get_text_embedding import get_text_embedding
+from utils.get_text_embedding import get_text_embedding_v3 as get_text_embedding
 from utils.chat_wrapper import chat_completion
 from utils.logger import logger
 
@@ -11,7 +11,7 @@ from config.config_parser import (
 )
 
 
-class DocQA():
+class DocQA:
     def __init__(self, query):
         self.query = query
 
@@ -26,7 +26,7 @@ class DocQA():
         }
         result = milvus_client.search(
             vector_to_search,
-            "embeddings", # queried field
+            "embeddings",  # queried field
             search_params,
             limit=MILVUS_SIZE,
             output_fields=["text", "source"]
