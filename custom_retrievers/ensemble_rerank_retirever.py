@@ -12,8 +12,7 @@ from utils.rerank import get_cohere_rerank_result
 
 
 class EnsembleRerankRetriever(BaseRetriever):
-    def __int__(self, top_k, faiss_index):
-        super.__init__()
+    def __init__(self, top_k, faiss_index):
         self.faiss_index = faiss_index
         self.top_k = top_k
         self.vector_store_retriever = VectorSearchRetriever(top_k=self.top_k, faiss_index=self.faiss_index)

@@ -18,7 +18,6 @@ from config.config_parser import (
 
 class VectorSearchRetriever(BaseRetriever):
     def __init__(self, top_k, faiss_index, query_rewrite=False) -> None:
-        super().__init__()
         self.faiss_index = faiss_index
         self.top_k = top_k
         # get query, corpus embedding cache for simulating query VectorStore

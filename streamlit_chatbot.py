@@ -1,22 +1,15 @@
 from typing import Dict, Any
+from utils.logger import logger
 import streamlit as st
 from streamlit_pills import pills
-import asyncio
+from config.config_parser import SYSTEM_ROLE
+from faiss import IndexFlatIP
 
-# Create a new event loop
-loop = asyncio.new_event_loop()
-
-# Set the event loop as the current event loop
-asyncio.set_event_loop(loop)
-
-from llama_index import (
-    VectorStoreIndex,
-    ServiceContext,
-    download_loader,
-)
 from llama_index.query_engine import RetrieverQueryEngine
 from openai import OpenAI
 from custom_retrievers.ensemble_rerank_retirever import EnsembleRerankRetriever
+from custom_retrievers.ensemble_retriever import EnsembleRetriever
+from custom_retrievers.vector_store_retriever import VectorSearchRetriever
 
 # from custom_retrievers.bm25_retriever import CustomBM25Retriever
 from Doc_QA import DocQA
@@ -48,14 +41,15 @@ class StreamlitChat:
 
         if "messages" not in st.session_state:  # Initialize the chat messages history
             st.session_state["messages"] = [
-                {"role": "assistant", "content": "Ask me a question:"}
+                {"role": "system", "content": SYSTEM_ROLE}
             ]
 
         st.title(
             f"Chat with Your Document, powered by LlamaIndex 💬🦙"
         )
         st.info(
-            "This example is powered by the **[Llama Hub Wikipedia Loader](https://llamahub.ai/l/wikipedia)**. Use any of [Llama Hub's many loaders](https://llamahub.ai/) to retrieve and chat with your data via a Streamlit app.",
+            "This example is powered by the Elasticsearch and Milvus."
+            ".Retrieve and Chat with your data via a Streamlit app.",
             icon="ℹ️",
         )
 
@@ -64,9 +58,11 @@ class StreamlitChat:
             st.session_state["messages"].append(
                 message
             )  # Add response to message history
+            # logger.info(f"add prompt from {role} with message: {content}")
 
-        faiss_index = ""  # dummy index
-        retriever = EnsembleRerankRetriever(top_k=2, faiss_index=faiss_index)
+        faiss_index = IndexFlatIP(1536)
+        # retriever = EnsembleRerankRetriever(top_k=2, faiss_index=faiss_index)
+        retriever = VectorSearchRetriever(top_k=3, faiss_index=faiss_index)
         query_engine = RetrieverQueryEngine.from_args(retriever)
 
         # custom_bm25_retriever = CustomBM25Retriever(top_k=3)
@@ -76,10 +72,9 @@ class StreamlitChat:
         selected = pills(
             "Choose a question to get started or write your own below.",
             [
-                "What is Snowflake?",
-                "What company did Snowflake announce they would acquire in October 2023?",
-                "What company did Snowflake acquire in March 2022?",
-                "When did Snowflake IPO?",
+                "中国队亚洲杯成绩如何?",
+                "中国队能小组出线吗?",
+                "中国男足主教练是谁?",
             ],
             clearable=True,
             index=None,
@@ -92,25 +87,22 @@ class StreamlitChat:
             with st.chat_message(message["role"]):
                 st.write(message["content"])
 
-        # To avoid duplicated display of answered pill questions each rerun
+            # To avoid duplicated display of answered pill questions each rerun
         if selected and selected not in st.session_state.get(
-            "displayed_pill_questions", set()
+                "displayed_pill_questions", set()
         ):
             st.session_state.setdefault("displayed_pill_questions", set()).add(selected)
             with st.chat_message("user"):
                 st.write(selected)
             with st.chat_message("assistant"):
-                response = st.session_state["chat_engine"].query(selected)
-                response_str = ""
-                response_container = st.empty()
-                for token in response.response_gen:
-                    response_str += token
-                    response_container.write(response_str)
-                add_to_message_history("user", selected)
-                add_to_message_history("assistant", response)
+                with st.spinner('Query is at work...'):
+                    response = st.session_state["chat_engine"].query(selected)
+                    st.markdown(response)
+                    add_to_message_history("user", selected)
+                    add_to_message_history("assistant", response)
 
         if prompt := st.chat_input(
-            "Your question"
+                "Your question"
         ):  # Prompt for user input and save to chat history
             add_to_message_history("user", prompt)
 
@@ -118,20 +110,12 @@ class StreamlitChat:
             with st.chat_message("user"):
                 st.write(prompt)
 
-            # If last message is not from assistant, generate a new response
-            # if st.session_state["messages"][-1]["role"] != "assistant":
             with st.chat_message("assistant"):
-                response = st.session_state["chat_engine"].query(prompt)
-                response_str = ""
-                response_container = st.empty()
-                for token in response.response_gen:
-                    response_str += token
-                    response_container.write(response_str)
-                # st.write(response.response)
-                add_to_message_history("assistant", response.response)
-
-            # Save the state of the generator
-            st.session_state["response_gen"] = response.response_gen
+                with st.spinner('Query is at work...'):
+                    response = st.session_state["chat_engine"].query(prompt)
+                    logger.info(f"response text is: {response}")
+                    st.markdown(response)
+                    add_to_message_history("assistant", response)
 
 
 if __name__ == "__main__":

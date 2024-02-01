@@ -11,8 +11,7 @@ from custom_retrievers.vector_store_retriever import VectorSearchRetriever
 
 
 class EnsembleRetriever(BaseRetriever):
-    def __int__(self, top_k, faiss_index, weights):
-        super.__init__()
+    def __init__(self, top_k, faiss_index, weights):
         self.weights = weights
         self.c: int = 60
         self.faiss_index = faiss_index
