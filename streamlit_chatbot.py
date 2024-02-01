@@ -14,7 +14,9 @@ from llama_index import (
     ServiceContext,
     download_loader,
 )
+from llama_index.query_engine import RetrieverQueryEngine
 from openai import OpenAI
+from custom_retrievers.ensemble_rerank_retirever import EnsembleRerankRetriever
 
 # from custom_retrievers.bm25_retriever import CustomBM25Retriever
 from Doc_QA import DocQA
@@ -63,8 +65,9 @@ class StreamlitChat:
                 message
             )  # Add response to message history
 
-        # get query_engine
-        query_engine = DocQA()
+        faiss_index = ""  # dummy index
+        retriever = EnsembleRerankRetriever(top_k=2, faiss_index=faiss_index)
+        query_engine = RetrieverQueryEngine.from_args(retriever)
 
         # custom_bm25_retriever = CustomBM25Retriever(top_k=3)
         # query = "给你机会你也不中用啊"
@@ -97,7 +100,7 @@ class StreamlitChat:
             with st.chat_message("user"):
                 st.write(selected)
             with st.chat_message("assistant"):
-                response = st.session_state["chat_engine"].answer(selected)
+                response = st.session_state["chat_engine"].query(selected)
                 response_str = ""
                 response_container = st.empty()
                 for token in response.response_gen:
@@ -118,7 +121,7 @@ class StreamlitChat:
             # If last message is not from assistant, generate a new response
             # if st.session_state["messages"][-1]["role"] != "assistant":
             with st.chat_message("assistant"):
-                response = st.session_state["chat_engine"].answer(prompt)
+                response = st.session_state["chat_engine"].query(prompt)
                 response_str = ""
                 response_container = st.empty()
                 for token in response.response_gen:

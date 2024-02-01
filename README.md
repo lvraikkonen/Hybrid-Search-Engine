@@ -22,16 +22,16 @@
 
 - [x] 文档问答API接口
 
-- [ ] 文档上传
+- [x] 文档上传
 
-- [ ] 可视化UI
+- [x] 可视化UI
 
 ### 模型支持
 
 Embedding Model
 
 - [x] text-embedding-ada-002
-- [ ] BAAI/bge-large-zh-v1.5
+- [x] BAAI/bge-large-zh-v1.5
 
 LLM
 
@@ -55,7 +55,7 @@ LLM
 
 - [x] Hybrid Search 关键词检索与向量检索集成
 - [ ] Graph Store 知识图谱集成
-- [ ] RAG-fusion RRF重排序
+- [x] RAG-fusion RRF重排序
 - [x] Rerank模型精排
 - [ ] Embedding Fine-tune
 - [x] 不同方法效果评估
