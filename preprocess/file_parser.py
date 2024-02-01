@@ -1,5 +1,5 @@
 from langchain.schema import Document
-from langchain.document_loaders import TextLoader, PyPDFLoader, Docx2txtLoader, SeleniumURLLoader
+from langchain_community.document_loaders import TextLoader, PyPDFLoader, Docx2txtLoader, SeleniumURLLoader
 
 from utils.logger import logger
 
@@ -54,14 +54,6 @@ class FileParser(object):
 
 
 if __name__ == '__main__':
-    txt_file_path = "D:\\Playground\\Hybrid-Search-Engine\\data\\files\\azure_openai_faq.txt"
-    content = FileParser(txt_file_path).parse()
+    url = "https://learn.microsoft.com/zh-cn/dotnet/csharp/advanced-topics/reflection-and-attributes/generics-and-reflection"
+    content = FileParser(url).parse()
     print(content)
-
-    pdf_file_path = "D:\\Playground\\Hybrid-Search-Engine\\data\\files\\2023_gdp.pdf"
-    content = FileParser(pdf_file_path).parse()
-    print(content)
-
-    # url = "https://www.163.com/news/article/IOO1UN15000189FH.html"
-    # content = FileParser(url).parse()
-    # print(content)

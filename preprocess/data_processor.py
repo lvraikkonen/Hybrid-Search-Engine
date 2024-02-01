@@ -1,9 +1,10 @@
 import datetime
 from elasticsearch import helpers
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import SpacyTextSplitter
 
 from utils.db_client import get_milvus_client, get_es_client
-from utils.get_text_embedding import get_text_embedding
+from utils.get_text_embedding import get_text_embedding_ada_v2 as get_text_embedding
 from utils.logger import logger
 from file_parser import FileParser
 
@@ -26,7 +27,8 @@ class DataProcessor(object):
     @staticmethod
     def text_spliter(documents):
         # 将文档拆分成块
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=250, chunk_overlap=0)
+        # text_splitter = RecursiveCharacterTextSplitter(chunk_size=250, chunk_overlap=0)
+        text_splitter = SpacyTextSplitter(pipeline="zh_core_web_sm", chunk_size=256)
         texts = text_splitter.split_documents(documents)
         return texts
 

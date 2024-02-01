@@ -59,4 +59,5 @@ def get_bge_embedding(req_text: str):
 
 if __name__ == '__main__':
     result = get_text_embedding_v3(req_text="I live in Beijing.", model_name='text-embedding-3-small')
+    logger.info(f"Embedding Array: {result}")
     print(f"embedding text with dimension {len(result)}")

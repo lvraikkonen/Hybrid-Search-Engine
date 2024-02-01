@@ -42,6 +42,6 @@ class CustomBM25Retriever(BaseRetriever):
 if __name__ == '__main__':
     from pprint import pprint
     custom_bm25_retriever = CustomBM25Retriever(top_k=3)
-    query = "给你机会你也不中用啊"
+    query = "叙利亚队"
     t_result = custom_bm25_retriever.retrieve(str_or_query_bundle=query)
     pprint(t_result)
