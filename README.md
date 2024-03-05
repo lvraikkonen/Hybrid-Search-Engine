@@ -63,3 +63,8 @@ LLM
 
 
 ## 结果总结与优化
+
+
+## 模块化RAG的路线图
+
+![The Framework of Modular RAG](image.png)
