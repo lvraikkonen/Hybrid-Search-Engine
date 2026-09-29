@@ -176,3 +176,5 @@ docker-compose/elasticsearch/plugins/
 
 data/*.json
 data/*.csv
+
+sample-data/*
