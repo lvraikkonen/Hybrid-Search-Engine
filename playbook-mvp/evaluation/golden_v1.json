@@ -1,0 +1,1018 @@
+{
+  "version": "s6-v1",
+  "review_status": "approved",
+  "approved_by": "user:current-thread",
+  "approval_evidence": "确认草案与 90% 目标",
+  "source_snapshot_sha256": "cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821",
+  "question_set_sha256": "2f3fcc1a9d4169b6d61d14ef9d818ae359c476d86aefcf023e3a137c70138654",
+  "profiles": [
+    "pb_msft_01",
+    "pb_21v_01",
+    "pb_partner_nce_01",
+    "pb_partner_ospa_01",
+    "pb_partner_both_01"
+  ],
+  "relevance_scale": {
+    "1": "related reference/link",
+    "2": "directly relevant source"
+  },
+  "judgments_exhaustive": false,
+  "hit_at_5_target_per_profile": 0.9,
+  "questions": [
+    {
+      "id": "Q01",
+      "query": "NCE 的合同文件如何生成，使用哪些系统？",
+      "language": "zh",
+      "scenario": "NCE 合同",
+      "business_scope": 0,
+      "reference_document_ids": [
+        25
+      ],
+      "relevance": {
+        "25": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "25": 2
+        },
+        "pb_21v_01": {
+          "25": 2
+        },
+        "pb_partner_nce_01": {
+          "25": 2
+        },
+        "pb_partner_ospa_01": {},
+        "pb_partner_both_01": {
+          "25": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q02",
+      "query": "OSPA Direct 和 Indirect 模式分别由谁生成合同？",
+      "language": "zh",
+      "scenario": "OSPA 合同",
+      "business_scope": 1,
+      "reference_document_ids": [
+        99
+      ],
+      "relevance": {
+        "99": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "99": 2
+        },
+        "pb_21v_01": {
+          "99": 2
+        },
+        "pb_partner_nce_01": {},
+        "pb_partner_ospa_01": {
+          "99": 2
+        },
+        "pb_partner_both_01": {
+          "99": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q03",
+      "query": "OSPA Playbook 的访问权限如何划分？",
+      "language": "zh",
+      "scenario": "OSPA 权限说明",
+      "business_scope": 1,
+      "reference_document_ids": [
+        148
+      ],
+      "relevance": {
+        "148": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "148": 2
+        },
+        "pb_21v_01": {
+          "148": 2
+        },
+        "pb_partner_nce_01": {},
+        "pb_partner_ospa_01": {
+          "148": 2
+        },
+        "pb_partner_both_01": {
+          "148": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q04",
+      "query": "21VCA-E Playbook 的哪些栏目可供合作伙伴查看？",
+      "language": "zh",
+      "scenario": "NCE 权限说明",
+      "business_scope": 0,
+      "reference_document_ids": [
+        63
+      ],
+      "relevance": {
+        "63": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "63": 2
+        },
+        "pb_21v_01": {
+          "63": 2
+        },
+        "pb_partner_nce_01": {
+          "63": 2
+        },
+        "pb_partner_ospa_01": {},
+        "pb_partner_both_01": {
+          "63": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q05",
+      "query": "世纪互联客户协议包含什么内容？",
+      "language": "zh",
+      "scenario": "NCE 协议",
+      "business_scope": 0,
+      "reference_document_ids": [
+        14
+      ],
+      "relevance": {
+        "14": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "14": 2
+        },
+        "pb_21v_01": {
+          "14": 2
+        },
+        "pb_partner_nce_01": {
+          "14": 2
+        },
+        "pb_partner_ospa_01": {
+          "14": 2
+        },
+        "pb_partner_both_01": {
+          "14": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q06",
+      "query": "世纪互联在线服务高级协议是什么？",
+      "language": "zh",
+      "scenario": "OSPA 协议",
+      "business_scope": 1,
+      "reference_document_ids": [
+        88
+      ],
+      "relevance": {
+        "88": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "88": 2
+        },
+        "pb_21v_01": {
+          "88": 2
+        },
+        "pb_partner_nce_01": {
+          "88": 2
+        },
+        "pb_partner_ospa_01": {
+          "88": 2
+        },
+        "pb_partner_both_01": {
+          "88": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q07",
+      "query": "NCE 信用审核需要怎样操作？",
+      "language": "zh",
+      "scenario": "NCE 信用审核",
+      "business_scope": 0,
+      "reference_document_ids": [
+        23
+      ],
+      "relevance": {
+        "23": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "23": 2
+        },
+        "pb_21v_01": {
+          "23": 2
+        },
+        "pb_partner_nce_01": {
+          "23": 2
+        },
+        "pb_partner_ospa_01": {},
+        "pb_partner_both_01": {
+          "23": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q08",
+      "query": "Direct Model OSPA 如何提交信用审核申请？",
+      "language": "zh",
+      "scenario": "OSPA 信用审核",
+      "business_scope": 1,
+      "reference_document_ids": [
+        97
+      ],
+      "relevance": {
+        "97": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "97": 2
+        },
+        "pb_21v_01": {
+          "97": 2
+        },
+        "pb_partner_nce_01": {},
+        "pb_partner_ospa_01": {
+          "97": 2
+        },
+        "pb_partner_both_01": {
+          "97": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q09",
+      "query": "Indirect Model OSPA 如何申请信用审核？",
+      "language": "zh",
+      "scenario": "OSPA 信用审核",
+      "business_scope": 1,
+      "reference_document_ids": [
+        98
+      ],
+      "relevance": {
+        "98": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "98": 2
+        },
+        "pb_21v_01": {
+          "98": 2
+        },
+        "pb_partner_nce_01": {},
+        "pb_partner_ospa_01": {
+          "98": 2
+        },
+        "pb_partner_both_01": {
+          "98": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q10",
+      "query": "How do I add a billing account owner?",
+      "language": "en",
+      "scenario": "NCE 账户",
+      "business_scope": 0,
+      "reference_document_ids": [
+        38
+      ],
+      "relevance": {
+        "38": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "38": 2
+        },
+        "pb_21v_01": {
+          "38": 2
+        },
+        "pb_partner_nce_01": {
+          "38": 2
+        },
+        "pb_partner_ospa_01": {
+          "38": 2
+        },
+        "pb_partner_both_01": {
+          "38": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q11",
+      "query": "如何新增 Billing Profile 的角色账户？",
+      "language": "zh",
+      "scenario": "NCE 账户",
+      "business_scope": 0,
+      "reference_document_ids": [
+        39
+      ],
+      "relevance": {
+        "39": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "39": 2
+        },
+        "pb_21v_01": {
+          "39": 2
+        },
+        "pb_partner_nce_01": {
+          "39": 2
+        },
+        "pb_partner_ospa_01": {
+          "39": 2
+        },
+        "pb_partner_both_01": {
+          "39": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q12",
+      "query": "How do I create an invoice section?",
+      "language": "en",
+      "scenario": "NCE 账户",
+      "business_scope": 0,
+      "reference_document_ids": [
+        41
+      ],
+      "relevance": {
+        "41": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "41": 2
+        },
+        "pb_21v_01": {
+          "41": 2
+        },
+        "pb_partner_nce_01": {
+          "41": 2
+        },
+        "pb_partner_ospa_01": {
+          "41": 2
+        },
+        "pb_partner_both_01": {
+          "41": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q13",
+      "query": "Azure RI 预留实例是什么？",
+      "language": "zh",
+      "scenario": "预留术语",
+      "business_scope": 0,
+      "reference_document_ids": [
+        42
+      ],
+      "relevance": {
+        "42": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "42": 2
+        },
+        "pb_21v_01": {
+          "42": 2
+        },
+        "pb_partner_nce_01": {
+          "42": 2
+        },
+        "pb_partner_ospa_01": {
+          "42": 2
+        },
+        "pb_partner_both_01": {
+          "42": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q14",
+      "query": "如何购买预留实例？",
+      "language": "zh",
+      "scenario": "预留购买",
+      "business_scope": 0,
+      "reference_document_ids": [
+        44
+      ],
+      "relevance": {
+        "44": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "44": 2
+        },
+        "pb_21v_01": {
+          "44": 2
+        },
+        "pb_partner_nce_01": {
+          "44": 2
+        },
+        "pb_partner_ospa_01": {
+          "44": 2
+        },
+        "pb_partner_both_01": {
+          "44": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q15",
+      "query": "RI 的续订在哪里设置？",
+      "language": "zh",
+      "scenario": "预留续订",
+      "business_scope": 0,
+      "reference_document_ids": [
+        47
+      ],
+      "relevance": {
+        "47": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "47": 2
+        },
+        "pb_21v_01": {
+          "47": 2
+        },
+        "pb_partner_nce_01": {
+          "47": 2
+        },
+        "pb_partner_ospa_01": {
+          "47": 2
+        },
+        "pb_partner_both_01": {
+          "47": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q16",
+      "query": "如何查看 RI 利用率？",
+      "language": "zh",
+      "scenario": "预留利用率",
+      "business_scope": 0,
+      "reference_document_ids": [
+        49
+      ],
+      "relevance": {
+        "49": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "49": 2
+        },
+        "pb_21v_01": {
+          "49": 2
+        },
+        "pb_partner_nce_01": {
+          "49": 2
+        },
+        "pb_partner_ospa_01": {
+          "49": 2
+        },
+        "pb_partner_both_01": {
+          "49": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q17",
+      "query": "What is an Azure Savings Plan?",
+      "language": "en",
+      "scenario": "节省计划术语",
+      "business_scope": 0,
+      "reference_document_ids": [
+        50
+      ],
+      "relevance": {
+        "50": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "50": 2
+        },
+        "pb_21v_01": {
+          "50": 2
+        },
+        "pb_partner_nce_01": {
+          "50": 2
+        },
+        "pb_partner_ospa_01": {
+          "50": 2
+        },
+        "pb_partner_both_01": {
+          "50": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q18",
+      "query": "Savings Plan 覆盖哪些计算产品？",
+      "language": "zh",
+      "scenario": "节省计划范围",
+      "business_scope": 0,
+      "reference_document_ids": [
+        52
+      ],
+      "relevance": {
+        "52": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "52": 2
+        },
+        "pb_21v_01": {
+          "52": 2
+        },
+        "pb_partner_nce_01": {
+          "52": 2
+        },
+        "pb_partner_ospa_01": {
+          "52": 2
+        },
+        "pb_partner_both_01": {
+          "52": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q19",
+      "query": "如何购买节省计划？",
+      "language": "zh",
+      "scenario": "节省计划购买",
+      "business_scope": 0,
+      "reference_document_ids": [
+        53
+      ],
+      "relevance": {
+        "53": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "53": 2
+        },
+        "pb_21v_01": {
+          "53": 2
+        },
+        "pb_partner_nce_01": {
+          "53": 2
+        },
+        "pb_partner_ospa_01": {
+          "53": 2
+        },
+        "pb_partner_both_01": {
+          "53": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q20",
+      "query": "Savings Plan 能否退款？",
+      "language": "zh",
+      "scenario": "节省计划退款",
+      "business_scope": 0,
+      "reference_document_ids": [
+        55
+      ],
+      "relevance": {
+        "55": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "55": 2
+        },
+        "pb_21v_01": {
+          "55": 2
+        },
+        "pb_partner_nce_01": {
+          "55": 2
+        },
+        "pb_partner_ospa_01": {
+          "55": 2
+        },
+        "pb_partner_both_01": {
+          "55": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q21",
+      "query": "如何理解摊销成本账单？",
+      "language": "zh",
+      "scenario": "NCE 账单",
+      "business_scope": 0,
+      "reference_document_ids": [
+        59
+      ],
+      "relevance": {
+        "59": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "59": 2
+        },
+        "pb_21v_01": {
+          "59": 2
+        },
+        "pb_partner_nce_01": {
+          "59": 2
+        },
+        "pb_partner_ospa_01": {
+          "59": 2
+        },
+        "pb_partner_both_01": {
+          "59": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q22",
+      "query": "Azure 订阅有哪些状态？",
+      "language": "zh",
+      "scenario": "NCE 订阅状态",
+      "business_scope": 0,
+      "reference_document_ids": [
+        60
+      ],
+      "relevance": {
+        "60": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "60": 2
+        },
+        "pb_21v_01": {
+          "60": 2
+        },
+        "pb_partner_nce_01": {
+          "60": 2
+        },
+        "pb_partner_ospa_01": {
+          "60": 2
+        },
+        "pb_partner_both_01": {
+          "60": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q23",
+      "query": "NCE 业务下怎样创建订阅？",
+      "language": "zh",
+      "scenario": "NCE 创建订阅",
+      "business_scope": 0,
+      "reference_document_ids": [
+        61
+      ],
+      "relevance": {
+        "61": 1
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "61": 1
+        },
+        "pb_21v_01": {
+          "61": 1
+        },
+        "pb_partner_nce_01": {
+          "61": 1
+        },
+        "pb_partner_ospa_01": {
+          "61": 1
+        },
+        "pb_partner_both_01": {
+          "61": 1
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q24",
+      "query": "NCE 的订阅如何取消？",
+      "language": "zh",
+      "scenario": "NCE 取消订阅",
+      "business_scope": 0,
+      "reference_document_ids": [
+        62
+      ],
+      "relevance": {
+        "62": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "62": 2
+        },
+        "pb_21v_01": {
+          "62": 2
+        },
+        "pb_partner_nce_01": {
+          "62": 2
+        },
+        "pb_partner_ospa_01": {
+          "62": 2
+        },
+        "pb_partner_both_01": {
+          "62": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q25",
+      "query": "OSPA 的订阅如何取消？",
+      "language": "zh",
+      "scenario": "OSPA 取消订阅",
+      "business_scope": 1,
+      "reference_document_ids": [
+        141
+      ],
+      "relevance": {
+        "141": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "141": 2
+        },
+        "pb_21v_01": {
+          "141": 2
+        },
+        "pb_partner_nce_01": {
+          "141": 2
+        },
+        "pb_partner_ospa_01": {
+          "141": 2
+        },
+        "pb_partner_both_01": {
+          "141": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q26",
+      "query": "怎样重新激活已取消的订阅？",
+      "language": "zh",
+      "scenario": "OSPA 激活订阅",
+      "business_scope": 1,
+      "reference_document_ids": [
+        142
+      ],
+      "relevance": {
+        "142": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "142": 2
+        },
+        "pb_21v_01": {
+          "142": 2
+        },
+        "pb_partner_nce_01": {
+          "142": 2
+        },
+        "pb_partner_ospa_01": {
+          "142": 2
+        },
+        "pb_partner_both_01": {
+          "142": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q27",
+      "query": "How do I delete an account in the enterprise portal?",
+      "language": "en",
+      "scenario": "OSPA 账户管理",
+      "business_scope": 1,
+      "reference_document_ids": [
+        128
+      ],
+      "relevance": {
+        "128": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "128": 2
+        },
+        "pb_21v_01": {
+          "128": 2
+        },
+        "pb_partner_nce_01": {
+          "128": 2
+        },
+        "pb_partner_ospa_01": {
+          "128": 2
+        },
+        "pb_partner_both_01": {
+          "128": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q28",
+      "query": "如何从企业门户下载使用量报告？",
+      "language": "zh",
+      "scenario": "OSPA 用量",
+      "business_scope": 1,
+      "reference_document_ids": [
+        130
+      ],
+      "relevance": {
+        "130": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "130": 2
+        },
+        "pb_21v_01": {
+          "130": 2
+        },
+        "pb_partner_nce_01": {
+          "130": 2
+        },
+        "pb_partner_ospa_01": {
+          "130": 2
+        },
+        "pb_partner_both_01": {
+          "130": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q29",
+      "query": "NCE 的 CICR 流程怎么操作？",
+      "language": "zh",
+      "scenario": "NCE 联系信息变更",
+      "business_scope": 0,
+      "reference_document_ids": [
+        19
+      ],
+      "relevance": {
+        "19": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "19": 2
+        },
+        "pb_21v_01": {
+          "19": 2
+        },
+        "pb_partner_nce_01": {
+          "19": 2
+        },
+        "pb_partner_ospa_01": {},
+        "pb_partner_both_01": {
+          "19": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q30",
+      "query": "OSPA 的 Contact Information Change Request 是什么流程？",
+      "language": "zh",
+      "scenario": "OSPA 联系信息变更",
+      "business_scope": 1,
+      "reference_document_ids": [
+        105
+      ],
+      "relevance": {
+        "105": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "105": 2
+        },
+        "pb_21v_01": {
+          "105": 2
+        },
+        "pb_partner_nce_01": {},
+        "pb_partner_ospa_01": {
+          "105": 2
+        },
+        "pb_partner_both_01": {
+          "105": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q31",
+      "query": "NCE 的实体名称变更 COEN 如何处理？",
+      "language": "zh",
+      "scenario": "NCE 实体变更",
+      "business_scope": 0,
+      "reference_document_ids": [
+        20
+      ],
+      "relevance": {
+        "20": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "20": 2
+        },
+        "pb_21v_01": {
+          "20": 2
+        },
+        "pb_partner_nce_01": {
+          "20": 2
+        },
+        "pb_partner_ospa_01": {},
+        "pb_partner_both_01": {
+          "20": 2
+        }
+      },
+      "judgments_exhaustive": false
+    },
+    {
+      "id": "Q32",
+      "query": "NCE 更换合同合作伙伴 COCP 有什么流程？",
+      "language": "zh",
+      "scenario": "NCE 合作伙伴变更",
+      "business_scope": 0,
+      "reference_document_ids": [
+        18
+      ],
+      "relevance": {
+        "18": 2
+      },
+      "by_profile": {
+        "pb_msft_01": {
+          "18": 2
+        },
+        "pb_21v_01": {
+          "18": 2
+        },
+        "pb_partner_nce_01": {
+          "18": 2
+        },
+        "pb_partner_ospa_01": {},
+        "pb_partner_both_01": {
+          "18": 2
+        }
+      },
+      "judgments_exhaustive": false
+    }
+  ],
+  "no_answer_questions": [
+    {
+      "id": "NA01",
+      "query": "员工年假有多少天，如何申请休假？",
+      "language": "zh",
+      "business_scope": "all",
+      "reason": "本快照没有人事休假制度。"
+    },
+    {
+      "id": "NA02",
+      "query": "What will the weather be in Shanghai tomorrow?",
+      "language": "en",
+      "business_scope": "all",
+      "reason": "本快照没有实时天气数据。"
+    },
+    {
+      "id": "NA03",
+      "query": "2027年12月中国北部3 Standard_D4s_v5 虚拟机实时每小时价格是多少？",
+      "language": "zh",
+      "business_scope": "all",
+      "reason": "现有文档可能介绍价目表入口，但没有指定未来时点的实时机型价格。"
+    }
+  ],
+  "approval_recorded_at": "2026-09-29T23:11:36.875862+00:00",
+  "frozen_sha256": "81005463989a950e1bb689bcea4daf0dfe7485e8787d2025d8c70a261276e118"
+}

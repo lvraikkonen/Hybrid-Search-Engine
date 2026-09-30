@@ -1,0 +1,9 @@
+# Local credentials, synchronization state and logs. Preserve for restart/recovery.
+.local/
+
+# Rebuilt from uv.lock and src/; do not commit generated runtime files.
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+web/

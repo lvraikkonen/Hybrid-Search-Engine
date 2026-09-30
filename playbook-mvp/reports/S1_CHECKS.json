@@ -1,0 +1,310 @@
+{
+  "stage": "S1",
+  "started_at": "2026-09-29T07:27:37.458584+00:00",
+  "status": "passed",
+  "scope": "synthetic only; no SQL documents/profiles imported",
+  "bootstrap": {
+    "started_at": "2026-09-29T07:27:14.944147+00:00",
+    "license_before": {
+      "status": "active",
+      "uid": "34ff6c78-f8b7-4a15-97e8-e83b4ac69f66",
+      "type": "basic",
+      "issue_date": "2026-09-29T07:26:49.899Z",
+      "issue_date_in_millis": 1790666809899,
+      "max_nodes": 1000,
+      "max_resource_units": null,
+      "issued_to": "playbook-mvp",
+      "issuer": "elasticsearch",
+      "start_date_in_millis": -1
+    },
+    "trial_activation": {
+      "at": "2026-09-29T07:27:15.151851+00:00",
+      "response": {
+        "acknowledged": true,
+        "trial_was_started": true,
+        "type": "trial"
+      }
+    },
+    "license_after": {
+      "status": "active",
+      "uid": "5c9f1377-a1a7-41fb-94d5-2d88fef09a6b",
+      "type": "trial",
+      "issue_date": "2026-09-29T07:27:15.030Z",
+      "issue_date_in_millis": 1790666835030,
+      "expiry_date": "2026-10-29T07:27:15.030Z",
+      "expiry_date_in_millis": 1793258835030,
+      "max_nodes": 1000,
+      "max_resource_units": null,
+      "issued_to": "playbook-mvp",
+      "issuer": "elasticsearch",
+      "start_date_in_millis": -1
+    },
+    "index_created": true,
+    "documents_written": true,
+    "completed_at": "2026-09-29T07:27:17.052859+00:00"
+  },
+  "license": {
+    "status": "active",
+    "uid": "5c9f1377-a1a7-41fb-94d5-2d88fef09a6b",
+    "type": "trial",
+    "issue_date": "2026-09-29T07:27:15.030Z",
+    "issue_date_in_millis": 1790666835030,
+    "expiry_date": "2026-10-29T07:27:15.030Z",
+    "expiry_date_in_millis": 1793258835030,
+    "max_nodes": 1000,
+    "max_resource_units": null,
+    "issued_to": "playbook-mvp",
+    "issuer": "elasticsearch",
+    "start_date_in_millis": -1
+  },
+  "server": {
+    "name": "es",
+    "cluster_name": "playbook-mvp",
+    "cluster_uuid": "w-Z7ponNTdu04x6sUr3cPA",
+    "version": {
+      "number": "9.5.4",
+      "build_flavor": "default",
+      "build_type": "docker",
+      "build_hash": "9170df19cae1adb107b7b489b4d82dec66d7a337",
+      "build_date": "2026-09-09T22:42:53.976833287Z",
+      "build_snapshot": false,
+      "lucene_version": "10.5.1",
+      "minimum_wire_compatibility_version": "8.19.0",
+      "minimum_index_compatibility_version": "8.0.0"
+    },
+    "tagline": "You Know, for Search"
+  },
+  "importer": {
+    "username": "pb_s1_importer",
+    "roles": [
+      "pb_s1_importer"
+    ]
+  },
+  "health": {
+    "cluster_name": "playbook-mvp",
+    "status": "green",
+    "timed_out": false,
+    "number_of_nodes": 1,
+    "number_of_data_nodes": 1,
+    "active_primary_shards": 4,
+    "active_shards": 4,
+    "relocating_shards": 0,
+    "initializing_shards": 0,
+    "unassigned_shards": 0,
+    "unassigned_primary_shards": 0,
+    "delayed_unassigned_shards": 0,
+    "number_of_pending_tasks": 0,
+    "number_of_in_flight_fetch": 0,
+    "task_max_waiting_in_queue_millis": 0,
+    "active_shards_percent_as_number": 100.0
+  },
+  "plugins": {
+    "nodes": {
+      "Jqkl-jzCQ7a8tnVBY3_f4g": {
+        "plugins": [
+          {
+            "name": "analysis-smartcn",
+            "version": "9.5.4",
+            "elasticsearch_version": "9.5.4",
+            "java_version": "21",
+            "description": "Smart Chinese Analysis plugin integrates Lucene Smart Chinese analysis module into elasticsearch.",
+            "classname": "org.elasticsearch.plugin.analysis.smartcn.AnalysisSmartChinesePlugin",
+            "extended_plugins": [],
+            "has_native_controller": false,
+            "licensed": false,
+            "is_official": true
+          }
+        ]
+      }
+    }
+  },
+  "analyze": {
+    "合同的生成": [
+      "合同",
+      "的",
+      "生成"
+    ],
+    "Azure 预留实例": [
+      "azur",
+      "预留",
+      "实例"
+    ],
+    "NCE OSPA 订阅取消": [
+      "nce",
+      "ospa",
+      "订阅",
+      "取消"
+    ]
+  },
+  "readers_before": {
+    "pb_s1_nce": {
+      "roles": [
+        "pb_s1_reader"
+      ],
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "scope": "synthetic-s1-only",
+        "playbook_business_categories": [
+          0
+        ]
+      },
+      "match_all_ids": [
+        "nce",
+        "public_nce",
+        "public_ospa"
+      ],
+      "get_cases": 14,
+      "mget_cases": 14,
+      "write_http": 403,
+      "role_write_http": 403,
+      "self_escalation_http": 403
+    },
+    "pb_s1_ospa": {
+      "roles": [
+        "pb_s1_reader"
+      ],
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "scope": "synthetic-s1-only",
+        "playbook_business_categories": [
+          1
+        ]
+      },
+      "match_all_ids": [
+        "ospa",
+        "public_nce",
+        "public_ospa"
+      ],
+      "get_cases": 14,
+      "mget_cases": 14,
+      "write_http": 403,
+      "role_write_http": 403,
+      "self_escalation_http": 403
+    }
+  },
+  "importer_scope_denied": {
+    "security_role": 403,
+    "other_index": 403
+  },
+  "anonymous_http": 401,
+  "tls": {
+    "trusted_ca_localhost": {
+      "protocol": "TLSv1.3",
+      "not_after": "Sep 29 07:24:16 2027 GMT",
+      "certificate_sha256": "1b33489b92b28e5aa553d0713051363258cea619ebc67967c657db2cdf6cba0b"
+    },
+    "trusted_ca_loopback": {
+      "protocol": "TLSv1.3",
+      "not_after": "Sep 29 07:24:16 2027 GMT",
+      "certificate_sha256": "1b33489b92b28e5aa553d0713051363258cea619ebc67967c657db2cdf6cba0b"
+    },
+    "untrusted_ca": "certificate_verification_rejected",
+    "wrong_hostname": "certificate_verification_rejected"
+  },
+  "environment": {
+    "host_architecture": "x86_64",
+    "python": "3.12.12",
+    "docker": {
+      "cpus": 8,
+      "memory_bytes": 8322748416,
+      "root": "/var/lib/docker",
+      "version": "29.8.1"
+    },
+    "image_id": "sha256:cb466f002dae532ee2960591bf4dfdf517c7c45c397e163c49319b2dbf1d2233",
+    "memory_limit": 2147483648,
+    "ports": {
+      "9200/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "19200"
+        }
+      ]
+    },
+    "mounts": [
+      {
+        "Type": "volume",
+        "Name": "playbook-mvp_es_data",
+        "Source": "/var/lib/docker/volumes/playbook-mvp_es_data/_data",
+        "Destination": "/usr/share/elasticsearch/data",
+        "Driver": "local",
+        "Mode": "rw",
+        "RW": true,
+        "Propagation": ""
+      },
+      {
+        "Type": "volume",
+        "Name": "playbook-mvp_es_certs",
+        "Source": "/var/lib/docker/volumes/playbook-mvp_es_certs/_data",
+        "Destination": "/usr/share/elasticsearch/config/certs",
+        "Driver": "local",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": ""
+      }
+    ]
+  },
+  "restart": {
+    "executed": true,
+    "persisted": true,
+    "cluster_uuid": "w-Z7ponNTdu04x6sUr3cPA",
+    "index_uuid": "kw_IUiVzQpmx70GX4sPO0g",
+    "documents_sha256": "e96f6a279566720eb03a058f98c57105cfa8e76d16a1cf255bf733870d9c50ad",
+    "before_started_at": "2026-09-29T07:26:00.118053052Z",
+    "after_started_at": "2026-09-29T07:27:44.934036994Z"
+  },
+  "readers_after": {
+    "pb_s1_nce": {
+      "roles": [
+        "pb_s1_reader"
+      ],
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "scope": "synthetic-s1-only",
+        "playbook_business_categories": [
+          0
+        ]
+      },
+      "match_all_ids": [
+        "nce",
+        "public_nce",
+        "public_ospa"
+      ],
+      "get_cases": 14,
+      "mget_cases": 14,
+      "write_http": 403,
+      "role_write_http": 403,
+      "self_escalation_http": 403
+    },
+    "pb_s1_ospa": {
+      "roles": [
+        "pb_s1_reader"
+      ],
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "scope": "synthetic-s1-only",
+        "playbook_business_categories": [
+          1
+        ]
+      },
+      "match_all_ids": [
+        "ospa",
+        "public_nce",
+        "public_ospa"
+      ],
+      "get_cases": 14,
+      "mget_cases": 14,
+      "write_http": 403,
+      "role_write_http": 403,
+      "self_escalation_http": 403
+    }
+  },
+  "completed_at": "2026-09-29T07:28:39.859396+00:00"
+}

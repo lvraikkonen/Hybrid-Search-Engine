@@ -1,0 +1,27 @@
+{
+  "stage": "S4",
+  "at": "2026-09-29T08:52:09.073816+00:00",
+  "status": "passed",
+  "original_file_sha256": {
+    "tools/extract_playbook_sql.py": "1dfb79f152e7548a385f3dabafca5a1728005f0b549323474ce48d4b3b62f99b",
+    "tools/build_dataset.py": "5549264c03919af1a0e34b3173851d83944218c304d6ca00dc77238e641c64f6",
+    "mock_auth.py": "04c7fa9b5393d951c9b371b23faac93e5b9ed0eb5f7bb9b037209cc9dc528638",
+    "src/template.html": "39db93a5f24813c97e8de09636583934dfae970227df08bde6dc5e775cdb9d64",
+    "src/style.css": "b5b765006d37ffc5998a9ba76ffd99f64eb1e45cba273e7efc44a7a1ec4209f0",
+    "src/app.js": "1b026991132dc57abbab0783eb18b16ed8d19896bef53a1adeefff2a84f1e46e",
+    "Playbook_知识库_20用户演示.html": "731d2cbecb3597350282701eb91508e14c48d0088823d2d20d064fcb53305bd8",
+    "data/playbook-sampledata.sql": "cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821"
+  },
+  "real_document_count": 130,
+  "real_documents_sha256": "e730f69e85a969f4cca1fc185aaa3bcc65b304ccf7b220553afc8b697318ecd5",
+  "same_as_s3": true,
+  "mapping_and_analyzer_unchanged": true,
+  "synonyms_sha256": "9b01dac49042d74f4b3361cacb1db4ac22ce6005a796a0833434766b6536111f",
+  "license": {
+    "type": "trial",
+    "status": "active",
+    "expiry_date": "2026-10-29T07:27:15.030Z"
+  },
+  "credential_count": 27,
+  "credentials_private_ignored_not_exposed": true
+}

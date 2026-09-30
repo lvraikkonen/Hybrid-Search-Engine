@@ -1,0 +1,381 @@
+{
+  "stage": "S6",
+  "started_at": "2026-09-30T02:19:03.083927+00:00",
+  "status": "passed",
+  "namespace": "playbook-s6-validation",
+  "synthetic_only": true,
+  "cases": [
+    {
+      "name": "complete_snapshot_explicit_release",
+      "plan_id": "10c3ecd86478f7130a6a94a0deb04358c5739f57cfc2a3fcb7c99589d8a6e77b",
+      "diff": {
+        "added": [
+          "playbook-test:Document:99002"
+        ],
+        "deleted": [],
+        "content_changed": [],
+        "acl_changed": [
+          "playbook-test:Document:99001"
+        ],
+        "metadata_changed": [],
+        "navigation_changed": true,
+        "profiles_changed": [
+          "pb_s6_partner_both_01"
+        ],
+        "withdrawn_document_ids": [],
+        "snapshot_changed": true
+      },
+      "status": "passed",
+      "generation": "10c3ecd86478f7130a6a94a0deb04358c5739f57cfc2a3fcb7c99589d8a6e77b",
+      "snapshot": "678621e1c293a13e6b4a713c14df3ef9da853e766fdc7389cb106de93837038b",
+      "written": 3,
+      "maintenance_ms": 1763.13,
+      "confirmed_at": "2026-09-30T02:19:06.081234+00:00",
+      "paths": {
+        "pb_s6_msft_01": [
+          99001,
+          99002,
+          99003
+        ],
+        "pb_s6_partner_nce_01": [
+          99001,
+          99003
+        ],
+        "pb_s6_partner_both_01": [
+          99001,
+          99002,
+          99003
+        ]
+      }
+    },
+    {
+      "name": "repeat_import_noop",
+      "plan_id": "094bdf96591f39193e006be7e38ea7acfb5e0cd68da460580a4aa55642b17cb1",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": false,
+        "profiles_changed": [],
+        "withdrawn_document_ids": [],
+        "snapshot_changed": false
+      },
+      "status": "unchanged",
+      "generation": "10c3ecd86478f7130a6a94a0deb04358c5739f57cfc2a3fcb7c99589d8a6e77b",
+      "written": 0
+    },
+    {
+      "name": "content_update_defaults_closed",
+      "plan_id": "b1a092d631233f7673141c26180af75eaf205115d35b8e9d5f300c6daed01fc5",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [
+          "playbook-test:Document:99001"
+        ],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": false,
+        "profiles_changed": [],
+        "withdrawn_document_ids": [],
+        "snapshot_changed": true
+      },
+      "status": "passed",
+      "generation": "b1a092d631233f7673141c26180af75eaf205115d35b8e9d5f300c6daed01fc5",
+      "snapshot": "94d8044b4aa63a951a1835ffc30350b0fd9321c778e10beca2b4c4844319225d",
+      "written": 3,
+      "maintenance_ms": 1637.86,
+      "confirmed_at": "2026-09-30T02:19:11.409283+00:00",
+      "paths": {
+        "pb_s6_msft_01": [],
+        "pb_s6_partner_nce_01": [],
+        "pb_s6_partner_both_01": []
+      }
+    },
+    {
+      "name": "stale_plan_rejected_without_blocking_current",
+      "status": "passed"
+    },
+    {
+      "name": "content_snapshot_explicit_reopen",
+      "plan_id": "3734b98a3401b4eb7e386a8d9bd02eba11dcfe2078bb8cbe32c3326b23ca8dd5",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": false,
+        "profiles_changed": [],
+        "withdrawn_document_ids": [],
+        "snapshot_changed": false
+      },
+      "status": "passed",
+      "generation": "3734b98a3401b4eb7e386a8d9bd02eba11dcfe2078bb8cbe32c3326b23ca8dd5",
+      "snapshot": "94d8044b4aa63a951a1835ffc30350b0fd9321c778e10beca2b4c4844319225d",
+      "written": 3,
+      "maintenance_ms": 1621.15,
+      "confirmed_at": "2026-09-30T02:19:16.170453+00:00",
+      "paths": {
+        "pb_s6_msft_01": [
+          99001,
+          99002,
+          99003
+        ],
+        "pb_s6_partner_nce_01": [
+          99001,
+          99003
+        ],
+        "pb_s6_partner_both_01": [
+          99001,
+          99002,
+          99003
+        ]
+      }
+    },
+    {
+      "name": "acl_only_revoke_partner_unchanged_document_timestamp",
+      "plan_id": "d6ec4414013c26bf88ff8abc26124b132e2d92b97d0a6c31bc9707b0d8325d53",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [],
+        "acl_changed": [
+          "playbook-test:Document:99001"
+        ],
+        "metadata_changed": [],
+        "navigation_changed": true,
+        "profiles_changed": [],
+        "withdrawn_document_ids": [],
+        "snapshot_changed": true
+      },
+      "status": "passed",
+      "generation": "d6ec4414013c26bf88ff8abc26124b132e2d92b97d0a6c31bc9707b0d8325d53",
+      "snapshot": "ffdcf07e85e251ff01277d71e13b801c5b684652f50ab252db9d5db0410abe1f",
+      "written": 3,
+      "maintenance_ms": 1350.61,
+      "confirmed_at": "2026-09-30T02:19:20.200442+00:00",
+      "paths": {
+        "pb_s6_msft_01": [
+          99001,
+          99002,
+          99003
+        ],
+        "pb_s6_partner_nce_01": [
+          99003
+        ],
+        "pb_s6_partner_both_01": [
+          99002,
+          99003
+        ]
+      }
+    },
+    {
+      "name": "user_business_revocation_invalidates_old_sessions",
+      "plan_id": "0dca1c983d89cb261133aba46dec9a27829c530ddc8604fdcda6b1881d291d03",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": false,
+        "profiles_changed": [
+          "pb_s6_partner_both_01"
+        ],
+        "withdrawn_document_ids": [],
+        "snapshot_changed": false
+      },
+      "status": "passed",
+      "generation": "0dca1c983d89cb261133aba46dec9a27829c530ddc8604fdcda6b1881d291d03",
+      "snapshot": "ffdcf07e85e251ff01277d71e13b801c5b684652f50ab252db9d5db0410abe1f",
+      "written": 0,
+      "maintenance_ms": 733.34,
+      "confirmed_at": "2026-09-30T02:19:23.686800+00:00",
+      "paths": {
+        "pb_s6_msft_01": [
+          99001,
+          99002,
+          99003
+        ],
+        "pb_s6_partner_nce_01": [
+          99003
+        ],
+        "pb_s6_partner_both_01": [
+          99003
+        ]
+      }
+    },
+    {
+      "name": "withdraw_public_document",
+      "plan_id": "631ab05301b6888c1baea64cdd22280ac774c3d4c6499fe991bfa60eef2f6e06",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": false,
+        "profiles_changed": [],
+        "withdrawn_document_ids": [
+          99003
+        ],
+        "snapshot_changed": false
+      },
+      "status": "passed",
+      "generation": "631ab05301b6888c1baea64cdd22280ac774c3d4c6499fe991bfa60eef2f6e06",
+      "snapshot": "ffdcf07e85e251ff01277d71e13b801c5b684652f50ab252db9d5db0410abe1f",
+      "written": 1,
+      "maintenance_ms": 931.93,
+      "confirmed_at": "2026-09-30T02:19:27.290252+00:00",
+      "paths": {
+        "pb_s6_msft_01": [
+          99001,
+          99002
+        ],
+        "pb_s6_partner_nce_01": [],
+        "pb_s6_partner_both_01": []
+      }
+    },
+    {
+      "name": "complete_snapshot_explicit_delete",
+      "plan_id": "776156e7d2636bb60f0c6efd17831a803979537a3fa179960cfff08210bddf9e",
+      "diff": {
+        "added": [],
+        "deleted": [
+          "playbook-test:Document:99002"
+        ],
+        "content_changed": [],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": true,
+        "profiles_changed": [],
+        "withdrawn_document_ids": [
+          99003
+        ],
+        "snapshot_changed": true
+      },
+      "status": "passed",
+      "generation": "776156e7d2636bb60f0c6efd17831a803979537a3fa179960cfff08210bddf9e",
+      "snapshot": "41f87d0b518ac36ff3a30e60498e0226b4bede8c9cb3eb070198bc3daa3248e0",
+      "written": 3,
+      "maintenance_ms": 1206.4,
+      "confirmed_at": "2026-09-30T02:19:31.250687+00:00",
+      "paths": {
+        "pb_s6_msft_01": [
+          99001
+        ],
+        "pb_s6_partner_nce_01": [],
+        "pb_s6_partner_both_01": []
+      }
+    },
+    {
+      "name": "injected_partial_write_failure_durable_gate_same_plan_retry",
+      "status": "passed",
+      "generation": "615ca71817d1862053742eff272a22f719c3c05697600c410dddce76ec9203be",
+      "snapshot": "547ece79dd4de3b38550ff38c6f2320970583f0eaafc082d22c2642e23bc22db",
+      "written": 1,
+      "maintenance_ms": 1513.27,
+      "confirmed_at": "2026-09-30T02:19:36.346537+00:00",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [
+          "playbook-test:Document:99001"
+        ],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": false,
+        "profiles_changed": [],
+        "withdrawn_document_ids": [
+          99003
+        ],
+        "snapshot_changed": true
+      },
+      "paths": {
+        "pb_s6_msft_01": [
+          99001
+        ],
+        "pb_s6_partner_nce_01": [],
+        "pb_s6_partner_both_01": []
+      }
+    },
+    {
+      "name": "content_rollback_preserves_latest_denials",
+      "plan_id": "7ed559d6c0382032ae0d9a882e7e90cd0023856d5272bfe9490b10beafb0f7c9",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [
+          "playbook-test:Document:99001"
+        ],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": false,
+        "profiles_changed": [],
+        "withdrawn_document_ids": [
+          99003
+        ],
+        "snapshot_changed": true
+      },
+      "status": "passed",
+      "generation": "7ed559d6c0382032ae0d9a882e7e90cd0023856d5272bfe9490b10beafb0f7c9",
+      "snapshot": "b59509950c9b59e9b8ca21383bf63d2c4aac88f7d6e04620e6d4ac83e1a54c6f",
+      "written": 2,
+      "maintenance_ms": 1446.23,
+      "confirmed_at": "2026-09-30T02:19:40.363345+00:00",
+      "paths": {
+        "pb_s6_msft_01": [
+          99001
+        ],
+        "pb_s6_partner_nce_01": [],
+        "pb_s6_partner_both_01": []
+      }
+    },
+    {
+      "name": "old_physical_index_and_file_paths_denied",
+      "status": "passed"
+    },
+    {
+      "name": "disabled_native_profile",
+      "plan_id": "0ca5ed6a48bfc691de9c883ab47b605dbe341093df477da63d0c93967e27dfc2",
+      "diff": {
+        "added": [],
+        "deleted": [],
+        "content_changed": [],
+        "acl_changed": [],
+        "metadata_changed": [],
+        "navigation_changed": false,
+        "profiles_changed": [
+          "pb_s6_partner_both_01"
+        ],
+        "withdrawn_document_ids": [
+          99003
+        ],
+        "snapshot_changed": false
+      },
+      "status": "passed",
+      "generation": "0ca5ed6a48bfc691de9c883ab47b605dbe341093df477da63d0c93967e27dfc2",
+      "snapshot": "b59509950c9b59e9b8ca21383bf63d2c4aac88f7d6e04620e6d4ac83e1a54c6f",
+      "written": 0,
+      "maintenance_ms": 652.56,
+      "confirmed_at": "2026-09-30T02:19:43.785390+00:00",
+      "paths": {
+        "pb_s6_msft_01": [
+          99001
+        ],
+        "pb_s6_partner_nce_01": []
+      }
+    }
+  ],
+  "http_checks": 646,
+  "native_es_checks": 187,
+  "container_restart": "not_run",
+  "real_index_unchanged": true,
+  "safety_failures": 0,
+  "completed_at": "2026-09-30T02:19:46.111687+00:00",
+  "audit_log_rows": 646,
+  "audit_sensitive_fields_absent": true
+}

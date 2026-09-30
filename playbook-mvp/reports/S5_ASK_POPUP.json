@@ -1,0 +1,441 @@
+{
+  "phase": "S5 UI follow-up",
+  "scope": "ASK AI modal entry and document navigation; S6 not started",
+  "checked_at_utc": "2026-09-29T22:40:01.675Z",
+  "base_url": "http://127.0.0.1:18080/",
+  "implementation": {
+    "desktop": "centered header trigger above 1000px",
+    "narrow": "right floating trigger at 1000px and below",
+    "popup": "native HTML dialog; click, Meta+K, Control+K; Esc, close button, backdrop",
+    "navigation": "close popup; authenticated document request; update URL, reader focus and menu selection",
+    "session": "current-session results retained on ordinary close; cleared and modal closed on session change/logout; hidden while session is checked"
+  },
+  "commands": [
+    {
+      "command": "node --check src/app.js",
+      "result": "PASS"
+    },
+    {
+      "command": "node --test tests/test_s5_client.mjs",
+      "result": "PASS",
+      "tests": 6
+    },
+    {
+      "command": "uv run python -B build.py",
+      "result": "PASS"
+    },
+    {
+      "command": "uv run python -B -m unittest discover -s tests -p 'test_s5_static.py' -v",
+      "result": "PASS",
+      "tests": 1,
+      "elapsed_seconds": 0.644
+    }
+  ],
+  "browser": {
+    "engine": "Codex in-app Chromium",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "passed": 21,
+    "checks": [
+      {
+        "name": "anonymous_home_popup_closed",
+        "status": "PASS",
+        "evidence": {
+          "disabled": true,
+          "documentTitle": "知识文档工作台",
+          "focus": "",
+          "open": false,
+          "profile": "",
+          "query": "",
+          "results": [],
+          "status": "选择用户后开始检索。"
+        }
+      },
+      {
+        "name": "anonymous_click_opens_disabled_search",
+        "status": "PASS",
+        "evidence": {
+          "disabled": true,
+          "documentTitle": "知识文档工作台",
+          "focus": "askClose",
+          "open": true,
+          "profile": "",
+          "query": "",
+          "results": [],
+          "status": "选择用户后开始检索。"
+        }
+      },
+      {
+        "name": "close_button_restores_trigger_focus",
+        "status": "PASS",
+        "evidence": {
+          "disabled": true,
+          "documentTitle": "知识文档工作台",
+          "focus": "askTrigger",
+          "open": false,
+          "profile": "",
+          "query": "",
+          "results": [],
+          "status": "选择用户后开始检索。"
+        }
+      },
+      {
+        "name": "command_k_opens_and_focuses_question",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "从目录或问题开始",
+          "focus": "questionInput",
+          "open": true,
+          "profile": "pb_partner_nce_01",
+          "query": "",
+          "results": [],
+          "status": "输入问题，查找相关文档。"
+        }
+      },
+      {
+        "name": "escape_closes_and_restores_focus",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "从目录或问题开始",
+          "focus": "askTrigger",
+          "open": false,
+          "profile": "pb_partner_nce_01",
+          "query": "",
+          "results": [],
+          "status": "输入问题，查找相关文档。"
+        }
+      },
+      {
+        "name": "control_k_opens_popup",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "从目录或问题开始",
+          "focus": "questionInput",
+          "open": true,
+          "profile": "pb_partner_nce_01",
+          "query": "",
+          "results": [],
+          "status": "输入问题，查找相关文档。"
+        }
+      },
+      {
+        "name": "popup_search_uses_nce_permission_boundary",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "从目录或问题开始",
+          "focus": "askSubmit",
+          "open": true,
+          "profile": "pb_partner_nce_01",
+          "query": "合同是如何生成的？",
+          "results": [
+            25,
+            63,
+            24,
+            33,
+            42
+          ],
+          "status": "“合同是如何生成的？” · 5 篇相关文档"
+        }
+      },
+      {
+        "name": "native_modal_focus_stays_in_search_controls",
+        "status": "PASS",
+        "evidence": {
+          "nativeModal": true,
+          "focusScope": "askScope",
+          "focusLanguage": "askLanguage"
+        }
+      },
+      {
+        "name": "result_closes_popup_and_opens_authorized_document",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "合同的生成",
+          "focus": "reader",
+          "open": false,
+          "profile": "pb_partner_nce_01",
+          "query": "合同是如何生成的？",
+          "results": [
+            25,
+            63,
+            24,
+            33,
+            42
+          ],
+          "selected": "playbook-test:Document:25",
+          "status": "“合同是如何生成的？” · 5 篇相关文档",
+          "url": "http://127.0.0.1:18080/#doc=25&lang=zh"
+        }
+      },
+      {
+        "name": "desktop_trigger_centered_without_overlap",
+        "status": "PASS",
+        "evidence": {
+          "center": 720,
+          "clearLeft": true,
+          "clearRight": true,
+          "headerCenter": 720
+        }
+      },
+      {
+        "name": "reopen_from_document_preserves_current_session_search",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "合同的生成",
+          "focus": "questionInput",
+          "open": true,
+          "profile": "pb_partner_nce_01",
+          "query": "合同是如何生成的？",
+          "results": [
+            25,
+            63,
+            24,
+            33,
+            42
+          ],
+          "selected": "playbook-test:Document:25",
+          "status": "“合同是如何生成的？” · 5 篇相关文档"
+        }
+      },
+      {
+        "name": "backdrop_click_closes_popup",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "合同的生成",
+          "focus": "reader",
+          "open": false,
+          "profile": "pb_partner_nce_01",
+          "query": "合同是如何生成的？",
+          "results": [
+            25,
+            63,
+            24,
+            33,
+            42
+          ],
+          "selected": "playbook-test:Document:25",
+          "status": "“合同是如何生成的？” · 5 篇相关文档"
+        }
+      },
+      {
+        "name": "1024px_header_has_no_overlap",
+        "status": "PASS",
+        "evidence": {
+          "center": 512,
+          "clearLeft": true,
+          "clearRight": true,
+          "scrollWidth": 1024,
+          "width": 1024
+        }
+      },
+      {
+        "name": "cross_tab_identity_change_closes_and_clears_popup",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "资源不存在或不可访问",
+          "focus": "reader",
+          "open": false,
+          "profile": "pb_partner_ospa_01",
+          "query": "",
+          "results": [],
+          "status": "输入问题，查找相关文档。"
+        }
+      },
+      {
+        "name": "new_session_popup_search_uses_ospa_permission_boundary",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "资源不存在或不可访问",
+          "focus": "askSubmit",
+          "open": true,
+          "profile": "pb_partner_ospa_01",
+          "query": "合同是如何生成的？",
+          "results": [
+            99,
+            101,
+            148,
+            92,
+            33
+          ],
+          "status": "“合同是如何生成的？” · 5 篇相关文档"
+        }
+      },
+      {
+        "name": "cross_tab_logout_closes_and_clears_popup",
+        "status": "PASS",
+        "evidence": {
+          "disabled": true,
+          "documentTitle": "知识文档工作台",
+          "focus": "askTrigger",
+          "open": false,
+          "profile": "",
+          "query": "",
+          "results": [],
+          "status": "选择用户后开始检索。"
+        }
+      },
+      {
+        "name": "narrow_screen_uses_visible_right_floating_trigger",
+        "status": "PASS",
+        "evidence": {
+          "bottom": 824,
+          "left": 202,
+          "position": "fixed",
+          "right": 370,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      },
+      {
+        "name": "narrow_popup_fits_viewport_and_scrolls_results",
+        "status": "PASS",
+        "evidence": {
+          "bottom": 828,
+          "clientHeight": 733,
+          "clientWidth": 366,
+          "left": 11,
+          "open": true,
+          "right": 379,
+          "scrollHeight": 2157,
+          "scrollWidth": 366,
+          "top": 16
+        }
+      },
+      {
+        "name": "shortcut_closes_mobile_directory_before_opening_popup",
+        "status": "PASS",
+        "evidence": {
+          "inert": "",
+          "menu": "false",
+          "open": true
+        }
+      },
+      {
+        "name": "narrow_result_navigates_and_closes_popup",
+        "status": "PASS",
+        "evidence": {
+          "disabled": false,
+          "documentTitle": "合同的生成",
+          "focus": "reader",
+          "open": false,
+          "profile": "pb_partner_nce_01",
+          "query": "合同是如何生成的？",
+          "results": [
+            25,
+            63,
+            24,
+            33,
+            42
+          ],
+          "selected": "playbook-test:Document:25",
+          "status": "“合同是如何生成的？” · 5 篇相关文档"
+        }
+      },
+      {
+        "name": "shortcut_replaces_other_dialog_without_stacking",
+        "status": "PASS",
+        "evidence": {
+          "about": false,
+          "ask": true,
+          "focus": "questionInput"
+        }
+      }
+    ],
+    "test_attempt_corrections": [
+      {
+        "name": "command_k_opens_and_focuses_question",
+        "status": "RETRY",
+        "evidence": {
+          "disabled": true,
+          "documentTitle": "知识文档工作台",
+          "focus": "askClose",
+          "open": true,
+          "profile": "pb_partner_nce_01",
+          "query": "",
+          "results": [],
+          "status": "输入问题，查找相关文档。"
+        },
+        "note": "快捷键采样发生在身份切换完成前，等待首页和控件可用后复测。"
+      },
+      {
+        "name": "native_dialog_keyboard_focus_cycles_inside",
+        "status": "RETRY",
+        "evidence": {
+          "last": {
+            "tag": "BODY"
+          },
+          "next": "askClose"
+        },
+        "note": "原生 dialog 的 Shift+Tab 可把焦点交给浏览器工具栏，随后 Tab 回到关闭按钮；改查弹窗内控件顺序与 modal 状态。"
+      },
+      {
+        "name": "narrow_screen_uses_visible_right_floating_trigger",
+        "status": "RETRY",
+        "evidence": {
+          "bottom": 54.5,
+          "left": 636,
+          "position": "absolute",
+          "right": 804,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        "note": "viewport 能力作用于新建的第二标签页；关闭该测试页后在交付页重新设置并验证尺寸。"
+      }
+    ],
+    "console_warnings_or_errors": [],
+    "temporary_overrides": "viewport reset; additional test tab closed"
+  },
+  "build": {
+    "mode": "same_origin_api_shell",
+    "assets": {
+      "index.html": {
+        "bytes": 6005,
+        "sha256": "49dfae07b39e0df145cba693d2c014043ed2e0b80aebe072fd32059ff3f0af11"
+      },
+      "style.css": {
+        "bytes": 34233,
+        "sha256": "bbe6e7f34318f42196540054cc51beebe13644d33c53163b69077b3b6e399a06"
+      },
+      "app.js": {
+        "bytes": 30327,
+        "sha256": "67af2cba6c10b5372ce3e2ed4dd23f3a8c579633717df0f27151f03bdbfb03a5"
+      }
+    },
+    "embedded_documents": 0,
+    "legacy_html_and_portal_data": "preserved_offline_not_served"
+  },
+  "screenshots": [
+    "S5_ASK_ENTRY_DESKTOP.jpg",
+    "S5_ASK_POPUP_DESKTOP.jpg",
+    "S5_ASK_ENTRY_NARROW.jpg",
+    "S5_ASK_POPUP_NARROW.jpg"
+  ],
+  "not_verified": [
+    "Safari, Firefox, physical mobile device and virtual keyboard",
+    "Operating-system download save flow remains unverified from S5",
+    "S6 relevance/performance, content/ACL updates and revocation checks not run",
+    "Full 58-test Python suite and 1127-request HTTP matrix were not repeated for this UI-only change; their earlier evidence is retained"
+  ],
+  "artifact_check_correction": "Browser screenshot bytes are native JPEG. Corrected the four new screenshot extensions from .png to .jpg without image conversion."
+}

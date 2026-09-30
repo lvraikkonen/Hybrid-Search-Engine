@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Playbook · 知识文档工作台</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip-link" href="#reader">跳转到文档内容</a>
+<header class="app-header">
+  <button class="mobile-menu icon-button" id="mobileMenu" aria-label="打开目录" aria-expanded="false" data-icon="menu"></button>
+  <button class="brand" id="homeButton" aria-label="Playbook 首页">
+    <span class="brand-symbol" data-icon="book"></span>
+    <span class="brand-word">Playbook<span>知识文档工作台</span></span>
+  </button>
+  <span class="header-divider"></span>
+  <div class="workspace-label">文档中心 <span class="mini-badge">LOCAL DEMO</span></div>
+  <button class="ask-trigger" id="askTrigger" aria-label="打开 ASK AI" aria-haspopup="dialog" aria-controls="askPanel" aria-keyshortcuts="Meta+K Control+K" title="ASK AI（⌘ / Ctrl + K）"><span data-icon="search"></span><strong>ASK AI</strong><kbd>⌘ K</kbd></button>
+  <div class="header-actions">
+    <button class="text-button header-about" id="aboutButton"><span data-icon="info"></span>使用说明</button>
+    <button class="text-button" id="logoutButton" disabled><span data-icon="user"></span>注销</button>
+    <div class="identity-switch">
+      <span id="avatar" class="avatar">—</span>
+      <div class="identity-text"><label for="userSelect" id="identityRole">选择本地实验身份</label><select id="userSelect" aria-label="切换模拟用户" disabled><option value="">请选择用户</option></select></div>
+      <span class="select-chevron" data-icon="chevron"></span>
+    </div>
+  </div>
+</header>
+<div class="demo-banner"><span data-icon="shield"></span><span><b>本地检索实验</b> · 按当前身份读取授权文档，源发布状态待核验。</span><button id="scopeInfo">查看边界 <span aria-hidden="true">↗</span></button></div>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="知识库目录">
+    <div class="sidebar-top">
+      <div class="sidebar-eyebrow">PLAYBOOK LIBRARY <span class="online-dot"></span></div>
+      <div class="library-title">知识库目录 <span id="visibleCount" class="count-pill">—</span></div>
+      <div class="search-box"><span data-icon="search"></span><input id="searchInput" type="search" placeholder="筛选目录名称…" aria-label="筛选已授权目录名称" autocomplete="off" disabled></div>
+      <div class="scope-tabs" role="group" aria-label="业务目录筛选"><button data-scope="all" class="active">全部</button><button data-scope="0">NCE</button><button data-scope="1">OSPA</button></div>
+      <div class="tree-tools"><span id="treeLabel">按上游菜单层级</span><button id="collapseAll" title="折叠或展开目录" aria-label="折叠或展开目录"><span data-icon="fold"></span></button></div>
+    </div>
+    <nav class="tree-scroll" id="menuTree" aria-label="文档导航"></nav>
+    <div class="sidebar-bottom">
+      <div class="access-overview"><span data-icon="shield-check"></span><span>当前用户可访问</span><strong id="accessibleTotal">—</strong></div>
+      <div class="access-breakdown"><span>公开 <b id="publicCount">—</b></span><span>受控 <b id="controlledCount">—</b></span></div>
+      <p id="identityNote">按角色与业务权限筛选</p>
+      <div class="local-status" id="sessionStatus" role="status"><span class="online-dot"></span>正在核对会话…</div>
+    </div>
+  </aside>
+  <button class="sidebar-backdrop" id="sidebarBackdrop" aria-label="关闭目录"></button>
+  <main id="reader" tabindex="-1" class="reader-scroll">
+    <div class="reader-inner">
+      <div id="breadcrumb" class="breadcrumb" aria-label="当前位置"></div>
+      <div id="view"><div class="empty-state"><h1>正在核对会话…</h1></div></div>
+    </div>
+  </main>
+</div>
+<dialog class="ask-panel" id="askPanel" aria-labelledby="askTitle">
+  <div class="dialog-head ask-head"><div><h2 id="askTitle">ASK AI</h2><p>查找资料，点击结果开始阅读</p></div><button id="askClose" class="icon-button" aria-label="关闭 ASK AI" data-icon="close"></button></div>
+  <div class="ask-body">
+    <form id="askForm">
+      <label for="questionInput">想查找什么资料？</label>
+      <textarea id="questionInput" rows="2" maxlength="1000" placeholder="例如：合同是如何生成的？" required disabled autofocus></textarea>
+      <div class="ask-controls">
+        <label>业务范围<select id="askScope" disabled><option value="all">全部业务</option><option value="0">NCE</option><option value="1">OSPA</option></select></label>
+        <label>检索语言<select id="askLanguage" disabled><option value="both">中文 + 英文</option><option value="zh">中文源字段</option><option value="en">英文源字段</option></select></label>
+        <button class="primary-button" id="askSubmit" type="submit" disabled><span data-icon="search"></span>检索文档</button>
+      </div>
+    </form>
+    <p class="ask-note">按相关性得分降序显示最多 5 篇授权文档，高亮标出匹配词。分数仅供本次检索比较，不代表答案正确率；请查阅原文确认答案。</p>
+    <div id="askStatus" role="status" aria-live="polite">选择用户后开始检索。</div>
+    <div id="askResults" aria-label="检索结果" aria-busy="false"></div>
+  </div>
+</dialog>
+<dialog id="dialog" aria-labelledby="dialogTitle"><div class="dialog-head"><div><div class="eyebrow" id="dialogEyebrow">PLAYBOOK</div><h2 id="dialogTitle"></h2></div><button id="dialogClose" class="icon-button" aria-label="关闭弹窗" data-icon="close"></button></div><div id="dialogBody" class="dialog-body"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><div class="noscript">请启用 JavaScript，并通过本机 HTTP 服务打开工作台。</div></noscript>
+<script src="/app.js" defer></script>
+</body>
+</html>

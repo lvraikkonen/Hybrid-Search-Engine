@@ -1,0 +1,426 @@
+{
+  "schema_version": "2.0",
+  "description": "Server-side normalized fixture; not a token or browser-supplied grant.",
+  "users": [
+    {
+      "profile_id": "pb_msft_01",
+      "user_id": "mock-001",
+      "user_name": "pb_msft_01",
+      "is_partner": false,
+      "role_ids": [
+        1
+      ],
+      "role_names": [
+        "MSFT"
+      ],
+      "raw_business_categories": [],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "internal_default",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_msft_02",
+      "user_id": "mock-002",
+      "user_name": "pb_msft_02",
+      "is_partner": false,
+      "role_ids": [
+        1
+      ],
+      "role_names": [
+        "MSFT"
+      ],
+      "raw_business_categories": [],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "internal_default",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_msft_03",
+      "user_id": "mock-003",
+      "user_name": "pb_msft_03",
+      "is_partner": false,
+      "role_ids": [
+        1
+      ],
+      "role_names": [
+        "MSFT"
+      ],
+      "raw_business_categories": [],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "internal_default",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_msft_04",
+      "user_id": "mock-004",
+      "user_name": "pb_msft_04",
+      "is_partner": false,
+      "role_ids": [
+        1
+      ],
+      "role_names": [
+        "MSFT"
+      ],
+      "raw_business_categories": [],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "internal_default",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "user_id": "mock-005",
+      "user_name": "pb_21v_01",
+      "is_partner": false,
+      "role_ids": [
+        3
+      ],
+      "role_names": [
+        "21V"
+      ],
+      "raw_business_categories": [],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "internal_default",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_21v_02",
+      "user_id": "mock-006",
+      "user_name": "pb_21v_02",
+      "is_partner": false,
+      "role_ids": [
+        3
+      ],
+      "role_names": [
+        "21V"
+      ],
+      "raw_business_categories": [],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "internal_default",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_21v_03",
+      "user_id": "mock-007",
+      "user_name": "pb_21v_03",
+      "is_partner": false,
+      "role_ids": [
+        3
+      ],
+      "role_names": [
+        "21V"
+      ],
+      "raw_business_categories": [],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "internal_default",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_21v_04",
+      "user_id": "mock-008",
+      "user_name": "pb_21v_04",
+      "is_partner": false,
+      "role_ids": [
+        3
+      ],
+      "role_names": [
+        "21V"
+      ],
+      "raw_business_categories": [],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "internal_default",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "user_id": "mock-009",
+      "user_name": "pb_partner_nce_01",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        0
+      ],
+      "effective_business_categories": [
+        0
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_nce_02",
+      "user_id": "mock-010",
+      "user_name": "pb_partner_nce_02",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        0
+      ],
+      "effective_business_categories": [
+        0
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_nce_03",
+      "user_id": "mock-011",
+      "user_name": "pb_partner_nce_03",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        0
+      ],
+      "effective_business_categories": [
+        0
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_nce_04",
+      "user_id": "mock-012",
+      "user_name": "pb_partner_nce_04",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        0
+      ],
+      "effective_business_categories": [
+        0
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "user_id": "mock-013",
+      "user_name": "pb_partner_ospa_01",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        1
+      ],
+      "effective_business_categories": [
+        1
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_ospa_02",
+      "user_id": "mock-014",
+      "user_name": "pb_partner_ospa_02",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        1
+      ],
+      "effective_business_categories": [
+        1
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_ospa_03",
+      "user_id": "mock-015",
+      "user_name": "pb_partner_ospa_03",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        1
+      ],
+      "effective_business_categories": [
+        1
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_ospa_04",
+      "user_id": "mock-016",
+      "user_name": "pb_partner_ospa_04",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        1
+      ],
+      "effective_business_categories": [
+        1
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "user_id": "mock-017",
+      "user_name": "pb_partner_both_01",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        0,
+        1
+      ],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_both_02",
+      "user_id": "mock-018",
+      "user_name": "pb_partner_both_02",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        0,
+        1
+      ],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_both_03",
+      "user_id": "mock-019",
+      "user_name": "pb_partner_both_03",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        0,
+        1
+      ],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    },
+    {
+      "profile_id": "pb_partner_both_04",
+      "user_id": "mock-020",
+      "user_name": "pb_partner_both_04",
+      "is_partner": true,
+      "role_ids": [
+        2
+      ],
+      "role_names": [
+        "Partner"
+      ],
+      "raw_business_categories": [
+        0,
+        1
+      ],
+      "effective_business_categories": [
+        0,
+        1
+      ],
+      "business_permission_source": "partner_explicit",
+      "authz_mode": "mock",
+      "policy_version": "mock-auth-v2-exclusive-role"
+    }
+  ]
+}

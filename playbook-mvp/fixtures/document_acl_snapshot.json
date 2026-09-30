@@ -1,0 +1,4172 @@
+{
+  "source": {
+    "file_name": "playbook-sampledata.sql",
+    "sha256": "cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821",
+    "encoding": "utf-16",
+    "instance_key": "playbook-test",
+    "evaluation_scope": "acl_only_not_publication_or_search",
+    "policy": "direct_single_menu_with_exclusive_user_role_v2",
+    "publication_inference": "none",
+    "test_gates": "MenuItem.Active=1 and granting Role.Status=1; confirm final upstream semantics."
+  },
+  "documents": [
+    {
+      "document_key": "playbook-test:Document:1",
+      "document_id": 1,
+      "title": "21VCA-E 新商务模式介绍",
+      "title_en": "Introduction to 21VCA-E New Commerce",
+      "slug": "introduction-to-new-commerce",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        127,
+        131
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 3,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          63
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:2",
+      "document_id": 2,
+      "title": "21VCA-E、OSPA渠道区别",
+      "title_en": "21VCA/OSPA Differences in Channels",
+      "slug": "differences-21vca-ospa",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        132,
+        418
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 4,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          64
+        ],
+        "source_grant_ids": [
+          126,
+          153,
+          180
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:3",
+      "document_id": 3,
+      "title": "由世纪互联运营的Microsoft Azure产品",
+      "title_en": "Microsoft Azure Operated by 21Vianet",
+      "slug": "azure-21v-operated",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        419,
+        470
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 5,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          65
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:4",
+      "document_id": 4,
+      "title": "21VCA-E客户协议术语",
+      "title_en": "Terms Definition of 21VCA",
+      "slug": "21v-agreement-definition-terms",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        471,
+        566
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 6,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          66
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:5",
+      "document_id": 5,
+      "title": "21VCA-E账单和发票术语",
+      "title_en": "Terms Definition of 21VCA Billing and Invoice",
+      "slug": "terms-definition-21v",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        567,
+        848
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 7,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          67
+        ],
+        "source_grant_ids": [
+          127,
+          154,
+          181
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:6",
+      "document_id": 6,
+      "title": "21VCA-E、OSPA价目表获取及术语说明",
+      "title_en": "How to Get Price List",
+      "slug": "terms-obtaining-pl",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        849,
+        1153
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 8,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          68
+        ],
+        "source_grant_ids": [
+          128,
+          155,
+          182
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:7",
+      "document_id": 7,
+      "title": "联系合作伙伴",
+      "title_en": "Contact Partner",
+      "slug": "contact-partner",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        1154,
+        1158
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 10,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          69
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:8",
+      "document_id": 8,
+      "title": "合作伙伴上线",
+      "title_en": "Partner Onboarding",
+      "slug": "partner-onboarding",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        1159,
+        2203
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 11,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          70
+        ],
+        "source_grant_ids": [
+          129,
+          156,
+          183
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:9",
+      "document_id": 9,
+      "title": "合作伙伴信用审核",
+      "title_en": "Partner Credit Check",
+      "slug": "partner-credit-check",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2204,
+        2222
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 12,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          71
+        ],
+        "source_grant_ids": [
+          130,
+          157,
+          184
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:10",
+      "document_id": 10,
+      "title": "合作伙伴奖励",
+      "title_en": "Partner Incentive",
+      "slug": "partner-incentive",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2223,
+        2237
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 13,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          72
+        ],
+        "source_grant_ids": [
+          131,
+          158,
+          185
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:11",
+      "document_id": 11,
+      "title": "合作伙伴下线",
+      "title_en": "Partner Offboarding",
+      "slug": "partner-offboarding",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2238,
+        2242
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 14,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          73
+        ],
+        "source_grant_ids": [
+          132,
+          159,
+          186
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:12",
+      "document_id": 12,
+      "title": "需求沟通",
+      "title_en": "Requirement Communication",
+      "slug": "requirement-communication",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2243,
+        2243
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 16,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          74
+        ],
+        "source_grant_ids": [
+          134,
+          161,
+          188
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:13",
+      "document_id": 13,
+      "title": "供应商入库支持",
+      "title_en": "Supplier Onboarding Support",
+      "slug": "supplier-onboarding-support",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2244,
+        2267
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 17,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          75
+        ],
+        "source_grant_ids": [
+          135,
+          162,
+          189
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:14",
+      "document_id": 14,
+      "title": "世纪互联客户协议",
+      "title_en": "21Vianet Customer Agreement",
+      "slug": "21vianet-customer-agreement",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2268,
+        2348
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 19,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          76
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:15",
+      "document_id": 15,
+      "title": "签署世纪互联客户协议",
+      "title_en": "Transaction",
+      "slug": "transaction",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2349,
+        2364
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 20,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          77
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:16",
+      "document_id": 16,
+      "title": "下单总流程概览",
+      "title_en": "Ordering Process",
+      "slug": "ordering-process",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2365,
+        2466
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 21,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          78
+        ],
+        "source_grant_ids": [
+          136,
+          163,
+          190
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:17",
+      "document_id": 17,
+      "title": "世纪互联蓝云先章流程",
+      "title_en": "21Vianet Sign First",
+      "slug": "prior-signature-21v",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2467,
+        2491
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 23,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          79
+        ],
+        "source_grant_ids": [
+          138,
+          165,
+          192
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:18",
+      "document_id": 18,
+      "title": "COCP",
+      "title_en": "COCP",
+      "slug": "cocp",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2492,
+        2687
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 24,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          80
+        ],
+        "source_grant_ids": [
+          139,
+          166,
+          193
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:19",
+      "document_id": 19,
+      "title": "CICR",
+      "title_en": "CICR",
+      "slug": "cicr",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2688,
+        2778
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 25,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          81
+        ],
+        "source_grant_ids": [
+          140,
+          167,
+          194
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:20",
+      "document_id": 20,
+      "title": "COEN",
+      "title_en": "COEN",
+      "slug": "coen",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2779,
+        2848
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 26,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          82
+        ],
+        "source_grant_ids": [
+          141,
+          168,
+          195
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:21",
+      "document_id": 21,
+      "title": "暂停Billing Profile",
+      "title_en": "Cancel Billing Profile",
+      "slug": "cancel-billing-profile",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2849,
+        2874
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 27,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          83
+        ],
+        "source_grant_ids": [
+          142,
+          169,
+          196
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:22",
+      "document_id": 22,
+      "title": "报价的创建",
+      "title_en": "Quote Creation",
+      "slug": "creation-of-quote",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2875,
+        2877
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 28,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          84
+        ],
+        "source_grant_ids": [
+          143,
+          170,
+          197
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:23",
+      "document_id": 23,
+      "title": "信用审核Credit check",
+      "title_en": "Credit Check",
+      "slug": "credit-check",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2878,
+        2940
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 29,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          85
+        ],
+        "source_grant_ids": [
+          144,
+          171,
+          198
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:24",
+      "document_id": 24,
+      "title": "填写信息表",
+      "title_en": "Fill in the Information Form",
+      "slug": "fill-info-form",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2941,
+        2984
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 30,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          86
+        ],
+        "source_grant_ids": [
+          145,
+          172,
+          199
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:25",
+      "document_id": 25,
+      "title": "合同的生成",
+      "title_en": "Contract Creation",
+      "slug": "creation-of-contract",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        2985,
+        3005
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 31,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          87
+        ],
+        "source_grant_ids": [
+          146,
+          173,
+          200
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:26",
+      "document_id": 26,
+      "title": "订单的审核",
+      "title_en": "Order to Cash",
+      "slug": "order-to-cash",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3006,
+        3076
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 32,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          88
+        ],
+        "source_grant_ids": [
+          147,
+          174,
+          201
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:27",
+      "document_id": 27,
+      "title": "协议/订单的生效",
+      "title_en": "Effectiveness",
+      "slug": "agreement-effectiveness-billing",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3077,
+        3108
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 33,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          89
+        ],
+        "source_grant_ids": [
+          148,
+          175,
+          202
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:28",
+      "document_id": 28,
+      "title": "发票及付款",
+      "title_en": "Invoice and Payment",
+      "slug": "invoice-and-payment",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3109,
+        3129
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 34,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          90
+        ],
+        "source_grant_ids": [
+          149,
+          176,
+          203
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:29",
+      "document_id": 29,
+      "title": "Hermes",
+      "title_en": "Hermes",
+      "slug": "tools-hermes",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3130,
+        3132
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 36,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          91
+        ],
+        "source_grant_ids": [
+          150,
+          177,
+          204
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:30",
+      "document_id": 30,
+      "title": "NCE业务操作平台",
+      "title_en": "NCE业务操作平台",
+      "slug": "tools-nce-ops",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3133,
+        3168
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 37,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          92
+        ],
+        "source_grant_ids": [
+          151,
+          178,
+          205
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:31",
+      "document_id": 31,
+      "title": "蓝云发票管理系统",
+      "title_en": "21Vianet Fapiao System ",
+      "slug": "tools-invoice-mgt-system",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3169,
+        3278
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 38,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          93
+        ],
+        "source_grant_ids": [
+          206,
+          207,
+          208
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:32",
+      "document_id": 32,
+      "title": "E-Sign 世纪互联电子签章系统",
+      "title_en": "21Vianet E-Sign System",
+      "slug": "tools-21v-esign-system",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3279,
+        3339
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 39,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          94
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:33",
+      "document_id": 33,
+      "title": "常见问题",
+      "title_en": "FAQ",
+      "slug": "sales-faq",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3340,
+        3434
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 40,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          95
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:34",
+      "document_id": 34,
+      "title": "21VCA-E账户结构",
+      "title_en": "21VCA-E Account Structure",
+      "slug": "structure-21vca-account",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3435,
+        3484
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 42,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          96
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:35",
+      "document_id": 35,
+      "title": "各级别账户权限",
+      "title_en": "Account Permissions at All Levels",
+      "slug": "accout-permissions",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        3485,
+        4301
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 43,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          97
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:36",
+      "document_id": 36,
+      "title": "Org ID创建",
+      "title_en": "Org ID Creation",
+      "slug": "orgid-creation",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4302,
+        4388
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 45,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          98
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:37",
+      "document_id": 37,
+      "title": "Tenant ID查询",
+      "title_en": "Find Tenant ID",
+      "slug": "find-tenantid",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4389,
+        4401
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 46,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          99
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:38",
+      "document_id": 38,
+      "title": "如何新增计费账户所有者(Billing account owner)",
+      "title_en": "How to Add a Billing Account Owner",
+      "slug": "add-biiling-account-owner",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4402,
+        4448
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 47,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          100
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:39",
+      "document_id": 39,
+      "title": "如何新增billing profile角色账户",
+      "title_en": "How to Add a Billing Profile Role Account",
+      "slug": "add-billing-profile-accounts",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4449,
+        4479
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 48,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          101
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:40",
+      "document_id": 40,
+      "title": "如何添加关联的计费租户",
+      "title_en": "How to Connect Billing Tenants",
+      "slug": "add-billing-tenant",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4480,
+        4659
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 49,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          102
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:41",
+      "document_id": 41,
+      "title": "如何创建发票科目（invoice section）",
+      "title_en": "How to Create an Invoice Section",
+      "slug": "create-invoice-section",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4660,
+        4720
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 50,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          103
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:42",
+      "document_id": 42,
+      "title": "什么是Azure预留（RI）？",
+      "title_en": "What Are Azure Reserved Instances(RI)?",
+      "slug": "what-azure-ri",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4721,
+        4722
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 52,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          104
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:43",
+      "document_id": 43,
+      "title": "为何购买预留项？",
+      "title_en": "Why Purchase Reserved Instances?",
+      "slug": "why-azure-ri",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4723,
+        4723
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 53,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          105
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:44",
+      "document_id": 44,
+      "title": "购买预留实例（RI）",
+      "title_en": "Purcharse Reserved Instances(RI)",
+      "slug": "purchase-ri",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4724,
+        4849
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 54,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          106
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:45",
+      "document_id": 45,
+      "title": "授予对租户下所有RI的访问权限",
+      "title_en": "Granting Tenants Access to All RIs",
+      "slug": "grant-access-to-ri",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4850,
+        4894
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 55,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          107
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:46",
+      "document_id": 46,
+      "title": "更改预留范围",
+      "title_en": "Change the Reservation Scope",
+      "slug": "change-scope-of-ri",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4895,
+        4912
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 56,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          108
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:47",
+      "document_id": 47,
+      "title": "设置RI的续订",
+      "title_en": "RI Renewal",
+      "slug": "set-up-ri-renewal",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4913,
+        4955
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 57,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          109
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:48",
+      "document_id": 48,
+      "title": "实例大小灵活性",
+      "title_en": "Virtual Machine Size Flexibility with Reserved VM Instances",
+      "slug": "instance-size-flexibility",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4956,
+        4978
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 58,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          110
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:49",
+      "document_id": 49,
+      "title": "如何查看RI的利用率",
+      "title_en": "How to Check the Utilization Rate of RI",
+      "slug": "view-ri-utilization",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        4979,
+        5000
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 59,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          111
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:50",
+      "document_id": 50,
+      "title": "什么是Azure 节省计划（Savings Plan）",
+      "title_en": "What Is Azure Savings Plan",
+      "slug": "what-azure-savings-Plans",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5001,
+        5001
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 61,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          112
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:51",
+      "document_id": 51,
+      "title": "为什么要购买节省计划",
+      "title_en": "Why Purchase a Savings Plan",
+      "slug": "why-purchase-sp",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5002,
+        5006
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 62,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          113
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:52",
+      "document_id": 52,
+      "title": "Savings Plan涵盖哪些计算产品",
+      "title_en": "What Compute Products Does the Savings Plan Cover",
+      "slug": "compute-products-covered-sp",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5007,
+        5065
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 63,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          114
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:53",
+      "document_id": 53,
+      "title": "如何购买Savings Plan",
+      "title_en": "How to Purchase a Savings Plan",
+      "slug": "how-purchase-sp",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5066,
+        5076
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 64,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          115
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:54",
+      "document_id": 54,
+      "title": "如何查看Savings Plan的利用率",
+      "title_en": "How to Check Savings Plan Utilization After Purchase",
+      "slug": "view-sp-utilization",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5077,
+        5085
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 65,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          116
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:55",
+      "document_id": 55,
+      "title": "Savings Plan的退款政策",
+      "title_en": "Refund Policy for Savings Plan",
+      "slug": "refound-policy-sp",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5086,
+        5086
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 66,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          117
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:56",
+      "document_id": 56,
+      "title": "Partner如何设置Markup",
+      "title_en": "How to Set Up Markup in Partner Role",
+      "slug": "set-up-markup-partner-role",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5087,
+        5102
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 68,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          118
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:57",
+      "document_id": 57,
+      "title": "链接合作伙伴 ID",
+      "title_en": "Link to a Partner ID",
+      "slug": "link-partner-id",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5103,
+        5114
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 69,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          119
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:58",
+      "document_id": 58,
+      "title": "如何下载账单",
+      "title_en": "How to Download Usage Report",
+      "slug": "download-usage-report",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5115,
+        5145
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 70,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          120
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:59",
+      "document_id": 59,
+      "title": "摊销成本账单",
+      "title_en": "Amortized Usage Report",
+      "slug": "amortized-cost-billing",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5146,
+        5422
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 71,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          121
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:60",
+      "document_id": 60,
+      "title": "订阅的状态",
+      "title_en": "Subscription Status",
+      "slug": "sub-status",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5423,
+        5431
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 73,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          122
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:61",
+      "document_id": 61,
+      "title": "创建订阅",
+      "title_en": "Create Subscription",
+      "slug": "create-sub",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5432,
+        5432
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 74,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          123
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:62",
+      "document_id": 62,
+      "title": "取消订阅",
+      "title_en": "Cancel Subscription",
+      "slug": "cancel-sub",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5433,
+        5473
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 75,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          124
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:63",
+      "document_id": 63,
+      "title": "21VCA-E Playbook访问权限",
+      "title_en": "21VCA-E Playbook Access Permissions",
+      "slug": "pb-21vca-access-permissions",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        5474,
+        6442
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 77,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 0,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          128
+        ],
+        "source_grant_ids": [
+          215,
+          216,
+          217
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:64",
+      "document_id": 64,
+      "title": "如何解读账单",
+      "title_en": "Understanding Usage Report\r\n",
+      "slug": "understanding-usage-report",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        6443,
+        7172
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 79,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          129
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:65",
+      "document_id": 65,
+      "title": "使用导出功能导出账单",
+      "title_en": "Use the Export Function to Export the Billing",
+      "slug": "export-billing",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        7173,
+        7782
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 80,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          130
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:66",
+      "document_id": 66,
+      "title": "确定要购买的预留项\r\n",
+      "title_en": "Determine what to purchase\r\n",
+      "slug": "determine-what-to-purchase",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        7783,
+        8349
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 81,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          131
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:67",
+      "document_id": 67,
+      "title": "RI常见问题解答\r\n",
+      "title_en": "RI FAQ\r\n",
+      "slug": "ri-faq",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8350,
+        8523
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 82,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          132
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:69",
+      "document_id": 69,
+      "title": "Saving Plan常见问题解答\r\n",
+      "title_en": "Saving Plan FAQ\r\n",
+      "slug": "saving-plan-faq",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8524,
+        8636
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 83,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          133
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:80",
+      "document_id": 80,
+      "title": "由世纪互联运营的微软智能云",
+      "title_en": "Microsoft Cloud Products Operated by 21Vianet",
+      "slug": "microsoft-cloud-products-operated-by-21vianet-1-1",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8637,
+        8713
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 88,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          666
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:81",
+      "document_id": 81,
+      "title": "OSPA业务模式介绍",
+      "title_en": "Introduction to OSPA",
+      "slug": "introduction-to-ospa",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8714,
+        8770
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 90,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          667
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:82",
+      "document_id": 82,
+      "title": "OSPA客户协议术语",
+      "title_en": "Terms Definition of OSPA",
+      "slug": "terms-definition-of-ospa",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8771,
+        8798
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 91,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          668
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:83",
+      "document_id": 83,
+      "title": "付款通知书",
+      "title_en": "Payment Notification",
+      "slug": "payment-notification",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8799,
+        8938
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 93,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          669
+        ],
+        "source_grant_ids": [
+          831,
+          864,
+          897
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:84",
+      "document_id": 84,
+      "title": "发票",
+      "title_en": "Invoices",
+      "slug": "invoices",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8939,
+        8945
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 94,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          670
+        ],
+        "source_grant_ids": [
+          832,
+          865,
+          898
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:85",
+      "document_id": 85,
+      "title": "相关方和报价流程",
+      "title_en": "Relevant Parties and Quotation Process",
+      "slug": "relevant-parties-and-quotation-process",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8946,
+        8951
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 96,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          671
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:86",
+      "document_id": 86,
+      "title": "需求沟通",
+      "title_en": "Requirements Communication",
+      "slug": "requirements-communication",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8952,
+        8953
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 98,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          672
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:87",
+      "document_id": 87,
+      "title": "供应商入库支持",
+      "title_en": "Supplier Onboarding Support",
+      "slug": "ospa-supplier-onboarding-support",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8954,
+        8980
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 99,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          673
+        ],
+        "source_grant_ids": [
+          833,
+          866,
+          899
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:88",
+      "document_id": 88,
+      "title": "世纪互联在线服务高级协议",
+      "title_en": "21Vianet Online Services Premium Agreement",
+      "slug": "21vianet-online-services-premium-agreement",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        8981,
+        9082
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 101,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          674
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:89",
+      "document_id": 89,
+      "title": "签署世纪互联在线服务高级协议",
+      "title_en": "Sign the 21Vianet Online Services Premium Agreement",
+      "slug": "sign-the-21vianet-online-services-premium-agreement",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9083,
+        9108
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 102,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          675
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:90",
+      "document_id": 90,
+      "title": "下单流程概述",
+      "title_en": "Ordering Process",
+      "slug": "ospa-ordering-process",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9109,
+        9143
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 104,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          676
+        ],
+        "source_grant_ids": [
+          835,
+          868,
+          901
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:91",
+      "document_id": 91,
+      "title": "下单要求简述",
+      "title_en": "Brief Description of Order Requirements",
+      "slug": "brief-description-of-order-requirements",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9144,
+        9213
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 105,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          677
+        ],
+        "source_grant_ids": [
+          836,
+          869,
+          902
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:92",
+      "document_id": 92,
+      "title": "合同文件列表",
+      "title_en": "List of Contract Packages",
+      "slug": "list-of-contract-packages",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9214,
+        9495
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 106,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          678
+        ],
+        "source_grant_ids": [
+          837,
+          870,
+          903
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:93",
+      "document_id": 93,
+      "title": "订单类型",
+      "title_en": "Order Types",
+      "slug": "order-types",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9496,
+        9509
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 107,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          679
+        ],
+        "source_grant_ids": [
+          838,
+          871,
+          904
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:94",
+      "document_id": 94,
+      "title": "账单类型",
+      "title_en": "Invoicing Types",
+      "slug": "invoicing-types",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9510,
+        9531
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 108,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          680
+        ],
+        "source_grant_ids": [
+          839,
+          872,
+          905
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:95",
+      "document_id": 95,
+      "title": "签署方式",
+      "title_en": "Signature",
+      "slug": "signature",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9532,
+        9596
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 109,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          681
+        ],
+        "source_grant_ids": [
+          840,
+          873,
+          906
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:96",
+      "document_id": 96,
+      "title": "信用审核总览",
+      "title_en": "Credit Check",
+      "slug": "credit-check-overview",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9597,
+        9598
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 111,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          682
+        ],
+        "source_grant_ids": [
+          842,
+          875,
+          908
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:97",
+      "document_id": 97,
+      "title": "Direct Model OSPA信用审核申请",
+      "title_en": "Direct Model OSPA Credit Check",
+      "slug": "direct-model-ospa-credit-check",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9599,
+        9656
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 112,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          683
+        ],
+        "source_grant_ids": [
+          843,
+          876,
+          909
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:98",
+      "document_id": 98,
+      "title": "Indirect Model OSPA信用审核申请",
+      "title_en": "Indirect Model OSPA Credit Check",
+      "slug": "indirect-model-ospa-credit-check",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9657,
+        9688
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 113,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          684
+        ],
+        "source_grant_ids": [
+          844,
+          877,
+          910
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:99",
+      "document_id": 99,
+      "title": "合同的生成",
+      "title_en": "Contract Creation",
+      "slug": "contract-creation",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9689,
+        9697
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 114,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          685
+        ],
+        "source_grant_ids": [
+          845,
+          878,
+          911
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:100",
+      "document_id": 100,
+      "title": "订单的审核",
+      "title_en": "Order to Cash",
+      "slug": "ospa-order-to-cash",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9698,
+        9792
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 115,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          686
+        ],
+        "source_grant_ids": [
+          846,
+          879,
+          912
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:101",
+      "document_id": 101,
+      "title": "协议生效、账单生成的邮件通知",
+      "title_en": "Agreement Execution, Order Confirmation and Notification",
+      "slug": "effectiveness-of-order-confirmation",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9793,
+        9834
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 116,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          687
+        ],
+        "source_grant_ids": [
+          847,
+          880,
+          913
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:102",
+      "document_id": 102,
+      "title": "发票及付款",
+      "title_en": "Invoice and Payment",
+      "slug": "ospa-invoice-and-payment",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9835,
+        9867
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 117,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          688
+        ],
+        "source_grant_ids": [
+          848,
+          881,
+          914
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:103",
+      "document_id": 103,
+      "title": "特殊流程总览",
+      "title_en": "Special Process",
+      "slug": "special-process-overview",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9868,
+        9869
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 119,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          689
+        ],
+        "source_grant_ids": [
+          850,
+          883,
+          916
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:104",
+      "document_id": 104,
+      "title": "世纪互联先章流程",
+      "title_en": "21Vianet Sign First",
+      "slug": "21vianet-sign-first",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9870,
+        9901
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 120,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          690
+        ],
+        "source_grant_ids": [
+          851,
+          884,
+          917
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:105",
+      "document_id": 105,
+      "title": "CICR",
+      "title_en": "CICR-Contact Information Change Request",
+      "slug": "cicr-contact-information-change-request",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9902,
+        9980
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 121,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          691
+        ],
+        "source_grant_ids": [
+          852,
+          885,
+          918
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:106",
+      "document_id": 106,
+      "title": "COEN",
+      "title_en": "COEN-Change of Entity Name",
+      "slug": "coen-change-of-entity-name",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        9981,
+        10043
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 122,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          692
+        ],
+        "source_grant_ids": [
+          853,
+          886,
+          919
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:107",
+      "document_id": 107,
+      "title": "COCP",
+      "title_en": "COCP-Change of Contract Partner",
+      "slug": "cocp-change-of-contract-partner",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10044,
+        10130
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 123,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          693
+        ],
+        "source_grant_ids": [
+          854,
+          887,
+          920
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:108",
+      "document_id": 108,
+      "title": "EST服务期限延期介绍",
+      "title_en": "Introduction to Extended Service Term",
+      "slug": "introduction-to-est",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10131,
+        10196
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 125,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          694
+        ],
+        "source_grant_ids": [
+          856,
+          889,
+          922
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:109",
+      "document_id": 109,
+      "title": "超额介绍",
+      "title_en": "Introduction of Overage",
+      "slug": "introduction-of-overage",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10197,
+        10231
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 127,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          695
+        ],
+        "source_grant_ids": [
+          858,
+          891,
+          924
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:110",
+      "document_id": 110,
+      "title": "直接支付",
+      "title_en": "Proceed to Pay the Incurred Overage",
+      "slug": "proceed-to-pay-the-incurred-overage",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10232,
+        10254
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 128,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          696
+        ],
+        "source_grant_ids": [
+          859,
+          892,
+          925
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:111",
+      "document_id": 111,
+      "title": "超额折抵",
+      "title_en": "Offset the Overage",
+      "slug": "offset-the-overage",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10256,
+        10261
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 129,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          697
+        ],
+        "source_grant_ids": [
+          860,
+          893,
+          926
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:112",
+      "document_id": 112,
+      "title": "Hermes",
+      "title_en": "Hermes",
+      "slug": "hermes",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10262,
+        10272
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 131,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          698
+        ],
+        "source_grant_ids": [
+          861,
+          894,
+          927
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:113",
+      "document_id": 113,
+      "title": "世纪互联蓝云发票系统",
+      "title_en": "21Vianet Fapiao System",
+      "slug": "21vianet-fapiao-system",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10273,
+        10477
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 132,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          699
+        ],
+        "source_grant_ids": [
+          862,
+          895,
+          928
+        ]
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:114",
+      "document_id": 114,
+      "title": "世纪互联蓝云电子签系统E-Sign",
+      "title_en": "21Vianet E-Sign System",
+      "slug": "21vianet-e-sign-system",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10478,
+        10490
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 133,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          700
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:115",
+      "document_id": 115,
+      "title": "常见问题解答",
+      "title_en": "FAQ",
+      "slug": "ospa-faq-answers",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10491,
+        10585
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 135,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          701
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:120",
+      "document_id": 120,
+      "title": "联系合作伙伴",
+      "title_en": "Contact Partner",
+      "slug": "ospa-contact-partner",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10586,
+        10591
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 142,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          702
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:122",
+      "document_id": 122,
+      "title": "企业门户中的角色",
+      "title_en": "Roles in enterprise portal",
+      "slug": "roles-in-enterprise-portal",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10592,
+        10750
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 145,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          703
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:123",
+      "document_id": 123,
+      "title": "如何添加企业管理员",
+      "title_en": "How to add an enterprise administrator",
+      "slug": "how-to-add-an-enterprise-administrator",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10751,
+        10791
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 146,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          704
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:124",
+      "document_id": 124,
+      "title": "如何添加账户管理员",
+      "title_en": "How to add an account administrator",
+      "slug": "how-to-add-an-account-administrator",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10792,
+        10826
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 147,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          705
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:125",
+      "document_id": 125,
+      "title": "创建部门",
+      "title_en": "How to create a department",
+      "slug": "how-to-create-a-department",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10827,
+        10865
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 148,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          706
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:126",
+      "document_id": 126,
+      "title": "添加部门管理员",
+      "title_en": "How to add a department administrator",
+      "slug": "how-to-add-a-department-administrator",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10866,
+        10942
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 149,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          707
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:127",
+      "document_id": 127,
+      "title": "将账户关联到部门",
+      "title_en": "Associate the account to the department",
+      "slug": "associate-the-account-to-the-department",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10943,
+        10981
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 150,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          708
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:128",
+      "document_id": 128,
+      "title": "如何删除账户",
+      "title_en": "How to delete an account",
+      "slug": "how-to-delete-an-account",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10982,
+        10992
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 151,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          709
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:129",
+      "document_id": 129,
+      "title": "跨合约迁移账户",
+      "title_en": "Migrate account across contracts",
+      "slug": "migrate-account-across-contracts",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        10993,
+        11015
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 152,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          710
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:130",
+      "document_id": 130,
+      "title": "如何下载使用量报告",
+      "title_en": "How to download usage report",
+      "slug": "how-to-download-usage-report",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11016,
+        11161
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 154,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          711
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:131",
+      "document_id": 131,
+      "title": "看懂使用量报告",
+      "title_en": "Understand the usage report",
+      "slug": "understand-the-usage-report",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11162,
+        11276
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 155,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          712
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:132",
+      "document_id": 132,
+      "title": "看懂使用量摘要",
+      "title_en": "Understand the usage summary",
+      "slug": "understand-the-usage-summary",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11277,
+        11384
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 156,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          713
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:133",
+      "document_id": 133,
+      "title": "部门开支配额",
+      "title_en": "Allocate quotas for departments",
+      "slug": "allocate-quotas-for-departments",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11385,
+        11471
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 157,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          714
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:134",
+      "document_id": 134,
+      "title": "添加通知联系人",
+      "title_en": "Add a notification contact",
+      "slug": "add-a-notification-contact",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11472,
+        11502
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 158,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          715
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:135",
+      "document_id": 135,
+      "title": "查看 CPP（Compute Pre-Purchase）",
+      "title_en": "View CPP (Compute Pre-Purchase)",
+      "slug": "view-cpp-compute-pre-purchase",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11503,
+        11577
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 159,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          716
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:136",
+      "document_id": 136,
+      "title": "看懂价目表",
+      "title_en": "Understand the price list",
+      "slug": "understand-the-price-list",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11578,
+        11626
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 160,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          717
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:137",
+      "document_id": 137,
+      "title": "间接在线高级服务协议（Indirect OSPA）账单问题",
+      "title_en": "Indirect Online Service Provider Agreement (Indirect OSPA) billing issues",
+      "slug": "indirect-online-service-provider-agreement-indirect-ospa-billing-issues",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11627,
+        11627
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 161,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          718
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:138",
+      "document_id": 138,
+      "title": "如何添加订阅",
+      "title_en": "How to add a subscription",
+      "slug": "how-to-add-a-subscription",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11628,
+        11716
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 164,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          719
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:139",
+      "document_id": 139,
+      "title": "如何查看企业协议订阅",
+      "title_en": "How to view enterprise agreement subscriptions",
+      "slug": "how-to-view-enterprise-agreement-subscriptions",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11717,
+        11759
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 165,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          720
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:140",
+      "document_id": 140,
+      "title": "企业门户中转让订阅",
+      "title_en": "Transfer subscription in enterprise portal",
+      "slug": "transfer-subscription-in-enterprise-portal",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11760,
+        11920
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 166,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          721
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:141",
+      "document_id": 141,
+      "title": "取消订阅",
+      "title_en": "How to cancel a subscription",
+      "slug": "how-to-cancel-a-subscription",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11921,
+        11987
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 167,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          722
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:142",
+      "document_id": 142,
+      "title": "激活已取消的订阅",
+      "title_en": "Activate the canceled subscription",
+      "slug": "activate-the-canceled-subscription",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        11988,
+        12026
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 168,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          723
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:143",
+      "document_id": 143,
+      "title": "Microsoft 365订阅管理",
+      "title_en": "Microsoft 365 Subscription Management",
+      "slug": "m365-subscription-management",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        12027,
+        12027
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 169,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          724
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:144",
+      "document_id": 144,
+      "title": "参考说明",
+      "title_en": "Disclaimer",
+      "slug": "disclaimer",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        12028,
+        12028
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 170,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 1,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          725
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:146",
+      "document_id": 146,
+      "title": "Azure 预留交换策略的变化",
+      "title_en": "Changes to the Azure reservation exchange policy",
+      "slug": "change-reservation-exchange-policy",
+      "business_category": 0,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        12029,
+        12245
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 171,
+        "menu_active_raw": 1,
+        "is_public": true,
+        "allowed_role_ids": [],
+        "required_business_category": 0,
+        "role_status_raw": {},
+        "source_relation_ids": [
+          726
+        ],
+        "source_grant_ids": []
+      }
+    },
+    {
+      "document_key": "playbook-test:Document:148",
+      "document_id": 148,
+      "title": "OSPA Playbook访问权限",
+      "title_en": "OSPA Playbook Access Permissions",
+      "slug": "pb-ospa-access-permissions",
+      "business_category": 1,
+      "upstream_status": 1,
+      "publication_state": "unverified",
+      "document_sql_lines": [
+        12246,
+        13234
+      ],
+      "acl": {
+        "state": "resolved",
+        "menu_id": 174,
+        "menu_active_raw": 1,
+        "is_public": false,
+        "allowed_role_ids": [
+          1,
+          2,
+          3
+        ],
+        "required_business_category": 1,
+        "role_status_raw": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "source_relation_ids": [
+          727
+        ],
+        "source_grant_ids": [
+          929,
+          931,
+          932
+        ]
+      }
+    }
+  ]
+}

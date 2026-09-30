@@ -1,0 +1,276 @@
+{
+  "stage": "S5",
+  "status": "passed_with_download_ui_limit",
+  "completed_at": "2026-09-29T09:36:59.961Z",
+  "surface": "Codex in-app Chromium, same-origin HTTP",
+  "checks": [
+    {
+      "name": "initial shell network",
+      "status": "PASS",
+      "paths": [
+        "/",
+        "/style.css",
+        "/app.js",
+        "/api/dev/profiles",
+        "/api/me"
+      ],
+      "embedded_documents": 0
+    },
+    {
+      "name": "NCE contract and counts",
+      "status": "PASS",
+      "count": 102,
+      "public": 76,
+      "controlled": 26,
+      "ids": [
+        25,
+        63,
+        24,
+        33,
+        42
+      ]
+    },
+    {
+      "name": "OSPA contract and counts",
+      "status": "PASS",
+      "count": 104,
+      "public": 76,
+      "controlled": 28,
+      "ids": [
+        99,
+        101,
+        148,
+        92,
+        33
+      ]
+    },
+    {
+      "name": "result click selects menu and fetches body",
+      "status": "PASS",
+      "document_id": 25
+    },
+    {
+      "name": "switch clears question, results, body and metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "same ACL for English, bilingual and literal raw",
+      "status": "PASS",
+      "document_id": 99
+    },
+    {
+      "name": "copy link",
+      "status": "PASS",
+      "url": "http://127.0.0.1:18080/#doc=99&lang=both"
+    },
+    {
+      "name": "refresh restores cookie identity and authorized deep link",
+      "status": "PASS"
+    },
+    {
+      "name": "search loading state has no old result",
+      "status": "PASS"
+    },
+    {
+      "name": "503 shown as error without local fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "retry recovers authorized ES results",
+      "status": "PASS"
+    },
+    {
+      "name": "switch immediately empties held response and private UI",
+      "status": "PASS"
+    },
+    {
+      "name": "late OSPA response does not restore old results",
+      "status": "PASS"
+    },
+    {
+      "name": "browser rejects successful payload with old server revision",
+      "status": "PASS"
+    },
+    {
+      "name": "session recovery uses authoritative cookie",
+      "status": "PASS"
+    },
+    {
+      "name": "latest submitted question wins over delayed success",
+      "status": "PASS"
+    },
+    {
+      "name": "timeout is distinct from no results",
+      "status": "PASS"
+    },
+    {
+      "name": "NCE reads OSPA Public through deep link",
+      "status": "PASS"
+    },
+    {
+      "name": "OSPA reads NCE Public through deep link",
+      "status": "PASS"
+    },
+    {
+      "name": "bilingual tables retain spans and contain no active resources",
+      "status": "PASS",
+      "tables": 2,
+      "rowspan8": 12
+    },
+    {
+      "name": "desktop and narrow viewport keep horizontal overflow inside tables",
+      "status": "PASS",
+      "desktop": [
+        1440,
+        1000
+      ],
+      "narrow": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "narrow navigation opens document and closes drawer",
+      "status": "PASS"
+    },
+    {
+      "name": "download button calls authorized API and receives attachment",
+      "status": "PASS",
+      "document_id": 99,
+      "language": "en",
+      "bytes": 308,
+      "sha256": "47549b65bf9f7f5131a152ab71f90a8bc34a095772c9e342a234d4d279ab0f65",
+      "content_disposition": "attachment; filename=\"document-99-en.md\"",
+      "native_save_dialog": "not_verified_browser_event_timed_out"
+    },
+    {
+      "name": "copied URL in second tab uses shared cookie",
+      "status": "PASS"
+    },
+    {
+      "name": "other tab discards old content and rejects its old deep link",
+      "status": "PASS"
+    },
+    {
+      "name": "browser back reauthorizes formerly allowed 148",
+      "status": "PASS"
+    },
+    {
+      "name": "forward and refresh do not resurrect restricted body",
+      "status": "PASS"
+    },
+    {
+      "name": "native direct download URL navigation",
+      "status": "NOT_VERIFIED",
+      "reason": "In-app browser returned net::ERR_BLOCKED_BY_CLIENT; actual 401/404 and attachment bytes are covered by S4 HTTP checks."
+    },
+    {
+      "name": "logout in another tab clears current content",
+      "status": "PASS"
+    },
+    {
+      "name": "pb_msft_01 contract results",
+      "status": "PASS",
+      "count": "130",
+      "ids": [
+        25,
+        99,
+        63,
+        101,
+        148
+      ]
+    },
+    {
+      "name": "pb_21v_01 contract results",
+      "status": "PASS",
+      "count": "130",
+      "ids": [
+        25,
+        99,
+        63,
+        101,
+        148
+      ]
+    },
+    {
+      "name": "pb_partner_both_01 contract results",
+      "status": "PASS",
+      "count": "130",
+      "ids": [
+        25,
+        99,
+        63,
+        101,
+        148
+      ]
+    },
+    {
+      "name": "result titles and snippets escape markup",
+      "status": "PASS"
+    },
+    {
+      "name": "immediate clear during delayed raw",
+      "status": "PASS"
+    },
+    {
+      "name": "late raw cannot restore NCE content",
+      "status": "PASS"
+    },
+    {
+      "name": "immediate clear during delayed download",
+      "status": "PASS"
+    },
+    {
+      "name": "late download cannot restore NCE content",
+      "status": "PASS"
+    },
+    {
+      "name": "immediate clear during delayed detail",
+      "status": "PASS"
+    },
+    {
+      "name": "late detail cannot restore NCE content",
+      "status": "PASS"
+    },
+    {
+      "name": "menu keyword filtering makes no full-text request",
+      "status": "PASS"
+    },
+    {
+      "name": "final initial network contains shell and session discovery only",
+      "status": "PASS",
+      "paths": [
+        "/",
+        "/style.css",
+        "/app.js",
+        "/api/dev/profiles",
+        "/api/me"
+      ]
+    },
+    {
+      "name": "unavailable attachment remains a reference",
+      "status": "PASS"
+    },
+    {
+      "name": "network audit uses only same-origin targeted API",
+      "status": "PASS",
+      "requests": 9,
+      "document_fetches": 1
+    },
+    {
+      "name": "closed narrow sidebar is inert",
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "passed": 43,
+    "not_verified": 1
+  },
+  "faults": "Response injection scoped to test-tab APIs; original ES policy and data unchanged",
+  "cleanup": "Fetch interception cleared; viewport override reset; extra tabs closed",
+  "screenshots": [
+    "S5_SEARCH.png",
+    "S5_DESKTOP.png",
+    "S5_NARROW.png"
+  ]
+}

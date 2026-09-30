@@ -1,0 +1,14 @@
+[
+  {
+    "at": "2026-09-29T08:21:12.771516+00:00",
+    "command": "init",
+    "error_type": "AuthError",
+    "message": "mock_disabled"
+  },
+  {
+    "at": "2026-09-29T08:21:32.272102+00:00",
+    "command": "check",
+    "error_type": "RuntimeError",
+    "message": "pb_msft_01 PUT /_security/user/pb_msft_01: HTTP 400, expected 403"
+  }
+]

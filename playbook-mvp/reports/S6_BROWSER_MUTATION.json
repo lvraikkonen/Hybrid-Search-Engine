@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "generation": "4e3336ee5881ddc12427699c1ce2f4f26e9016e0d12c4b7da4f29a81e85cab01",
+  "snapshot": "b59509950c9b59e9b8ca21383bf63d2c4aac88f7d6e04620e6d4ac83e1a54c6f",
+  "written": 1,
+  "maintenance_ms": 2864.96,
+  "confirmed_at": "2026-09-29T23:29:52.414471+00:00",
+  "diff": {
+    "added": [],
+    "deleted": [],
+    "content_changed": [],
+    "acl_changed": [],
+    "metadata_changed": [],
+    "navigation_changed": false,
+    "profiles_changed": [],
+    "withdrawn_document_ids": [
+      99001,
+      99003
+    ],
+    "snapshot_changed": false
+  }
+}

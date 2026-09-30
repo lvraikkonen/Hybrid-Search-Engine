@@ -1,0 +1,110 @@
+[
+  {
+    "environment": {
+      "APP_ENV": "development",
+      "MOCK_AUTH_ENABLED": "1"
+    },
+    "command": [
+      "python3",
+      "mock_auth.py",
+      "list"
+    ],
+    "expected_return_code": 0,
+    "actual_return_code": 0,
+    "passed": true
+  },
+  {
+    "environment": {
+      "APP_ENV": "development",
+      "MOCK_AUTH_ENABLED": "1"
+    },
+    "command": [
+      "python3",
+      "mock_auth.py",
+      "whoami",
+      "--profile",
+      "pb_msft_01"
+    ],
+    "expected_return_code": 0,
+    "actual_return_code": 0,
+    "passed": true
+  },
+  {
+    "environment": {
+      "APP_ENV": "development",
+      "MOCK_AUTH_ENABLED": "1"
+    },
+    "command": [
+      "python3",
+      "mock_auth.py",
+      "visible",
+      "--profile",
+      "pb_partner_nce_01"
+    ],
+    "expected_return_code": 0,
+    "actual_return_code": 0,
+    "passed": true
+  },
+  {
+    "environment": {
+      "APP_ENV": "development",
+      "MOCK_AUTH_ENABLED": "1"
+    },
+    "command": [
+      "python3",
+      "mock_auth.py",
+      "visible",
+      "--profile",
+      "pb_partner_ospa_01"
+    ],
+    "expected_return_code": 0,
+    "actual_return_code": 0,
+    "passed": true
+  },
+  {
+    "environment": {
+      "APP_ENV": "development",
+      "MOCK_AUTH_ENABLED": "1"
+    },
+    "command": [
+      "python3",
+      "mock_auth.py",
+      "es-metadata",
+      "--profile",
+      "pb_partner_both_01"
+    ],
+    "expected_return_code": 0,
+    "actual_return_code": 0,
+    "passed": true
+  },
+  {
+    "environment": {
+      "APP_ENV": "production",
+      "MOCK_AUTH_ENABLED": "1"
+    },
+    "command": [
+      "python3",
+      "mock_auth.py",
+      "whoami",
+      "--profile",
+      "pb_msft_01"
+    ],
+    "expected_return_code": 2,
+    "actual_return_code": 2,
+    "passed": true
+  },
+  {
+    "environment": {
+      "APP_ENV": "development",
+      "MOCK_AUTH_ENABLED": "0"
+    },
+    "command": [
+      "python3",
+      "mock_auth.py",
+      "list"
+    ],
+    "expected_return_code": 2,
+    "actual_return_code": 2,
+    "passed": true
+  }
+]

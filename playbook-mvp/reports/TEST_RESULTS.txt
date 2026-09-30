@@ -1,0 +1,42 @@
+test_01_exactly_twenty_valid_users (test_mock_users.MockUsersTests.test_01_exactly_twenty_valid_users) ... ok
+test_02_unique_user_ids (test_mock_users.MockUsersTests.test_02_unique_user_ids) ... ok
+test_03_unique_user_names (test_mock_users.MockUsersTests.test_03_unique_user_names) ... ok
+test_04_every_user_has_one_role (test_mock_users.MockUsersTests.test_04_every_user_has_one_role) ... ok
+test_05_dictionary_matches_sql (test_mock_users.MockUsersTests.test_05_dictionary_matches_sql) ... ok
+test_06_five_groups_four_each (test_mock_users.MockUsersTests.test_06_five_groups_four_each) ... ok
+test_07_internal_empty_raw_defaults_all_business (test_mock_users.MockUsersTests.test_07_internal_empty_raw_defaults_all_business) ... ok
+test_08_partner_preserves_explicit_business (test_mock_users.MockUsersTests.test_08_partner_preserves_explicit_business) ... ok
+test_09_partner_flag_is_exact (test_mock_users.MockUsersTests.test_09_partner_flag_is_exact) ... ok
+test_10_saved_effective_fixtures_match_normalizer (test_mock_users.MockUsersTests.test_10_saved_effective_fixtures_match_normalizer) ... ok
+test_11_es_metadata_is_candidate_only_and_normalized (test_mock_users.MockUsersTests.test_11_es_metadata_is_candidate_only_and_normalized) ... ok
+test_12_missing_role_rejected (test_mock_users.MockUsersTests.test_12_missing_role_rejected) ... ok
+test_13_all_mixed_role_pairs_rejected (test_mock_users.MockUsersTests.test_13_all_mixed_role_pairs_rejected) ... ok
+test_14_duplicate_role_is_not_silently_deduplicated (test_mock_users.MockUsersTests.test_14_duplicate_role_is_not_silently_deduplicated) ... ok
+test_15_three_roles_rejected (test_mock_users.MockUsersTests.test_15_three_roles_rejected) ... ok
+test_16_partner_flag_mismatch_rejected (test_mock_users.MockUsersTests.test_16_partner_flag_mismatch_rejected) ... ok
+test_17_unknown_role_rejected (test_mock_users.MockUsersTests.test_17_unknown_role_rejected) ... ok
+test_18_unknown_business_rejected (test_mock_users.MockUsersTests.test_18_unknown_business_rejected) ... ok
+test_19_empty_partner_business_rejected (test_mock_users.MockUsersTests.test_19_empty_partner_business_rejected) ... ok
+test_20_boolean_role_id_rejected (test_mock_users.MockUsersTests.test_20_boolean_role_id_rejected) ... ok
+test_21_identity_missing_rejected (test_mock_users.MockUsersTests.test_21_identity_missing_rejected) ... ok
+test_22_untrusted_data_shape_rejected (test_mock_users.MockUsersTests.test_22_untrusted_data_shape_rejected) ... ok
+test_23_disabled_and_expired_rejected (test_mock_users.MockUsersTests.test_23_disabled_and_expired_rejected) ... ok
+test_24_production_always_rejects_mock (test_mock_users.MockUsersTests.test_24_production_always_rejects_mock) ... ok
+test_25_explicit_mock_switch_required (test_mock_users.MockUsersTests.test_25_explicit_mock_switch_required) ... ok
+test_26_unknown_profile_rejected (test_mock_users.MockUsersTests.test_26_unknown_profile_rejected) ... ok
+test_27_document_counts_from_sql (test_mock_users.MockUsersTests.test_27_document_counts_from_sql) ... ok
+test_28_all_2600_pairs_match_independent_relational_oracle (test_mock_users.MockUsersTests.test_28_all_2600_pairs_match_independent_relational_oracle) ... ok
+test_29_expected_group_counts_and_three_sets (test_mock_users.MockUsersTests.test_29_expected_group_counts_and_three_sets) ... ok
+test_30_public_is_cross_business (test_mock_users.MockUsersTests.test_30_public_is_cross_business) ... ok
+test_31_real_same_title_contract_pair (test_mock_users.MockUsersTests.test_31_real_same_title_contract_pair) ... ok
+test_32_internal_is_not_superuser_synthetic_unit_test_only (test_mock_users.MockUsersTests.test_32_internal_is_not_superuser_synthetic_unit_test_only) ... ok
+test_33_unresolved_and_inactive_deny (test_mock_users.MockUsersTests.test_33_unresolved_and_inactive_deny) ... ok
+test_34_no_publication_inference (test_mock_users.MockUsersTests.test_34_no_publication_inference) ... ok
+test_35_normalization_does_not_mutate_source (test_mock_users.MockUsersTests.test_35_normalization_does_not_mutate_source) ... ok
+test_36_allow_and_deny_cover_exact_universe (test_mock_users.MockUsersTests.test_36_allow_and_deny_cover_exact_universe) ... ok
+test_37_source_role_menu_sets_equal_not_artificially_differentiated (test_mock_users.MockUsersTests.test_37_source_role_menu_sets_equal_not_artificially_differentiated) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.030s
+
+OK

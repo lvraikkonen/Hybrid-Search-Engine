@@ -1,0 +1,135 @@
+{
+  "stage": "S6",
+  "started_at": "2026-09-29T23:29:39.479Z",
+  "checks": [
+    {
+      "name": "authorized_synthetic_document_and_popup",
+      "status": "passed",
+      "document_id": 99001
+    },
+    {
+      "name": "remote_withdrawal_clears_document_menu_question_results_dialog_without_page_input",
+      "status": "passed",
+      "observed_at": "2026-09-29T23:30:38.668Z",
+      "dom": {
+        "body": "知识文档工作台请在右上角选择用户，再查阅授权资料。重试",
+        "dialogOpen": false,
+        "menu": "",
+        "question": "",
+        "results": "",
+        "user": ""
+      }
+    },
+    {
+      "name": "relogin_keeps_withdrawn_document_denied",
+      "status": "passed",
+      "dom": {
+        "body": "资源不存在或不可访问资源不存在或不可访问。重试",
+        "count": "0",
+        "menu": "没有匹配的目录名称。"
+      }
+    },
+    {
+      "name": "real_na01_shows_document_results_and_answer_confirmation_note",
+      "status": "passed",
+      "view": {
+        "dialogOpen": true,
+        "note": "每次独立检索，显示最多 5 篇授权文档及原文摘录。请查阅原文确认是否包含所问答案。",
+        "resultIds": [
+          23,
+          2,
+          25,
+          18,
+          58
+        ],
+        "status": "“员工年假有多少天，如何申请休假？” · 5 篇相关文档"
+      }
+    },
+    {
+      "name": "real_nce_query_returns_25_and_excludes_99",
+      "status": "passed",
+      "view": {
+        "ids": [
+          25,
+          2,
+          9,
+          63,
+          24
+        ],
+        "status": "“NCE 的合同文件如何生成，使用哪些系统？” · 5 篇相关文档"
+      }
+    },
+    {
+      "name": "click_result_closes_popup_and_opens_authorized_document",
+      "status": "passed",
+      "view": {
+        "body": "NCE受控Document #25合同的生成Contract Creation21V更新 2025-06-06T00:00:00.000发布状态待核验 · 本地实验中文English双语查看原文元数据复制链接下载中文原文 .md英文原文 .md元数据 .json中文 · Content通过审批的信息表将提交至微软CE用",
+        "dialogOpen": false,
+        "hash": "#doc=25&lang=zh",
+        "heading": "合同的生成"
+      }
+    },
+    {
+      "name": "final_background_session_poll_keeps_question_focus",
+      "status": "passed",
+      "view": {
+        "disabled": false,
+        "focus": "questionInput",
+        "question": "NCE 的合同文件如何生成，使用哪些系统？"
+      }
+    },
+    {
+      "name": "final_built_popup_search",
+      "status": "passed",
+      "view": {
+        "ids": [
+          25,
+          2,
+          9,
+          63,
+          24
+        ],
+        "note": "每次独立检索，显示最多 5 篇授权文档及原文摘录。请查阅原文确认是否包含所问答案。",
+        "open": true
+      }
+    },
+    {
+      "name": "final_command_k_opens_and_focuses_popup",
+      "status": "passed",
+      "view": {
+        "focus": "questionInput",
+        "open": true
+      }
+    }
+  ],
+  "unverified": [
+    "Native OS download save/location",
+    "Safari/Firefox/physical mobile/assistive technology"
+  ],
+  "screenshot": "screenshots/s6-ask-ai.jpg",
+  "completed_at": "2026-09-29T23:44:10.594Z",
+  "status": "passed",
+  "attempt_corrections": [
+    "Periodic foreground session verification blurred the focused question input; changed periodic verification to quiet mode, added a client regression, and rechecked focus in the rebuilt page.",
+    "One added-query navigation was blocked by the browser client; the original URL and index.html opened normally."
+  ],
+  "scope_notes": [
+    "Fresh S6 checks; whole S5 browser matrix was not rerun.",
+    "The visible-tab poll is configured at 15s, not a hard realtime end-to-end SLA.",
+    "Withdrawal and stale-session clearing were checked before the focus-only adjustment; final quiet-mode error clearing additionally has a client regression check."
+  ],
+  "final_static_assets": {
+    "index.html": {
+      "bytes": 6035,
+      "sha256": "89fa272d81805173d8ec7058e4cbc1ef25be780a85102d7530a1c2ed1f215f01"
+    },
+    "style.css": {
+      "bytes": 34233,
+      "sha256": "bbe6e7f34318f42196540054cc51beebe13644d33c53163b69077b3b6e399a06"
+    },
+    "app.js": {
+      "bytes": 30734,
+      "sha256": "949f811ef0a73b210a72f82aac06da2890efbe42510c4ae9e182852cefd35e7f"
+    }
+  }
+}

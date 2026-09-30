@@ -1,0 +1,63 @@
+[
+  {
+    "at": "2026-09-29T08:19:46.792488+00:00",
+    "status": "passed",
+    "profiles": [
+      "pb_21v_01",
+      "pb_21v_02",
+      "pb_21v_03",
+      "pb_21v_04",
+      "pb_msft_01",
+      "pb_msft_02",
+      "pb_msft_03",
+      "pb_msft_04",
+      "pb_partner_both_01",
+      "pb_partner_both_02",
+      "pb_partner_both_03",
+      "pb_partner_both_04",
+      "pb_partner_nce_01",
+      "pb_partner_nce_02",
+      "pb_partner_nce_03",
+      "pb_partner_nce_04",
+      "pb_partner_ospa_01",
+      "pb_partner_ospa_02",
+      "pb_partner_ospa_03",
+      "pb_partner_ospa_04"
+    ],
+    "reader_role": {
+      "cluster": [],
+      "run_as": [],
+      "indices": [
+        {
+          "names": [
+            "playbook-documents-v1"
+          ],
+          "privileges": [
+            "read"
+          ],
+          "query": {
+            "template": {
+              "source": "{\"bool\": {\"filter\": [{\"term\": {\"lab_release.approved\": true}}, {\"term\": {\"source.snapshot_sha256\": \"cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821\"}}, {\"term\": {\"lab_release.source_snapshot_sha256\": \"cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821\"}}, {\"bool\": {\"filter\": [{\"exists\": {\"field\": \"lab_release.approved_by\"}}], \"must_not\": [{\"term\": {\"lab_release.approved_by\": \"\"}}]}}, {\"exists\": {\"field\": \"lab_release.approved_at\"}}, {\"term\": {\"acl.state\": \"resolved\"}}, {\"term\": {\"acl.menu_active_raw\": 1}}, {\"bool\": {\"minimum_should_match\": 1, \"should\": [{\"term\": {\"acl.is_public\": true}}, {\"bool\": {\"filter\": [{\"terms\": {\"acl.allowed_role_ids\": {{#toJson}}_user.metadata.playbook_role_ids{{/toJson}}}}, {\"terms\": {\"acl.active_role_ids\": {{#toJson}}_user.metadata.playbook_role_ids{{/toJson}}}}, {\"terms\": {\"acl.required_business_category\": {{#toJson}}_user.metadata.playbook_business_categories{{/toJson}}}}]}}]}}]}}"
+            }
+          }
+        },
+        {
+          "names": [
+            "playbook-s3-policy-checks"
+          ],
+          "privileges": [
+            "read"
+          ],
+          "query": {
+            "template": {
+              "source": "{\"bool\": {\"filter\": [{\"term\": {\"lab_release.approved\": true}}, {\"term\": {\"source.snapshot_sha256\": \"1ac539519ceb5afa1d4eaf1308510e88648409c13ebbe98e612ce1b5a1e4cacc\"}}, {\"term\": {\"lab_release.source_snapshot_sha256\": \"1ac539519ceb5afa1d4eaf1308510e88648409c13ebbe98e612ce1b5a1e4cacc\"}}, {\"bool\": {\"filter\": [{\"exists\": {\"field\": \"lab_release.approved_by\"}}], \"must_not\": [{\"term\": {\"lab_release.approved_by\": \"\"}}]}}, {\"exists\": {\"field\": \"lab_release.approved_at\"}}, {\"term\": {\"acl.state\": \"resolved\"}}, {\"term\": {\"acl.menu_active_raw\": 1}}, {\"bool\": {\"minimum_should_match\": 1, \"should\": [{\"term\": {\"acl.is_public\": true}}, {\"bool\": {\"filter\": [{\"terms\": {\"acl.allowed_role_ids\": {{#toJson}}_user.metadata.playbook_role_ids{{/toJson}}}}, {\"terms\": {\"acl.active_role_ids\": {{#toJson}}_user.metadata.playbook_role_ids{{/toJson}}}}, {\"terms\": {\"acl.required_business_category\": {{#toJson}}_user.metadata.playbook_business_categories{{/toJson}}}}]}}]}}]}}"
+            }
+          }
+        }
+      ]
+    },
+    "synthetic_index": "playbook-s3-policy-checks",
+    "synthetic_documents": 22,
+    "business_profiles": 20
+  }
+]

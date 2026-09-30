@@ -1,0 +1,506 @@
+{
+  "schema_version": "2.0",
+  "auth_mode": "mock",
+  "mutually_exclusive_roles": true,
+  "roles_per_user": 1,
+  "role_dictionary": {
+    "1": "MSFT",
+    "2": "Partner",
+    "3": "21V"
+  },
+  "business_dictionary": {
+    "0": "NCE",
+    "1": "OSPA"
+  },
+  "business_categories_are_local_enum": true,
+  "profiles": [
+    {
+      "profile_id": "pb_msft_01",
+      "classification": "valid_mock_identity",
+      "group": "msft",
+      "description": "MSFT · 全业务 · 模拟用户 01",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-001",
+        "UserName": "pb_msft_01",
+        "IsPartner": false,
+        "Roles": [
+          {
+            "Id": 1,
+            "Name": "MSFT"
+          }
+        ],
+        "BusinessCategories": []
+      }
+    },
+    {
+      "profile_id": "pb_msft_02",
+      "classification": "valid_mock_identity",
+      "group": "msft",
+      "description": "MSFT · 全业务 · 模拟用户 02",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-002",
+        "UserName": "pb_msft_02",
+        "IsPartner": false,
+        "Roles": [
+          {
+            "Id": 1,
+            "Name": "MSFT"
+          }
+        ],
+        "BusinessCategories": []
+      }
+    },
+    {
+      "profile_id": "pb_msft_03",
+      "classification": "valid_mock_identity",
+      "group": "msft",
+      "description": "MSFT · 全业务 · 模拟用户 03",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-003",
+        "UserName": "pb_msft_03",
+        "IsPartner": false,
+        "Roles": [
+          {
+            "Id": 1,
+            "Name": "MSFT"
+          }
+        ],
+        "BusinessCategories": []
+      }
+    },
+    {
+      "profile_id": "pb_msft_04",
+      "classification": "valid_mock_identity",
+      "group": "msft",
+      "description": "MSFT · 全业务 · 模拟用户 04",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-004",
+        "UserName": "pb_msft_04",
+        "IsPartner": false,
+        "Roles": [
+          {
+            "Id": 1,
+            "Name": "MSFT"
+          }
+        ],
+        "BusinessCategories": []
+      }
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "classification": "valid_mock_identity",
+      "group": "21v",
+      "description": "21V · 全业务 · 模拟用户 01",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-005",
+        "UserName": "pb_21v_01",
+        "IsPartner": false,
+        "Roles": [
+          {
+            "Id": 3,
+            "Name": "21V"
+          }
+        ],
+        "BusinessCategories": []
+      }
+    },
+    {
+      "profile_id": "pb_21v_02",
+      "classification": "valid_mock_identity",
+      "group": "21v",
+      "description": "21V · 全业务 · 模拟用户 02",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-006",
+        "UserName": "pb_21v_02",
+        "IsPartner": false,
+        "Roles": [
+          {
+            "Id": 3,
+            "Name": "21V"
+          }
+        ],
+        "BusinessCategories": []
+      }
+    },
+    {
+      "profile_id": "pb_21v_03",
+      "classification": "valid_mock_identity",
+      "group": "21v",
+      "description": "21V · 全业务 · 模拟用户 03",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-007",
+        "UserName": "pb_21v_03",
+        "IsPartner": false,
+        "Roles": [
+          {
+            "Id": 3,
+            "Name": "21V"
+          }
+        ],
+        "BusinessCategories": []
+      }
+    },
+    {
+      "profile_id": "pb_21v_04",
+      "classification": "valid_mock_identity",
+      "group": "21v",
+      "description": "21V · 全业务 · 模拟用户 04",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-008",
+        "UserName": "pb_21v_04",
+        "IsPartner": false,
+        "Roles": [
+          {
+            "Id": 3,
+            "Name": "21V"
+          }
+        ],
+        "BusinessCategories": []
+      }
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "classification": "valid_mock_identity",
+      "group": "partner_nce",
+      "description": "Partner · 仅 NCE · 模拟用户 01",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-009",
+        "UserName": "pb_partner_nce_01",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          0
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_nce_02",
+      "classification": "valid_mock_identity",
+      "group": "partner_nce",
+      "description": "Partner · 仅 NCE · 模拟用户 02",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-010",
+        "UserName": "pb_partner_nce_02",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          0
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_nce_03",
+      "classification": "valid_mock_identity",
+      "group": "partner_nce",
+      "description": "Partner · 仅 NCE · 模拟用户 03",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-011",
+        "UserName": "pb_partner_nce_03",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          0
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_nce_04",
+      "classification": "valid_mock_identity",
+      "group": "partner_nce",
+      "description": "Partner · 仅 NCE · 模拟用户 04",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-012",
+        "UserName": "pb_partner_nce_04",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          0
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "classification": "valid_mock_identity",
+      "group": "partner_ospa",
+      "description": "Partner · 仅 OSPA · 模拟用户 01",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-013",
+        "UserName": "pb_partner_ospa_01",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          1
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_ospa_02",
+      "classification": "valid_mock_identity",
+      "group": "partner_ospa",
+      "description": "Partner · 仅 OSPA · 模拟用户 02",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-014",
+        "UserName": "pb_partner_ospa_02",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          1
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_ospa_03",
+      "classification": "valid_mock_identity",
+      "group": "partner_ospa",
+      "description": "Partner · 仅 OSPA · 模拟用户 03",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-015",
+        "UserName": "pb_partner_ospa_03",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          1
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_ospa_04",
+      "classification": "valid_mock_identity",
+      "group": "partner_ospa",
+      "description": "Partner · 仅 OSPA · 模拟用户 04",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-016",
+        "UserName": "pb_partner_ospa_04",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          1
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "classification": "valid_mock_identity",
+      "group": "partner_both",
+      "description": "Partner · 双业务 · 模拟用户 01",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-017",
+        "UserName": "pb_partner_both_01",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_both_02",
+      "classification": "valid_mock_identity",
+      "group": "partner_both",
+      "description": "Partner · 双业务 · 模拟用户 02",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-018",
+        "UserName": "pb_partner_both_02",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_both_03",
+      "classification": "valid_mock_identity",
+      "group": "partner_both",
+      "description": "Partner · 双业务 · 模拟用户 03",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-019",
+        "UserName": "pb_partner_both_03",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "profile_id": "pb_partner_both_04",
+      "classification": "valid_mock_identity",
+      "group": "partner_both",
+      "description": "Partner · 双业务 · 模拟用户 04",
+      "mock_session": {
+        "authenticated": true,
+        "enabled": true,
+        "expired": false
+      },
+      "authentication_info": {
+        "UserId": "mock-020",
+        "UserName": "pb_partner_both_04",
+        "IsPartner": true,
+        "Roles": [
+          {
+            "Id": 2,
+            "Name": "Partner"
+          }
+        ],
+        "BusinessCategories": [
+          0,
+          1
+        ]
+      }
+    }
+  ]
+}

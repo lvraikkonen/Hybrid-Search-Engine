@@ -1,0 +1,16 @@
+{
+  "version": "s2-v1",
+  "review_status": "approved",
+  "approved_by": "user:current-thread",
+  "approved_at": "2026-09-29T07:42:32Z",
+  "scope": "local_experiment_only",
+  "approval_evidence": "User reply: 确认这三组用于本地实验检索",
+  "approved_rules": ["RI, 预留实例", "Savings Plan, 节省计划", "CICR, Contact Information Change Request"],
+  "candidates": [
+    {"rule": "RI, 预留实例", "source_document_ids": [42, 44], "status": "approved_local_experiment"},
+    {"rule": "Savings Plan, 节省计划", "source_document_ids": [50, 53], "status": "approved_local_experiment"},
+    {"rule": "CICR, Contact Information Change Request", "source_document_ids": [19, 105, 148], "status": "approved_local_experiment"}
+  ],
+  "analyze_cases": ["合同的生成", "Azure 预留实例", "RI", "预留实例", "Savings Plan", "节省计划", "CICR", "Contact Information Change Request", "NCE OSPA 订阅取消"],
+  "note": "Only approved_rules may enter the search analyzer. Cancel/delete/suspend are not synonyms. Candidates are not a Golden Set."
+}

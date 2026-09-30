@@ -1,0 +1,37 @@
+{
+  "stage": "S5",
+  "completed_at": "2026-09-29T09:38:47.297760+00:00",
+  "status": "passed_with_documented_browser_download_limit",
+  "scope": "S5 only; S6 not started",
+  "python_unittest": {
+    "passed": 58,
+    "seconds": 19.189
+  },
+  "client_node_tests": {
+    "passed": 6
+  },
+  "final_static_recheck": {
+    "passed": 1,
+    "seconds": 0.566
+  },
+  "s3_gate": "S3_CHECKS.json",
+  "s4_http_regression": {
+    "requests": 1127,
+    "report": "S4_CHECKS.json"
+  },
+  "browser": {
+    "passed": 43,
+    "not_verified": 1,
+    "report": "S5_BROWSER_CHECKS.json"
+  },
+  "build": "S5_BUILD.json",
+  "integrity": "S5_INTEGRITY.json",
+  "network": "S5_NETWORK.json",
+  "native_download_save": "not_verified; button HTTP/attachment/UTF8 bytes and authorization verified separately",
+  "development_server": "http://127.0.0.1:18080/",
+  "quality_golden_set": "profile-level relevance grades and no-answer set not frozen",
+  "roadmap": {
+    "completed_S0_to_S5": 56,
+    "pending_S6": 12
+  }
+}

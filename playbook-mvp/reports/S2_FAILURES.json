@@ -1,0 +1,9 @@
+[
+  {
+    "at": "2026-09-29T07:57:21.974368+00:00",
+    "command": "release",
+    "status": "failed",
+    "error_type": "RuntimeError",
+    "message": "Approval snapshot differs from actual SQL; nothing released"
+  }
+]

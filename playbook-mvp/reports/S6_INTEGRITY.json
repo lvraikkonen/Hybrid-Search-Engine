@@ -1,0 +1,52 @@
+{
+  "stage": "S6",
+  "at": "2026-09-29T23:34:24.463393+00:00",
+  "status": "passed",
+  "protected_file_sha256": {
+    "tools/extract_playbook_sql.py": "1dfb79f152e7548a385f3dabafca5a1728005f0b549323474ce48d4b3b62f99b",
+    "tools/build_dataset.py": "5549264c03919af1a0e34b3173851d83944218c304d6ca00dc77238e641c64f6",
+    "mock_auth.py": "04c7fa9b5393d951c9b371b23faac93e5b9ed0eb5f7bb9b037209cc9dc528638",
+    "Playbook_知识库_20用户演示.html": "731d2cbecb3597350282701eb91508e14c48d0088823d2d20d064fcb53305bd8",
+    "data/playbook-sampledata.sql": "cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821"
+  },
+  "real_documents_sha256": "e730f69e85a969f4cca1fc185aaa3bcc65b304ccf7b220553afc8b697318ecd5",
+  "render_function_unchanged": true,
+  "render_hash_method": "AST source segment, matching S5",
+  "synonyms_unchanged": true,
+  "license": {
+    "type": "trial",
+    "status": "active",
+    "expiry_date": "2026-10-29T07:27:15.030Z"
+  },
+  "real_profiles": 20,
+  "static_assets": [
+    "app.js",
+    "index.html",
+    "style.css"
+  ],
+  "hardware_verified": {
+    "os": "macOS-15.7.5-x86_64-i386-64bit",
+    "python": "3.12.12",
+    "machine": "x86_64",
+    "logical_cpus": 8,
+    "cpu": "Intel(R) Core(TM) i5-1038NG7 CPU @ 2.00GHz",
+    "host_memory_bytes": "17179869184",
+    "docker_limits": "memory=2147483648 nano_cpus=0"
+  },
+  "credentials_private_ignored": true,
+  "credential_count": 31,
+  "static_assets_verified": {
+    "index.html": {
+      "bytes": 6035,
+      "sha256": "89fa272d81805173d8ec7058e4cbc1ef25be780a85102d7530a1c2ed1f215f01"
+    },
+    "style.css": {
+      "bytes": 34233,
+      "sha256": "bbe6e7f34318f42196540054cc51beebe13644d33c53163b69077b3b6e399a06"
+    },
+    "app.js": {
+      "bytes": 30734,
+      "sha256": "949f811ef0a73b210a72f82aac06da2890efbe42510c4ae9e182852cefd35e7f"
+    }
+  }
+}

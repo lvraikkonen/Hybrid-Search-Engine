@@ -1,0 +1,71 @@
+{
+  "source": {
+    "file_name": "playbook-sampledata.sql",
+    "sha256": "cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821",
+    "encoding": "utf-16",
+    "instance_key": "playbook-test",
+    "evaluation_scope": "acl_only_not_publication_or_search",
+    "policy": "direct_single_menu_with_exclusive_user_role_v2",
+    "publication_inference": "none",
+    "test_gates": "MenuItem.Active=1 and granting Role.Status=1; confirm final upstream semantics."
+  },
+  "table_validation": {
+    "table_counts": {
+      "Document": 130,
+      "MenuItem": 164,
+      "MenuItem_Document": 130,
+      "Notice": 4,
+      "Role": 3,
+      "Role_MenuItem": 195
+    },
+    "documents_without_menu": [],
+    "broken_document_menu_edges": [],
+    "broken_role_menu_edges": [],
+    "duplicate_document_menu_edges": [],
+    "duplicate_role_menu_edges": [],
+    "documents_with_multiple_menu_edges": [],
+    "menus_with_multiple_documents": [],
+    "invalid_parent_paths": [],
+    "menu_cycles": [],
+    "business_category_mismatches": [],
+    "relations_pointing_to_non_document_menus": [],
+    "controlled_menus_without_role_grants": []
+  },
+  "user_count": 20,
+  "all_users_single_role": true,
+  "all_users_valid": true,
+  "user_groups": {
+    "msft": 4,
+    "21v": 4,
+    "partner_nce": 4,
+    "partner_ospa": 4,
+    "partner_both": 4
+  },
+  "document_count": 130,
+  "public_count": 76,
+  "controlled_by_business": {
+    "0": 26,
+    "1": 28
+  },
+  "unique_acl_sets": 3,
+  "offline_authorization_cases": 2600,
+  "acl_counts_by_group": {
+    "msft": [
+      130
+    ],
+    "21v": [
+      130
+    ],
+    "partner_nce": [
+      102
+    ],
+    "partner_ospa": [
+      104
+    ],
+    "partner_both": [
+      130
+    ]
+  },
+  "es_integration_executed": false,
+  "production_publication_inferred": false
+}

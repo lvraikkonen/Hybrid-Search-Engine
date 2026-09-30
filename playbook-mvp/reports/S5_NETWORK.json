@@ -1,0 +1,92 @@
+[
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/",
+    "method": "GET"
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/",
+    "status": 200
+  },
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/style.css",
+    "method": "GET"
+  },
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/app.js",
+    "method": "GET"
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/style.css",
+    "status": 200
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/app.js",
+    "status": 200
+  },
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/api/dev/profiles",
+    "method": "GET"
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/api/dev/profiles",
+    "status": 200
+  },
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/api/me",
+    "method": "GET"
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/api/me",
+    "status": 401
+  },
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/api/dev/session",
+    "method": "POST"
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/api/dev/session",
+    "status": 200
+  },
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/api/menu",
+    "method": "GET"
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/api/menu",
+    "status": 200
+  },
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/api/search",
+    "method": "POST"
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/api/search",
+    "status": 200
+  },
+  {
+    "event": "Network.requestWillBeSent",
+    "url": "http://127.0.0.1:18080/api/documents/playbook-test%3ADocument%3A25",
+    "method": "GET"
+  },
+  {
+    "event": "Network.responseReceived",
+    "url": "http://127.0.0.1:18080/api/documents/playbook-test%3ADocument%3A25",
+    "status": 200
+  }
+]

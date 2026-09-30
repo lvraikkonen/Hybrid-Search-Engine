@@ -1,0 +1,19 @@
+{
+  "mode": "same_origin_api_shell",
+  "assets": {
+    "index.html": {
+      "bytes": 6089,
+      "sha256": "d7e1257a1fd19ed086eab391241ec7e6e355ded1cdd06516ffa4b14bdf61c985"
+    },
+    "style.css": {
+      "bytes": 34468,
+      "sha256": "b9e1b65760afcd4f9509e67ce2d22c5956bd9a54a6d4ee05e4e9b8bb918ddf85"
+    },
+    "app.js": {
+      "bytes": 31375,
+      "sha256": "33746ff0ea85d19ec0d32f9e5fd2014ceca53b5479bb4a406d45f4017cd8bd64"
+    }
+  },
+  "embedded_documents": 0,
+  "legacy_html_and_portal_data": "preserved_offline_not_served"
+}

@@ -1,0 +1,279 @@
+{
+  "schema_version": "2.0",
+  "provisioned": false,
+  "description": "Metadata only. No ES accounts, roles, credentials or DLS configuration created.",
+  "users": [
+    {
+      "username": "pb_msft_01",
+      "metadata": {
+        "playbook_role_ids": [
+          1
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_msft_02",
+      "metadata": {
+        "playbook_role_ids": [
+          1
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_msft_03",
+      "metadata": {
+        "playbook_role_ids": [
+          1
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_msft_04",
+      "metadata": {
+        "playbook_role_ids": [
+          1
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_21v_01",
+      "metadata": {
+        "playbook_role_ids": [
+          3
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_21v_02",
+      "metadata": {
+        "playbook_role_ids": [
+          3
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_21v_03",
+      "metadata": {
+        "playbook_role_ids": [
+          3
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_21v_04",
+      "metadata": {
+        "playbook_role_ids": [
+          3
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_nce_01",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          0
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_nce_02",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          0
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_nce_03",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          0
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_nce_04",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          0
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_ospa_01",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_ospa_02",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_ospa_03",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_ospa_04",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_both_01",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_both_02",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_both_03",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    },
+    {
+      "username": "pb_partner_both_04",
+      "metadata": {
+        "playbook_role_ids": [
+          2
+        ],
+        "playbook_business_categories": [
+          0,
+          1
+        ],
+        "authz_mode": "mock",
+        "authz_policy_version": "mock-auth-v2-exclusive-role"
+      }
+    }
+  ]
+}

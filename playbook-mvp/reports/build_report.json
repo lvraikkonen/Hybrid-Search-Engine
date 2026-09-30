@@ -1,0 +1,24 @@
+{
+  "source_sha256": "cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821",
+  "counts": {
+    "Document": 130,
+    "MenuItem": 164,
+    "MenuItem_Document": 130,
+    "Notice": 4,
+    "Role": 3,
+    "Role_MenuItem": 195
+  },
+  "users": 20,
+  "body_fields": 260,
+  "render_pipeline": "markdown-it-py → restricted HTML allowlist → asset placeholders",
+  "raw_roundtrip": true,
+  "runtime_network_dependencies": 0,
+  "limitations": [
+    "Client-side simulation only; all source content is embedded",
+    "Status/Active semantics not promoted to production published",
+    "Notice and AzurePortalExperience have no Document body and are shown as explicit placeholders",
+    "Images and attachment bytes are absent; references are retained",
+    "Search is local lexical matching, not ES/BM25"
+  ],
+  "output_bytes": 2531933
+}

@@ -1,0 +1,3643 @@
+{
+  "stage": "S6",
+  "started_at": "2026-09-30T02:18:35.523868+00:00",
+  "status": "passed",
+  "golden_sha256": "81005463989a950e1bb689bcea4daf0dfe7485e8787d2025d8c70a261276e118",
+  "source_snapshot_sha256": "cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821",
+  "environment": {
+    "os": "macOS-15.7.5-x86_64-i386-64bit",
+    "python": "3.12.12",
+    "machine": "x86_64",
+    "logical_cpus": 8,
+    "cpu": "Intel(R) Core(TM) i5-1038NG7 CPU @ 2.00GHz",
+    "host_memory_bytes": "17179869184",
+    "docker_limits": "memory=2147483648 nano_cpus=0"
+  },
+  "method": {
+    "top_k": 5,
+    "rounds": 3,
+    "warmup_per_profile": 5,
+    "concurrency": 1,
+    "es_latency": "Elasticsearch took; excludes HTTP/auth",
+    "api_latency": "loopback HTTP wall time including native identity and privilege verification",
+    "percentile": "nearest-rank",
+    "cache": "request_cache=false; OS/Lucene warmed, not flushed",
+    "relevance": "partial judged reference recall; unjudged documents unknown; not exhaustive corpus recall",
+    "no_answer_target": "descriptive only, no uncalibrated BM25 score cutoff"
+  },
+  "profiles": {
+    "pb_msft_01": {
+      "answerable_core_questions": 32,
+      "excluded": 0,
+      "hit_at_5": 0.96875,
+      "mrr_at_5": 0.8697916666666666,
+      "judged_recall_at_5": 0.96875,
+      "target": 0.9,
+      "target_met": true
+    },
+    "pb_21v_01": {
+      "answerable_core_questions": 32,
+      "excluded": 0,
+      "hit_at_5": 0.96875,
+      "mrr_at_5": 0.8697916666666666,
+      "judged_recall_at_5": 0.96875,
+      "target": 0.9,
+      "target_met": true
+    },
+    "pb_partner_nce_01": {
+      "answerable_core_questions": 27,
+      "excluded": 5,
+      "hit_at_5": 0.9629629629629629,
+      "mrr_at_5": 0.8641975308641975,
+      "judged_recall_at_5": 0.9629629629629629,
+      "target": 0.9,
+      "target_met": true
+    },
+    "pb_partner_ospa_01": {
+      "answerable_core_questions": 26,
+      "excluded": 6,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 0.9423076923076923,
+      "judged_recall_at_5": 1.0,
+      "target": 0.9,
+      "target_met": true
+    },
+    "pb_partner_both_01": {
+      "answerable_core_questions": 32,
+      "excluded": 0,
+      "hit_at_5": 0.96875,
+      "mrr_at_5": 0.8697916666666666,
+      "judged_recall_at_5": 0.96875,
+      "target": 0.9,
+      "target_met": true
+    }
+  },
+  "cases": [
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q01",
+      "top_5": [
+        25,
+        24,
+        30,
+        65,
+        52
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q02",
+      "top_5": [
+        99,
+        81,
+        97,
+        98,
+        83
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q03",
+      "top_5": [
+        148,
+        88,
+        97,
+        81,
+        82
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q04",
+      "top_5": [
+        63,
+        9,
+        11,
+        34,
+        2
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q05",
+      "top_5": [
+        14,
+        15,
+        23,
+        4,
+        13
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q06",
+      "top_5": [
+        88,
+        89,
+        137,
+        81,
+        104
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q07",
+      "top_5": [
+        30,
+        9,
+        23,
+        8,
+        2
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.3333333333333333,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q08",
+      "top_5": [
+        97,
+        98,
+        96,
+        115,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q09",
+      "top_5": [
+        98,
+        97,
+        96,
+        115,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q10",
+      "top_5": [
+        38,
+        39,
+        69,
+        40,
+        19
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q11",
+      "top_5": [
+        39,
+        38,
+        21,
+        58,
+        63
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q12",
+      "top_5": [
+        41,
+        61,
+        34,
+        69,
+        28
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q13",
+      "top_5": [
+        44,
+        42,
+        67,
+        50,
+        146
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q14",
+      "top_5": [
+        44,
+        53,
+        67,
+        49,
+        63
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q15",
+      "top_5": [
+        47,
+        44,
+        67,
+        146,
+        49
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q16",
+      "top_5": [
+        49,
+        44,
+        54,
+        63,
+        67
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q17",
+      "top_5": [
+        50,
+        69,
+        52,
+        63,
+        42
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q18",
+      "top_5": [
+        52,
+        50,
+        69,
+        51,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q19",
+      "top_5": [
+        53,
+        50,
+        51,
+        69,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q20",
+      "top_5": [
+        50,
+        55,
+        51,
+        69,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q21",
+      "top_5": [
+        59,
+        58,
+        64,
+        5,
+        65
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q22",
+      "top_5": [
+        60,
+        146,
+        52,
+        67,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q23",
+      "top_5": [
+        30,
+        61,
+        22,
+        36,
+        9
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q24",
+      "top_5": [
+        62,
+        60,
+        30,
+        49,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q25",
+      "top_5": [
+        141,
+        142,
+        138,
+        139,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q26",
+      "top_5": [
+        142,
+        141,
+        138,
+        113,
+        129
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q27",
+      "top_5": [
+        128,
+        122,
+        140,
+        123,
+        124
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q28",
+      "top_5": [
+        130,
+        131,
+        122,
+        140,
+        123
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q29",
+      "top_5": [
+        30,
+        19,
+        10,
+        9,
+        25
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q30",
+      "top_5": [
+        108,
+        105,
+        113,
+        90,
+        103
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q31",
+      "top_5": [
+        20,
+        30,
+        49,
+        40,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "Q32",
+      "top_5": [
+        7,
+        10,
+        11,
+        8,
+        9
+      ],
+      "metrics": {
+        "hit_at_5": 0,
+        "mrr_at_5": 0,
+        "judged_recall_at_5": 0.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q01",
+      "top_5": [
+        25,
+        24,
+        30,
+        65,
+        52
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q02",
+      "top_5": [
+        99,
+        81,
+        97,
+        98,
+        83
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q03",
+      "top_5": [
+        148,
+        88,
+        97,
+        81,
+        82
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q04",
+      "top_5": [
+        63,
+        9,
+        11,
+        34,
+        2
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q05",
+      "top_5": [
+        14,
+        15,
+        23,
+        4,
+        13
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q06",
+      "top_5": [
+        88,
+        89,
+        137,
+        81,
+        104
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q07",
+      "top_5": [
+        30,
+        9,
+        23,
+        8,
+        2
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.3333333333333333,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q08",
+      "top_5": [
+        97,
+        98,
+        96,
+        115,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q09",
+      "top_5": [
+        98,
+        97,
+        96,
+        115,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q10",
+      "top_5": [
+        38,
+        39,
+        69,
+        40,
+        19
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q11",
+      "top_5": [
+        39,
+        38,
+        21,
+        58,
+        63
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q12",
+      "top_5": [
+        41,
+        61,
+        34,
+        69,
+        28
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q13",
+      "top_5": [
+        44,
+        42,
+        67,
+        50,
+        146
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q14",
+      "top_5": [
+        44,
+        53,
+        67,
+        49,
+        63
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q15",
+      "top_5": [
+        47,
+        44,
+        67,
+        146,
+        49
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q16",
+      "top_5": [
+        49,
+        44,
+        54,
+        63,
+        67
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q17",
+      "top_5": [
+        50,
+        69,
+        52,
+        63,
+        42
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q18",
+      "top_5": [
+        52,
+        50,
+        69,
+        51,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q19",
+      "top_5": [
+        53,
+        50,
+        51,
+        69,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q20",
+      "top_5": [
+        50,
+        55,
+        51,
+        69,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q21",
+      "top_5": [
+        59,
+        58,
+        64,
+        5,
+        65
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q22",
+      "top_5": [
+        60,
+        146,
+        52,
+        67,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q23",
+      "top_5": [
+        30,
+        61,
+        22,
+        36,
+        9
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q24",
+      "top_5": [
+        62,
+        60,
+        30,
+        49,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q25",
+      "top_5": [
+        141,
+        142,
+        138,
+        139,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q26",
+      "top_5": [
+        142,
+        141,
+        138,
+        113,
+        129
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q27",
+      "top_5": [
+        128,
+        122,
+        140,
+        123,
+        124
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q28",
+      "top_5": [
+        130,
+        131,
+        122,
+        140,
+        123
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q29",
+      "top_5": [
+        30,
+        19,
+        10,
+        9,
+        25
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q30",
+      "top_5": [
+        108,
+        105,
+        113,
+        90,
+        103
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q31",
+      "top_5": [
+        20,
+        30,
+        49,
+        40,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "Q32",
+      "top_5": [
+        7,
+        10,
+        11,
+        8,
+        9
+      ],
+      "metrics": {
+        "hit_at_5": 0,
+        "mrr_at_5": 0,
+        "judged_recall_at_5": 0.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q01",
+      "top_5": [
+        25,
+        24,
+        30,
+        65,
+        52
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q02",
+      "top_5": [
+        81,
+        88,
+        115,
+        137,
+        85
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q03",
+      "top_5": [
+        88,
+        81,
+        82,
+        140,
+        130
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q04",
+      "top_5": [
+        63,
+        9,
+        11,
+        34,
+        2
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q05",
+      "top_5": [
+        14,
+        15,
+        23,
+        4,
+        13
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q06",
+      "top_5": [
+        88,
+        89,
+        137,
+        81,
+        115
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q07",
+      "top_5": [
+        30,
+        9,
+        23,
+        8,
+        2
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.3333333333333333,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q08",
+      "top_5": [
+        115,
+        81,
+        88,
+        82,
+        128
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q09",
+      "top_5": [
+        115,
+        137,
+        81,
+        88,
+        82
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q10",
+      "top_5": [
+        38,
+        39,
+        69,
+        40,
+        19
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q11",
+      "top_5": [
+        39,
+        38,
+        21,
+        58,
+        63
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q12",
+      "top_5": [
+        41,
+        61,
+        34,
+        69,
+        28
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q13",
+      "top_5": [
+        44,
+        42,
+        67,
+        50,
+        146
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q14",
+      "top_5": [
+        44,
+        53,
+        67,
+        49,
+        63
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q15",
+      "top_5": [
+        47,
+        44,
+        67,
+        146,
+        49
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q16",
+      "top_5": [
+        49,
+        44,
+        54,
+        63,
+        67
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q17",
+      "top_5": [
+        50,
+        69,
+        52,
+        63,
+        42
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q18",
+      "top_5": [
+        52,
+        50,
+        69,
+        51,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q19",
+      "top_5": [
+        53,
+        50,
+        51,
+        69,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q20",
+      "top_5": [
+        50,
+        55,
+        51,
+        69,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q21",
+      "top_5": [
+        59,
+        58,
+        64,
+        5,
+        65
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q22",
+      "top_5": [
+        60,
+        146,
+        52,
+        67,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q23",
+      "top_5": [
+        30,
+        61,
+        22,
+        36,
+        9
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q24",
+      "top_5": [
+        62,
+        60,
+        30,
+        49,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q25",
+      "top_5": [
+        141,
+        142,
+        138,
+        139,
+        81
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q26",
+      "top_5": [
+        142,
+        141,
+        138,
+        129,
+        143
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q27",
+      "top_5": [
+        128,
+        122,
+        140,
+        123,
+        124
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q28",
+      "top_5": [
+        130,
+        131,
+        122,
+        140,
+        123
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q29",
+      "top_5": [
+        30,
+        19,
+        10,
+        9,
+        25
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q30",
+      "top_5": [
+        81,
+        82,
+        115,
+        85,
+        137
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q31",
+      "top_5": [
+        20,
+        30,
+        49,
+        40,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "Q32",
+      "top_5": [
+        7,
+        10,
+        11,
+        8,
+        9
+      ],
+      "metrics": {
+        "hit_at_5": 0,
+        "mrr_at_5": 0,
+        "judged_recall_at_5": 0.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q01",
+      "top_5": [
+        65,
+        52,
+        49,
+        40,
+        54
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q02",
+      "top_5": [
+        99,
+        81,
+        97,
+        98,
+        83
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q03",
+      "top_5": [
+        148,
+        88,
+        97,
+        81,
+        82
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q04",
+      "top_5": [
+        34,
+        4,
+        1,
+        7,
+        57
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q05",
+      "top_5": [
+        14,
+        15,
+        4,
+        42,
+        146
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q06",
+      "top_5": [
+        88,
+        89,
+        137,
+        81,
+        104
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q07",
+      "top_5": [
+        15,
+        45,
+        47,
+        67,
+        32
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q08",
+      "top_5": [
+        97,
+        98,
+        96,
+        115,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q09",
+      "top_5": [
+        98,
+        97,
+        96,
+        115,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q10",
+      "top_5": [
+        38,
+        39,
+        69,
+        40,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q11",
+      "top_5": [
+        39,
+        38,
+        58,
+        34,
+        35
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q12",
+      "top_5": [
+        41,
+        61,
+        34,
+        69,
+        67
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q13",
+      "top_5": [
+        44,
+        42,
+        67,
+        50,
+        146
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q14",
+      "top_5": [
+        44,
+        53,
+        67,
+        49,
+        146
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q15",
+      "top_5": [
+        47,
+        44,
+        67,
+        146,
+        49
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q16",
+      "top_5": [
+        49,
+        44,
+        54,
+        67,
+        146
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q17",
+      "top_5": [
+        50,
+        69,
+        52,
+        42,
+        51
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q18",
+      "top_5": [
+        52,
+        50,
+        69,
+        51,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q19",
+      "top_5": [
+        53,
+        50,
+        51,
+        69,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q20",
+      "top_5": [
+        50,
+        55,
+        51,
+        69,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q21",
+      "top_5": [
+        59,
+        58,
+        64,
+        65,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q22",
+      "top_5": [
+        60,
+        146,
+        52,
+        67,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q23",
+      "top_5": [
+        61,
+        36,
+        62,
+        60,
+        41
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q24",
+      "top_5": [
+        62,
+        60,
+        49,
+        61,
+        40
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q25",
+      "top_5": [
+        141,
+        142,
+        138,
+        139,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q26",
+      "top_5": [
+        142,
+        141,
+        138,
+        113,
+        129
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q27",
+      "top_5": [
+        128,
+        122,
+        140,
+        123,
+        124
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q28",
+      "top_5": [
+        130,
+        131,
+        122,
+        140,
+        123
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q29",
+      "top_5": [
+        60,
+        47,
+        49,
+        55,
+        40
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q30",
+      "top_5": [
+        108,
+        105,
+        113,
+        90,
+        103
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q31",
+      "top_5": [
+        49,
+        40,
+        54,
+        4,
+        58
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "Q32",
+      "top_5": [
+        7,
+        57,
+        42,
+        50,
+        15
+      ],
+      "metrics": null,
+      "excluded_reason": "no_accessible_judged_reference"
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q01",
+      "top_5": [
+        25,
+        24,
+        30,
+        65,
+        52
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q02",
+      "top_5": [
+        99,
+        81,
+        97,
+        98,
+        83
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q03",
+      "top_5": [
+        148,
+        88,
+        97,
+        81,
+        82
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q04",
+      "top_5": [
+        63,
+        9,
+        11,
+        34,
+        2
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q05",
+      "top_5": [
+        14,
+        15,
+        23,
+        4,
+        13
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q06",
+      "top_5": [
+        88,
+        89,
+        137,
+        81,
+        104
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q07",
+      "top_5": [
+        30,
+        9,
+        23,
+        8,
+        2
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.3333333333333333,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q08",
+      "top_5": [
+        97,
+        98,
+        96,
+        115,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q09",
+      "top_5": [
+        98,
+        97,
+        96,
+        115,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q10",
+      "top_5": [
+        38,
+        39,
+        69,
+        40,
+        19
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q11",
+      "top_5": [
+        39,
+        38,
+        21,
+        58,
+        63
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q12",
+      "top_5": [
+        41,
+        61,
+        34,
+        69,
+        28
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q13",
+      "top_5": [
+        44,
+        42,
+        67,
+        50,
+        146
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q14",
+      "top_5": [
+        44,
+        53,
+        67,
+        49,
+        63
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q15",
+      "top_5": [
+        47,
+        44,
+        67,
+        146,
+        49
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q16",
+      "top_5": [
+        49,
+        44,
+        54,
+        63,
+        67
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q17",
+      "top_5": [
+        50,
+        69,
+        52,
+        63,
+        42
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q18",
+      "top_5": [
+        52,
+        50,
+        69,
+        51,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q19",
+      "top_5": [
+        53,
+        50,
+        51,
+        69,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q20",
+      "top_5": [
+        50,
+        55,
+        51,
+        69,
+        53
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q21",
+      "top_5": [
+        59,
+        58,
+        64,
+        5,
+        65
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q22",
+      "top_5": [
+        60,
+        146,
+        52,
+        67,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q23",
+      "top_5": [
+        30,
+        61,
+        22,
+        36,
+        9
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q24",
+      "top_5": [
+        62,
+        60,
+        30,
+        49,
+        61
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q25",
+      "top_5": [
+        141,
+        142,
+        138,
+        139,
+        148
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q26",
+      "top_5": [
+        142,
+        141,
+        138,
+        113,
+        129
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q27",
+      "top_5": [
+        128,
+        122,
+        140,
+        123,
+        124
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q28",
+      "top_5": [
+        130,
+        131,
+        122,
+        140,
+        123
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q29",
+      "top_5": [
+        30,
+        19,
+        10,
+        9,
+        25
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q30",
+      "top_5": [
+        108,
+        105,
+        113,
+        90,
+        103
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 0.5,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q31",
+      "top_5": [
+        20,
+        30,
+        49,
+        40,
+        54
+      ],
+      "metrics": {
+        "hit_at_5": 1,
+        "mrr_at_5": 1.0,
+        "judged_recall_at_5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "Q32",
+      "top_5": [
+        7,
+        10,
+        11,
+        8,
+        9
+      ],
+      "metrics": {
+        "hit_at_5": 0,
+        "mrr_at_5": 0,
+        "judged_recall_at_5": 0.0
+      },
+      "excluded_reason": null
+    }
+  ],
+  "no_answer_cases": [
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "NA01",
+      "top_5": [
+        23,
+        97,
+        98,
+        25,
+        18
+      ],
+      "snippets": [
+        {
+          "document_id": 23,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "如何申请Credit Check\n21VCA-E采用间接模式进行销售，在信审环节，需要合作伙伴向21Vianet 提交对应订单的信用申请，审核通过合作伙伴会收到通知，订单进入下单步骤。\n信用申请系统\n合作伙伴信用管理系统\n信用审核流程概览\n世纪互联客户协议信用审核机制\n世纪互联客户协议信用申请的审核分为系统自动审核及人工审核。"
+            }
+          ]
+        },
+        {
+          "document_id": 97,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "已开通系统权限的用户\n登录网址：https://nce.21vbluecloud.com\n登录方式：邮箱前缀 (即，MS Email Alias)\n如何在系统中提交Direct Model OSPA信用申请：\n下载 OSPA Direct Credit Check\n以上若有问题，您可以邮件至Direct Credit Notification：21vdcn@oe"
+            }
+          ]
+        },
+        {
+          "document_id": 98,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "信用申请系统\nURL：https://pcm.21vbluecloud.com/\n可联系世纪互联 PAM团队获取《合作伙伴信用管理系统用户手册》以获取更为详细的说明。\n如何在系统中提交Indirect Model OSPA的信用申请：\n下载 OSPA Indirect Credit Check"
+            }
+          ]
+        },
+        {
+          "document_id": 25,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "（仅限微软员工，请使用MS公司账号登录）\nHermes Platform，点击这里申请权限https://hermesusermanagement.microsoft.com/（仅限新用户）。"
+            }
+          ]
+        },
+        {
+          "document_id": 18,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "指定COCP生效日期的情况\n对于这种场景，会分为以下两种情况，即指定生效日期与预计后台完成操作后的第90天之日期的日期间隔（预计操作完成后生效的日期-指定生效日期）大于90天，或小于90天。\n1. 日期间隔大于90天\nCOCP申请文件只需要客户和新合作伙伴盖章，不需要原合作伙伴盖章。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "NA02",
+      "top_5": [
+        24,
+        52,
+        146,
+        66,
+        122
+      ],
+      "snippets": [
+        {
+          "document_id": 24,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "授权协议签署人Authorized Signer: The agreement and/or contract will be generated strictly in accordance with the authorized signer specified in the information form."
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "The Azure savings plan for Azure App Service can only be applied to the App Service upgraded Premium v3 plan and the upgraded Isolated v2 plan."
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "Instance size flexibility for VMs, the reservation cancellation policy, and RI-to-savings-plan trade-ins are not impacted by this change.\n1. What is changing?"
+            }
+          ]
+        },
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "This scope can also be changed later in the \"Configuration\" option within the RI order."
+            }
+          ]
+        },
+        {
+          "document_id": 122,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "You can designate multiple organizational accounts as enterprise administrators, but only one organizational account can be designated as the account owner in each account, and the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_msft_01",
+      "question_id": "NA03",
+      "top_5": [
+        66,
+        48,
+        52,
+        146,
+        135
+      ],
+      "snippets": [
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "实例大小灵活性：这是RI的一项关键功能。如果启用，购买一个RI可以应用于同一虚拟机系列\"灵活性组\"内的多种规格。例如，为Dsv3系列购买的RI，可以自动应用于Dsv3系列内不同大小的VM（如Standard_D2s_v3, Standard_D4s_v3等），使用更灵活，能更好地应对业务变化。"
+            }
+          ]
+        },
+        {
+          "document_id": 48,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "例如，如果购买在 DSv2 系列中列出的某个 VM 大小（例如 Standard_DS3_v2）的预留，则预留折扣可以应用到同一实例大小灵活性组中列出的其他大小：\nStandard_DS1_v2\nStandard_DS2_v2\nStandard_DS3_v2\nStandard_DS4_v2\n但是，该预留折扣不适用于在其他实例大小灵活性组中列出的 VM 大小，例如高内存"
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "SQL Server 每小时许可证\nAzure Arc 每小时许可证启用的 SQL Server\n请参考链接：什么是储蓄计划？"
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "虚拟机实例大小灵活性、预留实例取消政策、以及预留实例换购节省计划均不受此次变更影响。\n1. 有什么变化？\n自2027年2月1日起，客户将无法再对节省计划所涵盖服务的预留实例进行交换。在2027年2月1日之前购买的每个在影响范围内的有效预留实例，将保留最后一次交换的权利。\n2. 涉及哪些服务？"
+            }
+          ]
+        },
+        {
+          "document_id": 135,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "查看生效 CPP\nCPP 购买内容取决于每月某类型虚拟机的台数。因此已购买 CPP 会按照每月预购数量显示，而不会显示购买金额。如果你已订购了 CPP, 每月预购数量，可以通过价格；列表中 ‘免费量’列查看。\n查看示例： 客户购买了 5 个 A4 VM CPP service，显示免费量为 37.2*100小时 （744小时*5）\n使用和计费\n1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "NA01",
+      "top_5": [
+        23,
+        97,
+        98,
+        25,
+        18
+      ],
+      "snippets": [
+        {
+          "document_id": 23,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "如何申请Credit Check\n21VCA-E采用间接模式进行销售，在信审环节，需要合作伙伴向21Vianet 提交对应订单的信用申请，审核通过合作伙伴会收到通知，订单进入下单步骤。\n信用申请系统\n合作伙伴信用管理系统\n信用审核流程概览\n世纪互联客户协议信用审核机制\n世纪互联客户协议信用申请的审核分为系统自动审核及人工审核。"
+            }
+          ]
+        },
+        {
+          "document_id": 97,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "已开通系统权限的用户\n登录网址：https://nce.21vbluecloud.com\n登录方式：邮箱前缀 (即，MS Email Alias)\n如何在系统中提交Direct Model OSPA信用申请：\n下载 OSPA Direct Credit Check\n以上若有问题，您可以邮件至Direct Credit Notification：21vdcn@oe"
+            }
+          ]
+        },
+        {
+          "document_id": 98,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "信用申请系统\nURL：https://pcm.21vbluecloud.com/\n可联系世纪互联 PAM团队获取《合作伙伴信用管理系统用户手册》以获取更为详细的说明。\n如何在系统中提交Indirect Model OSPA的信用申请：\n下载 OSPA Indirect Credit Check"
+            }
+          ]
+        },
+        {
+          "document_id": 25,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "（仅限微软员工，请使用MS公司账号登录）\nHermes Platform，点击这里申请权限https://hermesusermanagement.microsoft.com/（仅限新用户）。"
+            }
+          ]
+        },
+        {
+          "document_id": 18,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "指定COCP生效日期的情况\n对于这种场景，会分为以下两种情况，即指定生效日期与预计后台完成操作后的第90天之日期的日期间隔（预计操作完成后生效的日期-指定生效日期）大于90天，或小于90天。\n1. 日期间隔大于90天\nCOCP申请文件只需要客户和新合作伙伴盖章，不需要原合作伙伴盖章。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "NA02",
+      "top_5": [
+        24,
+        52,
+        146,
+        66,
+        122
+      ],
+      "snippets": [
+        {
+          "document_id": 24,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "授权协议签署人Authorized Signer: The agreement and/or contract will be generated strictly in accordance with the authorized signer specified in the information form."
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "The Azure savings plan for Azure App Service can only be applied to the App Service upgraded Premium v3 plan and the upgraded Isolated v2 plan."
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "Instance size flexibility for VMs, the reservation cancellation policy, and RI-to-savings-plan trade-ins are not impacted by this change.\n1. What is changing?"
+            }
+          ]
+        },
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "This scope can also be changed later in the \"Configuration\" option within the RI order."
+            }
+          ]
+        },
+        {
+          "document_id": 122,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "You can designate multiple organizational accounts as enterprise administrators, but only one organizational account can be designated as the account owner in each account, and the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_21v_01",
+      "question_id": "NA03",
+      "top_5": [
+        66,
+        48,
+        52,
+        146,
+        135
+      ],
+      "snippets": [
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "实例大小灵活性：这是RI的一项关键功能。如果启用，购买一个RI可以应用于同一虚拟机系列\"灵活性组\"内的多种规格。例如，为Dsv3系列购买的RI，可以自动应用于Dsv3系列内不同大小的VM（如Standard_D2s_v3, Standard_D4s_v3等），使用更灵活，能更好地应对业务变化。"
+            }
+          ]
+        },
+        {
+          "document_id": 48,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "例如，如果购买在 DSv2 系列中列出的某个 VM 大小（例如 Standard_DS3_v2）的预留，则预留折扣可以应用到同一实例大小灵活性组中列出的其他大小：\nStandard_DS1_v2\nStandard_DS2_v2\nStandard_DS3_v2\nStandard_DS4_v2\n但是，该预留折扣不适用于在其他实例大小灵活性组中列出的 VM 大小，例如高内存"
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "SQL Server 每小时许可证\nAzure Arc 每小时许可证启用的 SQL Server\n请参考链接：什么是储蓄计划？"
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "虚拟机实例大小灵活性、预留实例取消政策、以及预留实例换购节省计划均不受此次变更影响。\n1. 有什么变化？\n自2027年2月1日起，客户将无法再对节省计划所涵盖服务的预留实例进行交换。在2027年2月1日之前购买的每个在影响范围内的有效预留实例，将保留最后一次交换的权利。\n2. 涉及哪些服务？"
+            }
+          ]
+        },
+        {
+          "document_id": 135,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "查看生效 CPP\nCPP 购买内容取决于每月某类型虚拟机的台数。因此已购买 CPP 会按照每月预购数量显示，而不会显示购买金额。如果你已订购了 CPP, 每月预购数量，可以通过价格；列表中 ‘免费量’列查看。\n查看示例： 客户购买了 5 个 A4 VM CPP service，显示免费量为 37.2*100小时 （744小时*5）\n使用和计费\n1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "NA01",
+      "top_5": [
+        23,
+        25,
+        18,
+        58,
+        64
+      ],
+      "snippets": [
+        {
+          "document_id": 23,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "如何申请Credit Check\n21VCA-E采用间接模式进行销售，在信审环节，需要合作伙伴向21Vianet 提交对应订单的信用申请，审核通过合作伙伴会收到通知，订单进入下单步骤。\n信用申请系统\n合作伙伴信用管理系统\n信用审核流程概览\n世纪互联客户协议信用审核机制\n世纪互联客户协议信用申请的审核分为系统自动审核及人工审核。"
+            }
+          ]
+        },
+        {
+          "document_id": 25,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "（仅限微软员工，请使用MS公司账号登录）\nHermes Platform，点击这里申请权限https://hermesusermanagement.microsoft.com/（仅限新用户）。"
+            }
+          ]
+        },
+        {
+          "document_id": 18,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "指定COCP生效日期的情况\n对于这种场景，会分为以下两种情况，即指定生效日期与预计后台完成操作后的第90天之日期的日期间隔（预计操作完成后生效的日期-指定生效日期）大于90天，或小于90天。\n1. 日期间隔大于90天\nCOCP申请文件只需要客户和新合作伙伴盖章，不需要原合作伙伴盖章。"
+            }
+          ]
+        },
+        {
+          "document_id": 58,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "以下角色可以下载账单：\nBilling Account: 所有者、参与者、读者\nBilling Profile：所有者、参与者、读者\nInvoice Manager\n下载账单的步骤：\n1. 使用管理员账户登录 Azure Portal\n2. 搜索“成本管理 + 计费”\n3. 选择计费对象信息，点击 Billing profile名称\n4. 在左侧菜单中，选择“"
+            }
+          ]
+        },
+        {
+          "document_id": 64,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "列名[1]：isAzureCreditEligible | 说明[2]：指示是否有资格使用 Azure 额度支付费用\n列名[1]：serviceInfo1 | 说明[2]：服务特定的元数据。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "NA02",
+      "top_5": [
+        24,
+        52,
+        146,
+        66,
+        122
+      ],
+      "snippets": [
+        {
+          "document_id": 24,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "授权协议签署人Authorized Signer: The agreement and/or contract will be generated strictly in accordance with the authorized signer specified in the information form."
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "The Azure savings plan for Azure App Service can only be applied to the App Service upgraded Premium v3 plan and the upgraded Isolated v2 plan."
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "Instance size flexibility for VMs, the reservation cancellation policy, and RI-to-savings-plan trade-ins are not impacted by this change.\n1. What is changing?"
+            }
+          ]
+        },
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "This scope can also be changed later in the \"Configuration\" option within the RI order."
+            }
+          ]
+        },
+        {
+          "document_id": 122,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "You can designate multiple organizational accounts as enterprise administrators, but only one organizational account can be designated as the account owner in each account, and the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_nce_01",
+      "question_id": "NA03",
+      "top_5": [
+        66,
+        48,
+        52,
+        146,
+        135
+      ],
+      "snippets": [
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "实例大小灵活性：这是RI的一项关键功能。如果启用，购买一个RI可以应用于同一虚拟机系列\"灵活性组\"内的多种规格。例如，为Dsv3系列购买的RI，可以自动应用于Dsv3系列内不同大小的VM（如Standard_D2s_v3, Standard_D4s_v3等），使用更灵活，能更好地应对业务变化。"
+            }
+          ]
+        },
+        {
+          "document_id": 48,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "例如，如果购买在 DSv2 系列中列出的某个 VM 大小（例如 Standard_DS3_v2）的预留，则预留折扣可以应用到同一实例大小灵活性组中列出的其他大小：\nStandard_DS1_v2\nStandard_DS2_v2\nStandard_DS3_v2\nStandard_DS4_v2\n但是，该预留折扣不适用于在其他实例大小灵活性组中列出的 VM 大小，例如高内存"
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "SQL Server 每小时许可证\nAzure Arc 每小时许可证启用的 SQL Server\n请参考链接：什么是储蓄计划？"
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "虚拟机实例大小灵活性、预留实例取消政策、以及预留实例换购节省计划均不受此次变更影响。\n1. 有什么变化？\n自2027年2月1日起，客户将无法再对节省计划所涵盖服务的预留实例进行交换。在2027年2月1日之前购买的每个在影响范围内的有效预留实例，将保留最后一次交换的权利。\n2. 涉及哪些服务？"
+            }
+          ]
+        },
+        {
+          "document_id": 135,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "查看生效 CPP\nCPP 购买内容取决于每月某类型虚拟机的台数。因此已购买 CPP 会按照每月预购数量显示，而不会显示购买金额。如果你已订购了 CPP, 每月预购数量，可以通过价格；列表中 ‘免费量’列查看。\n查看示例： 客户购买了 5 个 A4 VM CPP service，显示免费量为 37.2*100小时 （744小时*5）\n使用和计费\n1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "NA01",
+      "top_5": [
+        97,
+        98,
+        58,
+        64,
+        128
+      ],
+      "snippets": [
+        {
+          "document_id": 97,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "已开通系统权限的用户\n登录网址：https://nce.21vbluecloud.com\n登录方式：邮箱前缀 (即，MS Email Alias)\n如何在系统中提交Direct Model OSPA信用申请：\n下载 OSPA Direct Credit Check\n以上若有问题，您可以邮件至Direct Credit Notification：21vdcn@oe"
+            }
+          ]
+        },
+        {
+          "document_id": 98,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "信用申请系统\nURL：https://pcm.21vbluecloud.com/\n可联系世纪互联 PAM团队获取《合作伙伴信用管理系统用户手册》以获取更为详细的说明。\n如何在系统中提交Indirect Model OSPA的信用申请：\n下载 OSPA Indirect Credit Check"
+            }
+          ]
+        },
+        {
+          "document_id": 58,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "以下角色可以下载账单：\nBilling Account: 所有者、参与者、读者\nBilling Profile：所有者、参与者、读者\nInvoice Manager\n下载账单的步骤：\n1. 使用管理员账户登录 Azure Portal\n2. 搜索“成本管理 + 计费”\n3. 选择计费对象信息，点击 Billing profile名称\n4. 在左侧菜单中，选择“"
+            }
+          ]
+        },
+        {
+          "document_id": 64,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "列名[1]：isAzureCreditEligible | 说明[2]：指示是否有资格使用 Azure 额度支付费用\n列名[1]：serviceInfo1 | 说明[2]：服务特定的元数据。"
+            }
+          ]
+        },
+        {
+          "document_id": 128,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "在企业门户中可灵活管理帐户，比如删除帐户：\n登陆企业门户，在帐户选项中选中需要删除的帐户， 点击删除选项即可。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "NA02",
+      "top_5": [
+        52,
+        146,
+        66,
+        122,
+        50
+      ],
+      "snippets": [
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "The Azure savings plan for Azure App Service can only be applied to the App Service upgraded Premium v3 plan and the upgraded Isolated v2 plan."
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "Instance size flexibility for VMs, the reservation cancellation policy, and RI-to-savings-plan trade-ins are not impacted by this change.\n1. What is changing?"
+            }
+          ]
+        },
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "This scope can also be changed later in the \"Configuration\" option within the RI order."
+            }
+          ]
+        },
+        {
+          "document_id": 122,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "You can designate multiple organizational accounts as enterprise administrators, but only one organizational account can be designated as the account owner in each account, and the"
+            }
+          ]
+        },
+        {
+          "document_id": 50,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "Savings plan discounts vary by product and by commitment term (1- or 3-years), not the commitment amount."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_ospa_01",
+      "question_id": "NA03",
+      "top_5": [
+        66,
+        48,
+        52,
+        146,
+        135
+      ],
+      "snippets": [
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "实例大小灵活性：这是RI的一项关键功能。如果启用，购买一个RI可以应用于同一虚拟机系列\"灵活性组\"内的多种规格。例如，为Dsv3系列购买的RI，可以自动应用于Dsv3系列内不同大小的VM（如Standard_D2s_v3, Standard_D4s_v3等），使用更灵活，能更好地应对业务变化。"
+            }
+          ]
+        },
+        {
+          "document_id": 48,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "例如，如果购买在 DSv2 系列中列出的某个 VM 大小（例如 Standard_DS3_v2）的预留，则预留折扣可以应用到同一实例大小灵活性组中列出的其他大小：\nStandard_DS1_v2\nStandard_DS2_v2\nStandard_DS3_v2\nStandard_DS4_v2\n但是，该预留折扣不适用于在其他实例大小灵活性组中列出的 VM 大小，例如高内存"
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "SQL Server 每小时许可证\nAzure Arc 每小时许可证启用的 SQL Server\n请参考链接：什么是储蓄计划？"
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "虚拟机实例大小灵活性、预留实例取消政策、以及预留实例换购节省计划均不受此次变更影响。\n1. 有什么变化？\n自2027年2月1日起，客户将无法再对节省计划所涵盖服务的预留实例进行交换。在2027年2月1日之前购买的每个在影响范围内的有效预留实例，将保留最后一次交换的权利。\n2. 涉及哪些服务？"
+            }
+          ]
+        },
+        {
+          "document_id": 135,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "查看生效 CPP\nCPP 购买内容取决于每月某类型虚拟机的台数。因此已购买 CPP 会按照每月预购数量显示，而不会显示购买金额。如果你已订购了 CPP, 每月预购数量，可以通过价格；列表中 ‘免费量’列查看。\n查看示例： 客户购买了 5 个 A4 VM CPP service，显示免费量为 37.2*100小时 （744小时*5）\n使用和计费\n1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "NA01",
+      "top_5": [
+        23,
+        97,
+        98,
+        25,
+        18
+      ],
+      "snippets": [
+        {
+          "document_id": 23,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "如何申请Credit Check\n21VCA-E采用间接模式进行销售，在信审环节，需要合作伙伴向21Vianet 提交对应订单的信用申请，审核通过合作伙伴会收到通知，订单进入下单步骤。\n信用申请系统\n合作伙伴信用管理系统\n信用审核流程概览\n世纪互联客户协议信用审核机制\n世纪互联客户协议信用申请的审核分为系统自动审核及人工审核。"
+            }
+          ]
+        },
+        {
+          "document_id": 97,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "已开通系统权限的用户\n登录网址：https://nce.21vbluecloud.com\n登录方式：邮箱前缀 (即，MS Email Alias)\n如何在系统中提交Direct Model OSPA信用申请：\n下载 OSPA Direct Credit Check\n以上若有问题，您可以邮件至Direct Credit Notification：21vdcn@oe"
+            }
+          ]
+        },
+        {
+          "document_id": 98,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "信用申请系统\nURL：https://pcm.21vbluecloud.com/\n可联系世纪互联 PAM团队获取《合作伙伴信用管理系统用户手册》以获取更为详细的说明。\n如何在系统中提交Indirect Model OSPA的信用申请：\n下载 OSPA Indirect Credit Check"
+            }
+          ]
+        },
+        {
+          "document_id": 25,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "（仅限微软员工，请使用MS公司账号登录）\nHermes Platform，点击这里申请权限https://hermesusermanagement.microsoft.com/（仅限新用户）。"
+            }
+          ]
+        },
+        {
+          "document_id": 18,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "指定COCP生效日期的情况\n对于这种场景，会分为以下两种情况，即指定生效日期与预计后台完成操作后的第90天之日期的日期间隔（预计操作完成后生效的日期-指定生效日期）大于90天，或小于90天。\n1. 日期间隔大于90天\nCOCP申请文件只需要客户和新合作伙伴盖章，不需要原合作伙伴盖章。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "NA02",
+      "top_5": [
+        24,
+        52,
+        146,
+        66,
+        122
+      ],
+      "snippets": [
+        {
+          "document_id": 24,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "授权协议签署人Authorized Signer: The agreement and/or contract will be generated strictly in accordance with the authorized signer specified in the information form."
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "The Azure savings plan for Azure App Service can only be applied to the App Service upgraded Premium v3 plan and the upgraded Isolated v2 plan."
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "Instance size flexibility for VMs, the reservation cancellation policy, and RI-to-savings-plan trade-ins are not impacted by this change.\n1. What is changing?"
+            }
+          ]
+        },
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "This scope can also be changed later in the \"Configuration\" option within the RI order."
+            }
+          ]
+        },
+        {
+          "document_id": 122,
+          "snippets": [
+            {
+              "source_field": "ContentEn",
+              "text": "You can designate multiple organizational accounts as enterprise administrators, but only one organizational account can be designated as the account owner in each account, and the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "pb_partner_both_01",
+      "question_id": "NA03",
+      "top_5": [
+        66,
+        48,
+        52,
+        146,
+        135
+      ],
+      "snippets": [
+        {
+          "document_id": 66,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "实例大小灵活性：这是RI的一项关键功能。如果启用，购买一个RI可以应用于同一虚拟机系列\"灵活性组\"内的多种规格。例如，为Dsv3系列购买的RI，可以自动应用于Dsv3系列内不同大小的VM（如Standard_D2s_v3, Standard_D4s_v3等），使用更灵活，能更好地应对业务变化。"
+            }
+          ]
+        },
+        {
+          "document_id": 48,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "例如，如果购买在 DSv2 系列中列出的某个 VM 大小（例如 Standard_DS3_v2）的预留，则预留折扣可以应用到同一实例大小灵活性组中列出的其他大小：\nStandard_DS1_v2\nStandard_DS2_v2\nStandard_DS3_v2\nStandard_DS4_v2\n但是，该预留折扣不适用于在其他实例大小灵活性组中列出的 VM 大小，例如高内存"
+            }
+          ]
+        },
+        {
+          "document_id": 52,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "SQL Server 每小时许可证\nAzure Arc 每小时许可证启用的 SQL Server\n请参考链接：什么是储蓄计划？"
+            }
+          ]
+        },
+        {
+          "document_id": 146,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "虚拟机实例大小灵活性、预留实例取消政策、以及预留实例换购节省计划均不受此次变更影响。\n1. 有什么变化？\n自2027年2月1日起，客户将无法再对节省计划所涵盖服务的预留实例进行交换。在2027年2月1日之前购买的每个在影响范围内的有效预留实例，将保留最后一次交换的权利。\n2. 涉及哪些服务？"
+            }
+          ]
+        },
+        {
+          "document_id": 135,
+          "snippets": [
+            {
+              "source_field": "Content",
+              "text": "查看生效 CPP\nCPP 购买内容取决于每月某类型虚拟机的台数。因此已购买 CPP 会按照每月预购数量显示，而不会显示购买金额。如果你已订购了 CPP, 每月预购数量，可以通过价格；列表中 ‘免费量’列查看。\n查看示例： 客户购买了 5 个 A4 VM CPP service，显示免费量为 37.2*100小时 （744小时*5）\n使用和计费\n1."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "completed_at": "2026-09-30T02:19:02.285544+00:00",
+  "performance": {
+    "es_retrieval": {
+      "count": 480,
+      "p50_ms": 9,
+      "p95_ms": 19
+    },
+    "api": {
+      "count": 480,
+      "p50_ms": 48.201,
+      "p95_ms": 59.926
+    }
+  },
+  "no_answer_return_rate": 1.0,
+  "permission_violations": 0,
+  "measured_queries": 480,
+  "warmup_queries": 25,
+  "no_answer_queries": 15
+}

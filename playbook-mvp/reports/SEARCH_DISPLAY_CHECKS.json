@@ -1,0 +1,154 @@
+{
+  "completed_at": "2026-09-30T03:09:53.837Z",
+  "browser": "Codex in-app Browser",
+  "url": "http://127.0.0.1:18080/",
+  "checks": [
+    {
+      "case": "nce_scores_descending_and_matches_highlighted",
+      "rows": [
+        {
+          "id": 25,
+          "score": 30.74,
+          "snippetMarks": 3,
+          "titleMarks": 3
+        },
+        {
+          "id": 24,
+          "score": 11.58,
+          "snippetMarks": 9,
+          "titleMarks": 0
+        },
+        {
+          "id": 27,
+          "score": 10.54,
+          "snippetMarks": 10,
+          "titleMarks": 1
+        },
+        {
+          "id": 89,
+          "score": 7,
+          "snippetMarks": 6,
+          "titleMarks": 0
+        },
+        {
+          "id": 15,
+          "score": 6.69,
+          "snippetMarks": 7,
+          "titleMarks": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": "highlighted_result_opens_document",
+      "passed": true
+    },
+    {
+      "case": "english_phrase_highlighting",
+      "passed": true,
+      "rows": [
+        {
+          "id": 69,
+          "score": "19.28",
+          "snippetMarks": [
+            "savings plan",
+            "savings plan"
+          ],
+          "titleMarks": [
+            "Saving Plan"
+          ]
+        },
+        {
+          "id": 50,
+          "score": "15.75",
+          "snippetMarks": [
+            "Savings plan"
+          ],
+          "titleMarks": [
+            "Savings Plan"
+          ]
+        },
+        {
+          "id": 51,
+          "score": "15.75",
+          "snippetMarks": [
+            "Savings Plan",
+            "savings plans"
+          ],
+          "titleMarks": [
+            "Savings Plan"
+          ]
+        },
+        {
+          "id": 55,
+          "score": "15.75",
+          "snippetMarks": [
+            "savings plan",
+            "savings plan"
+          ],
+          "titleMarks": [
+            "Savings Plan"
+          ]
+        },
+        {
+          "id": 63,
+          "score": "14.80",
+          "snippetMarks": [
+            "节省计划",
+            "Savings Plan",
+            "Savings Plan",
+            "节省计划",
+            "Savings Plan",
+            "节省计划"
+          ],
+          "titleMarks": []
+        }
+      ]
+    },
+    {
+      "case": "empty_results_clear_scores_and_highlights",
+      "passed": true
+    },
+    {
+      "case": "user_switch_clears_prior_query_and_results",
+      "passed": true
+    },
+    {
+      "case": "ospa_scores_and_highlights_respect_authorized_documents",
+      "passed": true,
+      "rows": [
+        {
+          "id": 99,
+          "matches": 8,
+          "score": 30.74
+        },
+        {
+          "id": 101,
+          "matches": 3,
+          "score": 12.8
+        },
+        {
+          "id": 92,
+          "matches": 4,
+          "score": 12.24
+        },
+        {
+          "id": 89,
+          "matches": 6,
+          "score": 7
+        },
+        {
+          "id": 15,
+          "matches": 7,
+          "score": 6.69
+        }
+      ]
+    },
+    {
+      "case": "command_k_opens_search_popup",
+      "passed": true
+    }
+  ],
+  "screenshot": "screenshots/search-score-highlights.jpg",
+  "console_errors": []
+}

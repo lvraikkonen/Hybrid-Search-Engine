@@ -1,0 +1,82 @@
+name: playbook-mvp
+
+services:
+  certs:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.5.4@sha256:82ac14f43fe701992e601f4cc81e1c0d7dbc5a2576d8cd736006452925df4026
+    user: "0"
+    volumes:
+      - es_certs:/certs
+    secrets:
+      - elastic_password
+    entrypoint: ["bash", "-euc"]
+    command:
+      - |
+        if [ ! -f /certs/ca/ca.crt ]; then
+          bin/elasticsearch-certutil ca --silent --pem --days 3650 --out /certs/ca.zip
+          unzip -q /certs/ca.zip -d /certs
+        fi
+        if [ ! -f /certs/es/es.crt ]; then
+          bin/elasticsearch-certutil cert --silent --pem --days 365 --name es \
+            --dns es,localhost --ip 127.0.0.1 \
+            --ca-cert /certs/ca/ca.crt --ca-key /certs/ca/ca.key --out /certs/es.zip
+          unzip -q /certs/es.zip -d /certs
+        fi
+        if [ ! -f /certs/elastic_password ]; then
+          cp /run/secrets/elastic_password /certs/elastic_password
+        fi
+        [[ "$$(</run/secrets/elastic_password)" == "$$(</certs/elastic_password)" ]] || {
+          echo 'Local bootstrap password differs from the persisted secret; explicit recovery required.' >&2
+          exit 1
+        }
+        chown -R root:root /certs
+        find /certs -type d -exec chmod 750 {} \;
+        find /certs -type f -exec chmod 640 {} \;
+        chmod 600 /certs/ca/ca.key /certs/ca.zip /certs/es.zip
+    restart: "no"
+
+  es:
+    build: ./infra/elasticsearch
+    image: playbook-es:9.5.4-smartcn
+    depends_on:
+      certs:
+        condition: service_completed_successfully
+    environment:
+      node.name: es
+      cluster.name: playbook-mvp
+      discovery.type: single-node
+      ELASTIC_PASSWORD_FILE: /usr/share/elasticsearch/config/certs/elastic_password
+      ES_JAVA_OPTS: -Xms1g -Xmx1g
+      xpack.security.enabled: "true"
+      xpack.security.autoconfiguration.enabled: "false"
+      xpack.security.http.ssl.enabled: "true"
+      xpack.security.http.ssl.key: certs/es/es.key
+      xpack.security.http.ssl.certificate: certs/es/es.crt
+      xpack.security.http.ssl.certificate_authorities: certs/ca/ca.crt
+      xpack.security.transport.ssl.enabled: "true"
+      xpack.security.transport.ssl.verification_mode: full
+      xpack.security.transport.ssl.key: certs/es/es.key
+      xpack.security.transport.ssl.certificate: certs/es/es.crt
+      xpack.security.transport.ssl.certificate_authorities: certs/ca/ca.crt
+      xpack.license.self_generated.type: basic
+      xpack.ml.enabled: "false"
+    ports:
+      - "127.0.0.1:19200:9200"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+      - es_certs:/usr/share/elasticsearch/config/certs:ro
+    mem_limit: 2g
+    healthcheck:
+      test: ["CMD-SHELL", "test \"$$(curl --silent --show-error --cacert config/certs/ca/ca.crt -o /dev/null -w '%{http_code}' https://localhost:9200)\" = 401"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+    restart: unless-stopped
+
+secrets:
+  elastic_password:
+    file: ./.local/elastic_password
+
+volumes:
+  es_data:
+  es_certs:

@@ -1,0 +1,104 @@
+{
+  "package": "Playbook_Mock_Users_20_v2",
+  "contains_original_sql": false,
+  "contains_document_bodies": false,
+  "user_count": 20,
+  "roles_per_user": 1,
+  "offline_unit_tests_passed": 37,
+  "offline_user_document_checks": 2600,
+  "cli_checks_passed": 7,
+  "es_users_created": false,
+  "es_dls_integration_tested": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 33,
+      "sha256": "24417d9e60b06cddf58d442e0f805b4151485898c6fa3e43efdae1f526b1f60e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6967,
+      "sha256": "d42a6903427bf3ee88d084f9d14963d30fc8704bf2eac13fd5fac2b9bdd518fa"
+    },
+    {
+      "path": "docs/CODEX_HANDOFF.md",
+      "bytes": 2942,
+      "sha256": "599d297817b94ec3251b1069ce965a7d304b8f6ba7ec502a10f83305afbe3a0e"
+    },
+    {
+      "path": "fixtures/authorization_cases.jsonl",
+      "bytes": 395476,
+      "sha256": "750846f29cc799b045fc9e704a0f3426b6dd05286299d944172ca73e85b0b727"
+    },
+    {
+      "path": "fixtures/document_acl_snapshot.json",
+      "bytes": 101683,
+      "sha256": "3742e665de7efa24da66547769779329202f4ac49eaf9e41d1ea7ddcae4ea187"
+    },
+    {
+      "path": "fixtures/es_metadata_candidates.json",
+      "bytes": 6095,
+      "sha256": "e856324ac640e8a09a57feb6d7d8cd8e5aa2c25e4545f46e70b0cceb27889b77"
+    },
+    {
+      "path": "fixtures/expected_access.json",
+      "bytes": 38243,
+      "sha256": "42acda703cbc772d49c8814f90d6cb8a86478b3e54c20988b92e37db69ddcbeb"
+    },
+    {
+      "path": "fixtures/mock_users.json",
+      "bytes": 12090,
+      "sha256": "dcc5268ee35290cd125943536ba86d92eb166e17556cc30800fb0e2f65304596"
+    },
+    {
+      "path": "fixtures/mock_users_effective.json",
+      "bytes": 9834,
+      "sha256": "87ceba297faec69baad3279212f40b30827803dfeb9dcc5a8d4ccc9faae9bde9"
+    },
+    {
+      "path": "fixtures/source_acl_tables.json",
+      "bytes": 167891,
+      "sha256": "c321b629c79f9f65490a236c07aa326236713c4da6ddaabbc738c2c411aca19e"
+    },
+    {
+      "path": "mock_auth.py",
+      "bytes": 8157,
+      "sha256": "04c7fa9b5393d951c9b371b23faac93e5b9ed0eb5f7bb9b037209cc9dc528638"
+    },
+    {
+      "path": "reports/CLI_CHECKS.json",
+      "bytes": 2022,
+      "sha256": "be9c745f3d40e2e2b07290a24c4fb6ce373993911c529efbc85f878e5e236066"
+    },
+    {
+      "path": "reports/SOURCE_VALIDATION.json",
+      "bytes": 1796,
+      "sha256": "745843e20c707a39114e1e4ab43594b51f33e8b7970a135abeeca02d45bb6cdc"
+    },
+    {
+      "path": "reports/TEST_RESULTS.txt",
+      "bytes": 4465,
+      "sha256": "1c5d4419a60a642826b9bf2a62ec906586de16467214b1f0bd0b0f7cfdf08c6c"
+    },
+    {
+      "path": "reports/USERS_OVERVIEW.md",
+      "bytes": 1337,
+      "sha256": "609e9f1ca396f529c688c18bd7e21f81bb889e1e857757ad6262d571e250ccba"
+    },
+    {
+      "path": "tests/test_mock_users.py",
+      "bytes": 10389,
+      "sha256": "d595a24258f7958b563cee77920e520fe5854b2989af88361ce4569760c768c0"
+    },
+    {
+      "path": "tools/build_dataset.py",
+      "bytes": 10747,
+      "sha256": "5549264c03919af1a0e34b3173851d83944218c304d6ca00dc77238e641c64f6"
+    },
+    {
+      "path": "tools/extract_playbook_sql.py",
+      "bytes": 20801,
+      "sha256": "1dfb79f152e7548a385f3dabafca5a1728005f0b549323474ce48d4b3b62f99b"
+    }
+  ]
+}

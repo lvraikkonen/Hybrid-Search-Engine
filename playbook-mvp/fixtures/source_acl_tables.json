@@ -1,0 +1,7658 @@
+{
+  "source": {
+    "file_name": "playbook-sampledata.sql",
+    "sha256": "cf738a308166a03adcafb9f7a8fdb38e88488fecf928dbf37063c284b5a64821",
+    "encoding": "utf-16",
+    "instance_key": "playbook-test",
+    "evaluation_scope": "acl_only_not_publication_or_search",
+    "policy": "direct_single_menu_with_exclusive_user_role_v2",
+    "publication_inference": "none",
+    "test_gates": "MenuItem.Active=1 and granting Role.Status=1; confirm final upstream semantics."
+  },
+  "tables": {
+    "MenuItem": [
+      {
+        "Id": 1,
+        "Name": "近期更新",
+        "NameEn": "Partner Notification",
+        "ParentId": 0,
+        "Sort": 1000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 2,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13239,
+          13239
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "21VCA-E简介",
+        "NameEn": "Introduction of 21VCA-E",
+        "ParentId": 0,
+        "Sort": 2000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13240,
+          13240
+        ]
+      },
+      {
+        "Id": 3,
+        "Name": "21VCA-E 新商务模式介绍",
+        "NameEn": "Introduction to 21VCA-E New Commerce",
+        "ParentId": 2,
+        "Sort": 2001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13241,
+          13241
+        ]
+      },
+      {
+        "Id": 4,
+        "Name": "21VCA-E、OSPA渠道区别",
+        "NameEn": "21VCA/OSPA Differences in Channels",
+        "ParentId": 2,
+        "Sort": 2002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13242,
+          13242
+        ]
+      },
+      {
+        "Id": 5,
+        "Name": "由世纪互联运营的Microsoft Azure产品",
+        "NameEn": "Microsoft Azure Operated by 21Vianet",
+        "ParentId": 2,
+        "Sort": 2003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13243,
+          13243
+        ]
+      },
+      {
+        "Id": 6,
+        "Name": "21VCA-E客户协议术语",
+        "NameEn": "Terms Definition of 21VCA",
+        "ParentId": 2,
+        "Sort": 2004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13244,
+          13244
+        ]
+      },
+      {
+        "Id": 7,
+        "Name": "21VCA-E账单和发票术语",
+        "NameEn": "Terms Definition of 21VCA Billing and Invoice",
+        "ParentId": 2,
+        "Sort": 2005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13245,
+          13245
+        ]
+      },
+      {
+        "Id": 8,
+        "Name": "21VCA-E、OSPA价目表获取及术语说明",
+        "NameEn": "How to Get Price List",
+        "ParentId": 2,
+        "Sort": 2006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13246,
+          13246
+        ]
+      },
+      {
+        "Id": 9,
+        "Name": "合作伙伴支持",
+        "NameEn": "Partner Support",
+        "ParentId": 0,
+        "Sort": 3000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13247,
+          13247
+        ]
+      },
+      {
+        "Id": 10,
+        "Name": "联系合作伙伴",
+        "NameEn": "Contact Partner",
+        "ParentId": 9,
+        "Sort": 3001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13248,
+          13248
+        ]
+      },
+      {
+        "Id": 11,
+        "Name": "合作伙伴上线",
+        "NameEn": "Partner Onboarding",
+        "ParentId": 9,
+        "Sort": 3002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13249,
+          13249
+        ]
+      },
+      {
+        "Id": 12,
+        "Name": "合作伙伴信用审核",
+        "NameEn": "Partner Credit Check",
+        "ParentId": 9,
+        "Sort": 3003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13250,
+          13250
+        ]
+      },
+      {
+        "Id": 13,
+        "Name": "合作伙伴奖励",
+        "NameEn": "Partner Incentive",
+        "ParentId": 9,
+        "Sort": 3004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13251,
+          13251
+        ]
+      },
+      {
+        "Id": 14,
+        "Name": "合作伙伴下线",
+        "NameEn": "Partner Offboarding",
+        "ParentId": 9,
+        "Sort": 3005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13252,
+          13252
+        ]
+      },
+      {
+        "Id": 15,
+        "Name": "售前沟通与支持",
+        "NameEn": "Pre-sale Communication and Support",
+        "ParentId": 0,
+        "Sort": 4000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13253,
+          13253
+        ]
+      },
+      {
+        "Id": 16,
+        "Name": "需求沟通",
+        "NameEn": "Requirement Communication",
+        "ParentId": 15,
+        "Sort": 4001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13254,
+          13254
+        ]
+      },
+      {
+        "Id": 17,
+        "Name": "供应商入库支持",
+        "NameEn": "Supplier Onboarding Support",
+        "ParentId": 15,
+        "Sort": 4002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13255,
+          13255
+        ]
+      },
+      {
+        "Id": 18,
+        "Name": "如何体验世纪互联客户协议新模式",
+        "NameEn": "The Customer Journey of 21VCA-E",
+        "ParentId": 0,
+        "Sort": 5000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13256,
+          13256
+        ]
+      },
+      {
+        "Id": 19,
+        "Name": "世纪互联客户协议",
+        "NameEn": "21Vianet Customer Agreement",
+        "ParentId": 18,
+        "Sort": 5001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13257,
+          13257
+        ]
+      },
+      {
+        "Id": 20,
+        "Name": "签署世纪互联客户协议",
+        "NameEn": "Transaction",
+        "ParentId": 18,
+        "Sort": 5002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13258,
+          13258
+        ]
+      },
+      {
+        "Id": 21,
+        "Name": "下单总流程概览",
+        "NameEn": "Ordering Process",
+        "ParentId": 18,
+        "Sort": 5003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13259,
+          13259
+        ]
+      },
+      {
+        "Id": 22,
+        "Name": "特殊流程介绍",
+        "NameEn": "Special Process",
+        "ParentId": 18,
+        "Sort": 5004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13260,
+          13260
+        ]
+      },
+      {
+        "Id": 23,
+        "Name": "世纪互联蓝云先章流程",
+        "NameEn": "21Vianet Sign First",
+        "ParentId": 22,
+        "Sort": 5005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13261,
+          13261
+        ]
+      },
+      {
+        "Id": 24,
+        "Name": "COCP",
+        "NameEn": "COCP",
+        "ParentId": 22,
+        "Sort": 5006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13262,
+          13262
+        ]
+      },
+      {
+        "Id": 25,
+        "Name": "CICR",
+        "NameEn": "CICR",
+        "ParentId": 22,
+        "Sort": 5007,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13263,
+          13263
+        ]
+      },
+      {
+        "Id": 26,
+        "Name": "COEN",
+        "NameEn": "COEN",
+        "ParentId": 22,
+        "Sort": 5008,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13264,
+          13264
+        ]
+      },
+      {
+        "Id": 27,
+        "Name": "暂停Billing Profile",
+        "NameEn": "Cancel Billing Profile",
+        "ParentId": 22,
+        "Sort": 5009,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13265,
+          13265
+        ]
+      },
+      {
+        "Id": 28,
+        "Name": "报价的创建",
+        "NameEn": "Quote Creation",
+        "ParentId": 18,
+        "Sort": 5010,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13266,
+          13266
+        ]
+      },
+      {
+        "Id": 29,
+        "Name": "信用审核Credit check",
+        "NameEn": "Credit Check",
+        "ParentId": 18,
+        "Sort": 5011,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13267,
+          13267
+        ]
+      },
+      {
+        "Id": 30,
+        "Name": "填写信息表",
+        "NameEn": "Fill in the Information Form",
+        "ParentId": 18,
+        "Sort": 5012,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13268,
+          13268
+        ]
+      },
+      {
+        "Id": 31,
+        "Name": "合同的生成",
+        "NameEn": "Contract Creation",
+        "ParentId": 18,
+        "Sort": 5013,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13269,
+          13269
+        ]
+      },
+      {
+        "Id": 32,
+        "Name": "订单的审核",
+        "NameEn": "Order to Cash",
+        "ParentId": 18,
+        "Sort": 5014,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13270,
+          13270
+        ]
+      },
+      {
+        "Id": 33,
+        "Name": "协议/订单的生效",
+        "NameEn": "Effectiveness",
+        "ParentId": 18,
+        "Sort": 5015,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13271,
+          13271
+        ]
+      },
+      {
+        "Id": 34,
+        "Name": "发票及付款",
+        "NameEn": "Invoice and Payment",
+        "ParentId": 18,
+        "Sort": 5016,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13272,
+          13272
+        ]
+      },
+      {
+        "Id": 35,
+        "Name": "相关工具",
+        "NameEn": "Relevant Tools",
+        "ParentId": 18,
+        "Sort": 5017,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13273,
+          13273
+        ]
+      },
+      {
+        "Id": 36,
+        "Name": "Hermes",
+        "NameEn": "Hermes",
+        "ParentId": 35,
+        "Sort": 5018,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13274,
+          13274
+        ]
+      },
+      {
+        "Id": 37,
+        "Name": "NCE业务操作平台",
+        "NameEn": "NCE业务操作平台",
+        "ParentId": 35,
+        "Sort": 5019,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13275,
+          13275
+        ]
+      },
+      {
+        "Id": 38,
+        "Name": "蓝云发票管理系统",
+        "NameEn": "21Vianet Fapiao System ",
+        "ParentId": 35,
+        "Sort": 5020,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13276,
+          13276
+        ]
+      },
+      {
+        "Id": 39,
+        "Name": "E-Sign 世纪互联电子签章系统",
+        "NameEn": "21Vianet E-Sign System",
+        "ParentId": 35,
+        "Sort": 5021,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13277,
+          13277
+        ]
+      },
+      {
+        "Id": 40,
+        "Name": "常见问题",
+        "NameEn": "FAQ",
+        "ParentId": 18,
+        "Sort": 5022,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13278,
+          13278
+        ]
+      },
+      {
+        "Id": 41,
+        "Name": "Azure Portal权限、角色分配",
+        "NameEn": "Azure Portal Permissions and Role Assignments",
+        "ParentId": 0,
+        "Sort": 6000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13279,
+          13279
+        ]
+      },
+      {
+        "Id": 42,
+        "Name": "21VCA-E账户结构",
+        "NameEn": "21VCA-E Account Structure",
+        "ParentId": 41,
+        "Sort": 6001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13280,
+          13280
+        ]
+      },
+      {
+        "Id": 43,
+        "Name": "各级别账户权限",
+        "NameEn": "Account Permissions at All Levels",
+        "ParentId": 41,
+        "Sort": 6002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13281,
+          13281
+        ]
+      },
+      {
+        "Id": 44,
+        "Name": "如何新建Org ID",
+        "NameEn": "How to Create Org ID",
+        "ParentId": 41,
+        "Sort": 6003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13282,
+          13282
+        ]
+      },
+      {
+        "Id": 45,
+        "Name": "Org ID创建",
+        "NameEn": "Org ID Creation",
+        "ParentId": 44,
+        "Sort": 6004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13283,
+          13283
+        ]
+      },
+      {
+        "Id": 46,
+        "Name": "Tenant ID查询",
+        "NameEn": "Find Tenant ID",
+        "ParentId": 44,
+        "Sort": 6005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-06-06T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13284,
+          13284
+        ]
+      },
+      {
+        "Id": 47,
+        "Name": "如何新增计费账户所有者(Billing account owner)",
+        "NameEn": "How to Add a Billing Account Owner",
+        "ParentId": 41,
+        "Sort": 6006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13285,
+          13285
+        ]
+      },
+      {
+        "Id": 48,
+        "Name": "如何新增billing profile角色账户",
+        "NameEn": "How to Add a Billing Profile Role Account",
+        "ParentId": 41,
+        "Sort": 6007,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13286,
+          13286
+        ]
+      },
+      {
+        "Id": 49,
+        "Name": "如何添加关联的计费租户",
+        "NameEn": "How to Connect Billing Tenants",
+        "ParentId": 41,
+        "Sort": 6008,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13287,
+          13287
+        ]
+      },
+      {
+        "Id": 50,
+        "Name": "如何创建发票科目（invoice section）",
+        "NameEn": "How to Create an Invoice Section",
+        "ParentId": 41,
+        "Sort": 6009,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13288,
+          13288
+        ]
+      },
+      {
+        "Id": 51,
+        "Name": "预留实例（RI）",
+        "NameEn": "Reserved Instances(RI)",
+        "ParentId": 0,
+        "Sort": 7000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13289,
+          13289
+        ]
+      },
+      {
+        "Id": 52,
+        "Name": "什么是Azure预留（RI）？",
+        "NameEn": "What Are Azure Reserved Instances(RI)?",
+        "ParentId": 51,
+        "Sort": 7001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13290,
+          13290
+        ]
+      },
+      {
+        "Id": 53,
+        "Name": "为何购买预留项？",
+        "NameEn": "Why Purchase Reserved Instances?",
+        "ParentId": 51,
+        "Sort": 7002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13291,
+          13291
+        ]
+      },
+      {
+        "Id": 54,
+        "Name": "购买预留实例（RI）",
+        "NameEn": "Purcharse Reserved Instances(RI)",
+        "ParentId": 51,
+        "Sort": 7004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-07-31T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13292,
+          13292
+        ]
+      },
+      {
+        "Id": 55,
+        "Name": "授予对租户下所有RI的访问权限",
+        "NameEn": "Granting Tenants Access to All RIs",
+        "ParentId": 51,
+        "Sort": 7005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13293,
+          13293
+        ]
+      },
+      {
+        "Id": 56,
+        "Name": "更改预留范围",
+        "NameEn": "Change the Reservation Scope",
+        "ParentId": 51,
+        "Sort": 7006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13294,
+          13294
+        ]
+      },
+      {
+        "Id": 57,
+        "Name": "设置RI的续订",
+        "NameEn": "RI Renewal",
+        "ParentId": 51,
+        "Sort": 7007,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13295,
+          13295
+        ]
+      },
+      {
+        "Id": 58,
+        "Name": "实例大小灵活性",
+        "NameEn": "Virtual Machine Size Flexibility with Reserved VM Instances",
+        "ParentId": 51,
+        "Sort": 7008,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13296,
+          13296
+        ]
+      },
+      {
+        "Id": 59,
+        "Name": "如何查看RI的利用率",
+        "NameEn": "How to Check the Utilization Rate of RI",
+        "ParentId": 51,
+        "Sort": 7009,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13297,
+          13297
+        ]
+      },
+      {
+        "Id": 60,
+        "Name": "节省计划（Savings Plan）介绍",
+        "NameEn": "Savings Plan",
+        "ParentId": 0,
+        "Sort": 8000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13298,
+          13298
+        ]
+      },
+      {
+        "Id": 61,
+        "Name": "什么是Azure 节省计划（Savings Plan）",
+        "NameEn": "What Is Azure Savings Plan",
+        "ParentId": 60,
+        "Sort": 8001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13299,
+          13299
+        ]
+      },
+      {
+        "Id": 62,
+        "Name": "为什么要购买节省计划",
+        "NameEn": "Why Purchase a Savings Plan",
+        "ParentId": 60,
+        "Sort": 8002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13300,
+          13300
+        ]
+      },
+      {
+        "Id": 63,
+        "Name": "Savings Plan涵盖哪些计算产品",
+        "NameEn": "What Compute Products Does the Savings Plan Cover",
+        "ParentId": 60,
+        "Sort": 8003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13301,
+          13301
+        ]
+      },
+      {
+        "Id": 64,
+        "Name": "如何购买Savings Plan",
+        "NameEn": "How to Purchase a Savings Plan",
+        "ParentId": 60,
+        "Sort": 8004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13302,
+          13302
+        ]
+      },
+      {
+        "Id": 65,
+        "Name": "如何查看Savings Plan的利用率",
+        "NameEn": "How to Check Savings Plan Utilization After Purchase",
+        "ParentId": 60,
+        "Sort": 8005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13303,
+          13303
+        ]
+      },
+      {
+        "Id": 66,
+        "Name": "Savings Plan的退款政策",
+        "NameEn": "Refund Policy for Savings Plan",
+        "ParentId": 60,
+        "Sort": 8006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13304,
+          13304
+        ]
+      },
+      {
+        "Id": 67,
+        "Name": "21VCA-E账单",
+        "NameEn": "21VCA-E Billing",
+        "ParentId": 0,
+        "Sort": 9000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13305,
+          13305
+        ]
+      },
+      {
+        "Id": 68,
+        "Name": "Partner如何设置Markup",
+        "NameEn": "How to Set Up Markup in Partner Role",
+        "ParentId": 67,
+        "Sort": 9001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13306,
+          13306
+        ]
+      },
+      {
+        "Id": 69,
+        "Name": "链接合作伙伴 ID",
+        "NameEn": "Link to a Partner ID",
+        "ParentId": 67,
+        "Sort": 9002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13307,
+          13307
+        ]
+      },
+      {
+        "Id": 70,
+        "Name": "如何下载账单",
+        "NameEn": "How to Download Usage Report",
+        "ParentId": 67,
+        "Sort": 9003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13308,
+          13308
+        ]
+      },
+      {
+        "Id": 71,
+        "Name": "摊销成本账单",
+        "NameEn": "Amortized Usage Report",
+        "ParentId": 67,
+        "Sort": 9005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-07-31T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13309,
+          13309
+        ]
+      },
+      {
+        "Id": 72,
+        "Name": "订阅管理",
+        "NameEn": "Subscription Management",
+        "ParentId": 0,
+        "Sort": 10000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13310,
+          13310
+        ]
+      },
+      {
+        "Id": 73,
+        "Name": "订阅的状态",
+        "NameEn": "Subscription Status",
+        "ParentId": 72,
+        "Sort": 10001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13311,
+          13311
+        ]
+      },
+      {
+        "Id": 74,
+        "Name": "创建订阅",
+        "NameEn": "Create Subscription",
+        "ParentId": 72,
+        "Sort": 10002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13312,
+          13312
+        ]
+      },
+      {
+        "Id": 75,
+        "Name": "取消订阅",
+        "NameEn": "Cancel Subscription",
+        "ParentId": 72,
+        "Sort": 10003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-05-28T09:10:12.850",
+        "UpdatedTime": "2025-04-22T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13313,
+          13313
+        ]
+      },
+      {
+        "Id": 76,
+        "Name": "21VCA-E Playbook访问权限",
+        "NameEn": "21VCA-E Playbook Access Permissions",
+        "ParentId": 0,
+        "Sort": 11001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-06-11T00:00:00.000",
+        "UpdatedTime": "2025-06-11T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13314,
+          13314
+        ]
+      },
+      {
+        "Id": 77,
+        "Name": "21VCA-E Playbook访问权限",
+        "NameEn": "21VCA-E Playbook Access Permissions",
+        "ParentId": 76,
+        "Sort": 11002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 1,
+        "CreatedTime": "2025-06-11T00:00:00.000",
+        "UpdatedTime": "2025-06-11T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13315,
+          13315
+        ]
+      },
+      {
+        "Id": 79,
+        "Name": "如何解读账单\r\n",
+        "NameEn": "Understanding Usage Report\r\n",
+        "ParentId": 67,
+        "Sort": 9004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-07-31T00:00:00.000",
+        "UpdatedTime": "2025-07-31T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13316,
+          13318
+        ]
+      },
+      {
+        "Id": 80,
+        "Name": "使用导出功能导出账单",
+        "NameEn": "Use the Export Function to Export the Billing",
+        "ParentId": 67,
+        "Sort": 9006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2025-09-28T00:00:00.000",
+        "UpdatedTime": "2025-09-28T00:00:00.000",
+        "Active": 1,
+        "_sql_lines": [
+          13319,
+          13319
+        ]
+      },
+      {
+        "Id": 81,
+        "Name": "确定要购买的预留项\r\n",
+        "NameEn": "Determine what to purchase\r\n",
+        "ParentId": 51,
+        "Sort": 7003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2026-03-10T09:35:50.980",
+        "UpdatedTime": "2026-03-10T09:35:50.980",
+        "Active": 1,
+        "_sql_lines": [
+          13320,
+          13322
+        ]
+      },
+      {
+        "Id": 82,
+        "Name": "RI常见问题解答\r\n",
+        "NameEn": "RI FAQ\r\n",
+        "ParentId": 51,
+        "Sort": 7011,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2026-05-08T03:40:31.847",
+        "UpdatedTime": "2026-05-08T03:40:31.847",
+        "Active": 1,
+        "_sql_lines": [
+          13323,
+          13325
+        ]
+      },
+      {
+        "Id": 83,
+        "Name": "Saving Plan常见问题解答",
+        "NameEn": "Saving Plan FAQ\r\n",
+        "ParentId": 60,
+        "Sort": 8007,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2026-05-08T03:41:04.780",
+        "UpdatedTime": "2026-05-08T03:41:04.780",
+        "Active": 1,
+        "_sql_lines": [
+          13326,
+          13327
+        ]
+      },
+      {
+        "Id": 86,
+        "Name": "Azure门户体验",
+        "NameEn": "Azure Portal Experience",
+        "ParentId": 0,
+        "Sort": 20000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 3,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13328,
+          13328
+        ]
+      },
+      {
+        "Id": 87,
+        "Name": "由世纪互联运营的微软智能云",
+        "NameEn": "Microsoft Cloud Products Operated by 21Vianet",
+        "ParentId": 0,
+        "Sort": 11000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13329,
+          13329
+        ]
+      },
+      {
+        "Id": 88,
+        "Name": "由世纪互联运营的微软智能云",
+        "NameEn": "Microsoft Cloud Products Operated by 21Vianet",
+        "ParentId": 87,
+        "Sort": 11001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13330,
+          13330
+        ]
+      },
+      {
+        "Id": 89,
+        "Name": "OSPA简介",
+        "NameEn": "Introduction of OSPA",
+        "ParentId": 0,
+        "Sort": 12000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13331,
+          13331
+        ]
+      },
+      {
+        "Id": 90,
+        "Name": "OSPA业务模式介绍",
+        "NameEn": "Introduction to OSPA",
+        "ParentId": 89,
+        "Sort": 12001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13332,
+          13332
+        ]
+      },
+      {
+        "Id": 91,
+        "Name": "OSPA客户协议术语",
+        "NameEn": "Terms Definition of OSPA",
+        "ParentId": 89,
+        "Sort": 12002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13333,
+          13333
+        ]
+      },
+      {
+        "Id": 92,
+        "Name": "OSPA账单和发票术语",
+        "NameEn": "Terms Definition of OSPA Billing and Invoice",
+        "ParentId": 89,
+        "Sort": 12003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13334,
+          13334
+        ]
+      },
+      {
+        "Id": 93,
+        "Name": "付款通知书",
+        "NameEn": "Payment Notification",
+        "ParentId": 92,
+        "Sort": 12004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13335,
+          13335
+        ]
+      },
+      {
+        "Id": 94,
+        "Name": "发票",
+        "NameEn": "Invoices",
+        "ParentId": 92,
+        "Sort": 12005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13336,
+          13336
+        ]
+      },
+      {
+        "Id": 95,
+        "Name": "OSPA查询产品报价",
+        "NameEn": "Inquiries Product Quotations",
+        "ParentId": 0,
+        "Sort": 13000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13337,
+          13337
+        ]
+      },
+      {
+        "Id": 96,
+        "Name": "相关方和报价流程",
+        "NameEn": "Relevant Parties and Quotation Process",
+        "ParentId": 95,
+        "Sort": 13001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13338,
+          13338
+        ]
+      },
+      {
+        "Id": 97,
+        "Name": "OSPA售前沟通与支持",
+        "NameEn": "Pre-sales Communication and Support",
+        "ParentId": 0,
+        "Sort": 14000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13339,
+          13339
+        ]
+      },
+      {
+        "Id": 98,
+        "Name": "需求沟通",
+        "NameEn": "Requirements Communication",
+        "ParentId": 97,
+        "Sort": 14001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13340,
+          13340
+        ]
+      },
+      {
+        "Id": 99,
+        "Name": "供应商入库支持",
+        "NameEn": "Supplier Onboarding Support",
+        "ParentId": 97,
+        "Sort": 14002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13341,
+          13341
+        ]
+      },
+      {
+        "Id": 100,
+        "Name": "如何签署世纪互联在线服务高级协议",
+        "NameEn": "The Customer Journey of OSPA",
+        "ParentId": 0,
+        "Sort": 15000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13342,
+          13342
+        ]
+      },
+      {
+        "Id": 101,
+        "Name": "世纪互联在线服务高级协议",
+        "NameEn": "21Vianet Online Services Premium Agreement",
+        "ParentId": 100,
+        "Sort": 15001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13343,
+          13343
+        ]
+      },
+      {
+        "Id": 102,
+        "Name": "签署世纪互联在线服务高级协议",
+        "NameEn": "Sign the 21Vianet Online Services Premium Agreement",
+        "ParentId": 100,
+        "Sort": 15002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13344,
+          13344
+        ]
+      },
+      {
+        "Id": 103,
+        "Name": "下单总流程概览",
+        "NameEn": "Overview of Ordering Process",
+        "ParentId": 100,
+        "Sort": 15003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13346,
+          13346
+        ]
+      },
+      {
+        "Id": 104,
+        "Name": "下单流程概述",
+        "NameEn": "Ordering Process",
+        "ParentId": 103,
+        "Sort": 15004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13347,
+          13347
+        ]
+      },
+      {
+        "Id": 105,
+        "Name": "下单要求简述",
+        "NameEn": "Brief Description of Order Requirements",
+        "ParentId": 103,
+        "Sort": 15005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13348,
+          13348
+        ]
+      },
+      {
+        "Id": 106,
+        "Name": "合同文件列表",
+        "NameEn": "List of Contract Packages",
+        "ParentId": 103,
+        "Sort": 15006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13349,
+          13349
+        ]
+      },
+      {
+        "Id": 107,
+        "Name": "订单类型",
+        "NameEn": "Order Types",
+        "ParentId": 103,
+        "Sort": 15007,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13350,
+          13350
+        ]
+      },
+      {
+        "Id": 108,
+        "Name": "账单类型",
+        "NameEn": "Invoicing Types",
+        "ParentId": 103,
+        "Sort": 15008,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13351,
+          13351
+        ]
+      },
+      {
+        "Id": 109,
+        "Name": "签署方式",
+        "NameEn": "Signature",
+        "ParentId": 103,
+        "Sort": 15009,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13352,
+          13352
+        ]
+      },
+      {
+        "Id": 110,
+        "Name": "信用审核",
+        "NameEn": "Credit Check",
+        "ParentId": 100,
+        "Sort": 15010,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13353,
+          13353
+        ]
+      },
+      {
+        "Id": 111,
+        "Name": "信用审核总览",
+        "NameEn": "Credit Check",
+        "ParentId": 110,
+        "Sort": 15011,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13354,
+          13354
+        ]
+      },
+      {
+        "Id": 112,
+        "Name": "Direct Model OSPA信用审核申请",
+        "NameEn": "Direct Model OSPA Credit Check",
+        "ParentId": 110,
+        "Sort": 15012,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13355,
+          13355
+        ]
+      },
+      {
+        "Id": 113,
+        "Name": "Indirect Model OSPA信用审核申请",
+        "NameEn": "Indirect Model OSPA Credit Check",
+        "ParentId": 110,
+        "Sort": 15013,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13356,
+          13356
+        ]
+      },
+      {
+        "Id": 114,
+        "Name": "合同的生成",
+        "NameEn": "Contract Creation",
+        "ParentId": 100,
+        "Sort": 15014,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13357,
+          13357
+        ]
+      },
+      {
+        "Id": 115,
+        "Name": "订单的审核",
+        "NameEn": "Order to Cash",
+        "ParentId": 100,
+        "Sort": 15015,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13358,
+          13358
+        ]
+      },
+      {
+        "Id": 116,
+        "Name": "协议生效、账单生成的邮件通知",
+        "NameEn": "Agreement Execution, Order Confirmation and Notification",
+        "ParentId": 100,
+        "Sort": 15016,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13359,
+          13359
+        ]
+      },
+      {
+        "Id": 117,
+        "Name": "发票及付款",
+        "NameEn": "Invoice and Payment",
+        "ParentId": 100,
+        "Sort": 15017,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13360,
+          13360
+        ]
+      },
+      {
+        "Id": 118,
+        "Name": "特殊流程介绍",
+        "NameEn": "Special Process",
+        "ParentId": 0,
+        "Sort": 16000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13361,
+          13361
+        ]
+      },
+      {
+        "Id": 119,
+        "Name": "特殊流程总览",
+        "NameEn": "Special Process",
+        "ParentId": 118,
+        "Sort": 16001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13362,
+          13362
+        ]
+      },
+      {
+        "Id": 120,
+        "Name": "世纪互联先章流程",
+        "NameEn": "21Vianet Sign First",
+        "ParentId": 118,
+        "Sort": 16002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13363,
+          13363
+        ]
+      },
+      {
+        "Id": 121,
+        "Name": "CICR",
+        "NameEn": "CICR-Contact Information Change Request",
+        "ParentId": 118,
+        "Sort": 16003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13364,
+          13364
+        ]
+      },
+      {
+        "Id": 122,
+        "Name": "COEN",
+        "NameEn": "COEN-Change of Entity Name",
+        "ParentId": 118,
+        "Sort": 16004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13365,
+          13365
+        ]
+      },
+      {
+        "Id": 123,
+        "Name": "COCP",
+        "NameEn": "COCP-Change of Contract Partner",
+        "ParentId": 118,
+        "Sort": 16005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13366,
+          13366
+        ]
+      },
+      {
+        "Id": 124,
+        "Name": "EST服务期限延期简介",
+        "NameEn": "Introduction of Extended Service Term",
+        "ParentId": 0,
+        "Sort": 17000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13367,
+          13367
+        ]
+      },
+      {
+        "Id": 125,
+        "Name": "EST服务期限延期介绍",
+        "NameEn": "Introduction to Extended Service Term",
+        "ParentId": 124,
+        "Sort": 17001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13368,
+          13368
+        ]
+      },
+      {
+        "Id": 126,
+        "Name": "超额简介",
+        "NameEn": "Overage",
+        "ParentId": 0,
+        "Sort": 18000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13369,
+          13369
+        ]
+      },
+      {
+        "Id": 127,
+        "Name": "超额介绍",
+        "NameEn": "Introduction of Overage",
+        "ParentId": 126,
+        "Sort": 18001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13370,
+          13370
+        ]
+      },
+      {
+        "Id": 128,
+        "Name": "直接支付",
+        "NameEn": "Proceed to Pay the Incurred Overage",
+        "ParentId": 126,
+        "Sort": 18002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13371,
+          13371
+        ]
+      },
+      {
+        "Id": 129,
+        "Name": "超额折抵",
+        "NameEn": "Offset the Overage",
+        "ParentId": 126,
+        "Sort": 18003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13372,
+          13372
+        ]
+      },
+      {
+        "Id": 130,
+        "Name": "OSPA相关工具",
+        "NameEn": "OSPA Relevant Tools",
+        "ParentId": 0,
+        "Sort": 19000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13373,
+          13373
+        ]
+      },
+      {
+        "Id": 131,
+        "Name": "Hermes",
+        "NameEn": "Hermes",
+        "ParentId": 130,
+        "Sort": 19001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13374,
+          13374
+        ]
+      },
+      {
+        "Id": 132,
+        "Name": "世纪互联蓝云发票系统",
+        "NameEn": "21Vianet Fapiao System",
+        "ParentId": 130,
+        "Sort": 19002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13375,
+          13375
+        ]
+      },
+      {
+        "Id": 133,
+        "Name": "世纪互联蓝云电子签系统E-Sign",
+        "NameEn": "21Vianet E-Sign System",
+        "ParentId": 130,
+        "Sort": 19003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13376,
+          13376
+        ]
+      },
+      {
+        "Id": 134,
+        "Name": "OSPA常见问题",
+        "NameEn": "FAQ",
+        "ParentId": 0,
+        "Sort": 20000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13377,
+          13377
+        ]
+      },
+      {
+        "Id": 135,
+        "Name": "常见问题解答",
+        "NameEn": "FAQ",
+        "ParentId": 134,
+        "Sort": 20001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13378,
+          13378
+        ]
+      },
+      {
+        "Id": 141,
+        "Name": "合作伙伴支持",
+        "NameEn": "Partner Support",
+        "ParentId": 0,
+        "Sort": 22000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13379,
+          13379
+        ]
+      },
+      {
+        "Id": 142,
+        "Name": "联系合作伙伴",
+        "NameEn": "Contact Partner",
+        "ParentId": 141,
+        "Sort": 22001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13380,
+          13380
+        ]
+      },
+      {
+        "Id": 144,
+        "Name": "EA Portal账户管理",
+        "NameEn": "EA Portal account management",
+        "ParentId": 0,
+        "Sort": 24000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13381,
+          13381
+        ]
+      },
+      {
+        "Id": 145,
+        "Name": "企业门户中的角色",
+        "NameEn": "Roles in enterprise portal",
+        "ParentId": 144,
+        "Sort": 24001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13382,
+          13382
+        ]
+      },
+      {
+        "Id": 146,
+        "Name": "如何添加企业管理员",
+        "NameEn": "How to add an enterprise administrator",
+        "ParentId": 144,
+        "Sort": 24002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13383,
+          13383
+        ]
+      },
+      {
+        "Id": 147,
+        "Name": "如何添加账户管理员",
+        "NameEn": "How to add an account administrator",
+        "ParentId": 144,
+        "Sort": 24003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13384,
+          13384
+        ]
+      },
+      {
+        "Id": 148,
+        "Name": "创建部门",
+        "NameEn": "How to create a department",
+        "ParentId": 144,
+        "Sort": 24004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13385,
+          13385
+        ]
+      },
+      {
+        "Id": 149,
+        "Name": "添加部门管理员",
+        "NameEn": "How to add a department administrator",
+        "ParentId": 144,
+        "Sort": 24005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13386,
+          13386
+        ]
+      },
+      {
+        "Id": 150,
+        "Name": "将账户关联到部门",
+        "NameEn": "Associate the account to the department",
+        "ParentId": 144,
+        "Sort": 24006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13387,
+          13387
+        ]
+      },
+      {
+        "Id": 151,
+        "Name": "如何删除账户",
+        "NameEn": "How to delete an account",
+        "ParentId": 144,
+        "Sort": 24007,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13388,
+          13388
+        ]
+      },
+      {
+        "Id": 152,
+        "Name": "跨合约迁移账户",
+        "NameEn": "Migrate account across contracts",
+        "ParentId": 144,
+        "Sort": 24008,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13389,
+          13389
+        ]
+      },
+      {
+        "Id": 153,
+        "Name": "监视使用情况和成本",
+        "NameEn": "Monitor usage and costs",
+        "ParentId": 0,
+        "Sort": 25000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13390,
+          13390
+        ]
+      },
+      {
+        "Id": 154,
+        "Name": "如何下载使用量报告",
+        "NameEn": "How to download usage report",
+        "ParentId": 153,
+        "Sort": 25001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13391,
+          13391
+        ]
+      },
+      {
+        "Id": 155,
+        "Name": "看懂使用量报告",
+        "NameEn": "Understand the usage report",
+        "ParentId": 153,
+        "Sort": 25002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13392,
+          13392
+        ]
+      },
+      {
+        "Id": 156,
+        "Name": "看懂使用量摘要",
+        "NameEn": "Understand the usage summary",
+        "ParentId": 153,
+        "Sort": 25003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13393,
+          13393
+        ]
+      },
+      {
+        "Id": 157,
+        "Name": "部门开支配额",
+        "NameEn": "Allocate quotas for departments",
+        "ParentId": 153,
+        "Sort": 25004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13394,
+          13394
+        ]
+      },
+      {
+        "Id": 158,
+        "Name": "添加通知联系人",
+        "NameEn": "Add a notification contact",
+        "ParentId": 153,
+        "Sort": 25005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13395,
+          13395
+        ]
+      },
+      {
+        "Id": 159,
+        "Name": "查看 CPP（Compute Pre-Purchase）",
+        "NameEn": "View CPP (Compute Pre-Purchase)",
+        "ParentId": 153,
+        "Sort": 25006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13396,
+          13396
+        ]
+      },
+      {
+        "Id": 160,
+        "Name": "看懂价目表",
+        "NameEn": "Understand the price list",
+        "ParentId": 153,
+        "Sort": 25007,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13397,
+          13397
+        ]
+      },
+      {
+        "Id": 161,
+        "Name": "间接在线高级服务协议（Indirect OSPA）账单问题",
+        "NameEn": "Indirect Online Service Provider Agreement (Indirect OSPA) billing issues",
+        "ParentId": 153,
+        "Sort": 25008,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13398,
+          13398
+        ]
+      },
+      {
+        "Id": 162,
+        "Name": "订阅管理",
+        "NameEn": "Subscription Management",
+        "ParentId": 0,
+        "Sort": 26000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13399,
+          13399
+        ]
+      },
+      {
+        "Id": 163,
+        "Name": "Azure 订阅管理",
+        "NameEn": "Azure Subscription Management",
+        "ParentId": 162,
+        "Sort": 26001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13400,
+          13400
+        ]
+      },
+      {
+        "Id": 164,
+        "Name": "如何添加订阅",
+        "NameEn": "How to add a subscription",
+        "ParentId": 163,
+        "Sort": 26002,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13401,
+          13401
+        ]
+      },
+      {
+        "Id": 165,
+        "Name": "如何查看企业协议订阅",
+        "NameEn": "How to view enterprise agreement subscriptions",
+        "ParentId": 163,
+        "Sort": 26003,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13402,
+          13402
+        ]
+      },
+      {
+        "Id": 166,
+        "Name": "企业门户中转让订阅",
+        "NameEn": "Transfer subscription in enterprise portal",
+        "ParentId": 163,
+        "Sort": 26004,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13403,
+          13403
+        ]
+      },
+      {
+        "Id": 167,
+        "Name": "取消订阅",
+        "NameEn": "How to cancel a subscription",
+        "ParentId": 163,
+        "Sort": 26005,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13404,
+          13404
+        ]
+      },
+      {
+        "Id": 168,
+        "Name": "激活已取消的订阅",
+        "NameEn": "Activate the canceled subscription",
+        "ParentId": 163,
+        "Sort": 26006,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13405,
+          13405
+        ]
+      },
+      {
+        "Id": 169,
+        "Name": "Microsoft 365订阅管理",
+        "NameEn": "Microsoft 365 Subscription Management",
+        "ParentId": 162,
+        "Sort": 26007,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13406,
+          13406
+        ]
+      },
+      {
+        "Id": 170,
+        "Name": "参考说明",
+        "NameEn": "Disclaimer",
+        "ParentId": 0,
+        "Sort": 28000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 0,
+        "CreatedTime": "2026-07-22T11:20:40.837",
+        "UpdatedTime": "2026-07-22T11:20:40.837",
+        "Active": 1,
+        "_sql_lines": [
+          13407,
+          13407
+        ]
+      },
+      {
+        "Id": 171,
+        "Name": "Azure 预留交换策略的变化",
+        "NameEn": "Changes to the Azure reservation exchange policy",
+        "ParentId": 51,
+        "Sort": 7010,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 0,
+        "UnderControl": 0,
+        "CreatedTime": "2026-08-10T08:15:49.817",
+        "UpdatedTime": "2026-08-10T08:15:49.817",
+        "Active": 1,
+        "_sql_lines": [
+          13408,
+          13408
+        ]
+      },
+      {
+        "Id": 172,
+        "Name": "OSPA Playbook访问权限\r\n",
+        "NameEn": "OSPA Playbook Access Permissions",
+        "ParentId": 0,
+        "Sort": 27000,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 1,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-08-28T06:40:52.023",
+        "UpdatedTime": "2026-08-28T06:40:52.023",
+        "Active": 1,
+        "_sql_lines": [
+          13409,
+          13410
+        ]
+      },
+      {
+        "Id": 174,
+        "Name": "OSPA Playbook访问权限",
+        "NameEn": "OSPA Playbook Access Permissions",
+        "ParentId": 172,
+        "Sort": 27001,
+        "Url": null,
+        "LanguageMode": 2,
+        "Type": 0,
+        "BusinessCategory": 1,
+        "UnderControl": 1,
+        "CreatedTime": "2026-08-28T06:41:28.220",
+        "UpdatedTime": "2026-08-28T06:41:28.220",
+        "Active": 1,
+        "_sql_lines": [
+          13411,
+          13411
+        ]
+      }
+    ],
+    "MenuItem_Document": [
+      {
+        "Id": 63,
+        "MenuItemId": 3,
+        "DocumentId": 1,
+        "_sql_lines": [
+          13416,
+          13416
+        ]
+      },
+      {
+        "Id": 64,
+        "MenuItemId": 4,
+        "DocumentId": 2,
+        "_sql_lines": [
+          13417,
+          13417
+        ]
+      },
+      {
+        "Id": 65,
+        "MenuItemId": 5,
+        "DocumentId": 3,
+        "_sql_lines": [
+          13418,
+          13418
+        ]
+      },
+      {
+        "Id": 66,
+        "MenuItemId": 6,
+        "DocumentId": 4,
+        "_sql_lines": [
+          13419,
+          13419
+        ]
+      },
+      {
+        "Id": 67,
+        "MenuItemId": 7,
+        "DocumentId": 5,
+        "_sql_lines": [
+          13420,
+          13420
+        ]
+      },
+      {
+        "Id": 68,
+        "MenuItemId": 8,
+        "DocumentId": 6,
+        "_sql_lines": [
+          13421,
+          13421
+        ]
+      },
+      {
+        "Id": 69,
+        "MenuItemId": 10,
+        "DocumentId": 7,
+        "_sql_lines": [
+          13422,
+          13422
+        ]
+      },
+      {
+        "Id": 70,
+        "MenuItemId": 11,
+        "DocumentId": 8,
+        "_sql_lines": [
+          13423,
+          13423
+        ]
+      },
+      {
+        "Id": 71,
+        "MenuItemId": 12,
+        "DocumentId": 9,
+        "_sql_lines": [
+          13424,
+          13424
+        ]
+      },
+      {
+        "Id": 72,
+        "MenuItemId": 13,
+        "DocumentId": 10,
+        "_sql_lines": [
+          13425,
+          13425
+        ]
+      },
+      {
+        "Id": 73,
+        "MenuItemId": 14,
+        "DocumentId": 11,
+        "_sql_lines": [
+          13426,
+          13426
+        ]
+      },
+      {
+        "Id": 74,
+        "MenuItemId": 16,
+        "DocumentId": 12,
+        "_sql_lines": [
+          13427,
+          13427
+        ]
+      },
+      {
+        "Id": 75,
+        "MenuItemId": 17,
+        "DocumentId": 13,
+        "_sql_lines": [
+          13428,
+          13428
+        ]
+      },
+      {
+        "Id": 76,
+        "MenuItemId": 19,
+        "DocumentId": 14,
+        "_sql_lines": [
+          13429,
+          13429
+        ]
+      },
+      {
+        "Id": 77,
+        "MenuItemId": 20,
+        "DocumentId": 15,
+        "_sql_lines": [
+          13430,
+          13430
+        ]
+      },
+      {
+        "Id": 78,
+        "MenuItemId": 21,
+        "DocumentId": 16,
+        "_sql_lines": [
+          13431,
+          13431
+        ]
+      },
+      {
+        "Id": 79,
+        "MenuItemId": 23,
+        "DocumentId": 17,
+        "_sql_lines": [
+          13432,
+          13432
+        ]
+      },
+      {
+        "Id": 80,
+        "MenuItemId": 24,
+        "DocumentId": 18,
+        "_sql_lines": [
+          13433,
+          13433
+        ]
+      },
+      {
+        "Id": 81,
+        "MenuItemId": 25,
+        "DocumentId": 19,
+        "_sql_lines": [
+          13434,
+          13434
+        ]
+      },
+      {
+        "Id": 82,
+        "MenuItemId": 26,
+        "DocumentId": 20,
+        "_sql_lines": [
+          13435,
+          13435
+        ]
+      },
+      {
+        "Id": 83,
+        "MenuItemId": 27,
+        "DocumentId": 21,
+        "_sql_lines": [
+          13436,
+          13436
+        ]
+      },
+      {
+        "Id": 84,
+        "MenuItemId": 28,
+        "DocumentId": 22,
+        "_sql_lines": [
+          13437,
+          13437
+        ]
+      },
+      {
+        "Id": 85,
+        "MenuItemId": 29,
+        "DocumentId": 23,
+        "_sql_lines": [
+          13438,
+          13438
+        ]
+      },
+      {
+        "Id": 86,
+        "MenuItemId": 30,
+        "DocumentId": 24,
+        "_sql_lines": [
+          13439,
+          13439
+        ]
+      },
+      {
+        "Id": 87,
+        "MenuItemId": 31,
+        "DocumentId": 25,
+        "_sql_lines": [
+          13440,
+          13440
+        ]
+      },
+      {
+        "Id": 88,
+        "MenuItemId": 32,
+        "DocumentId": 26,
+        "_sql_lines": [
+          13441,
+          13441
+        ]
+      },
+      {
+        "Id": 89,
+        "MenuItemId": 33,
+        "DocumentId": 27,
+        "_sql_lines": [
+          13442,
+          13442
+        ]
+      },
+      {
+        "Id": 90,
+        "MenuItemId": 34,
+        "DocumentId": 28,
+        "_sql_lines": [
+          13443,
+          13443
+        ]
+      },
+      {
+        "Id": 91,
+        "MenuItemId": 36,
+        "DocumentId": 29,
+        "_sql_lines": [
+          13444,
+          13444
+        ]
+      },
+      {
+        "Id": 92,
+        "MenuItemId": 37,
+        "DocumentId": 30,
+        "_sql_lines": [
+          13445,
+          13445
+        ]
+      },
+      {
+        "Id": 93,
+        "MenuItemId": 38,
+        "DocumentId": 31,
+        "_sql_lines": [
+          13446,
+          13446
+        ]
+      },
+      {
+        "Id": 94,
+        "MenuItemId": 39,
+        "DocumentId": 32,
+        "_sql_lines": [
+          13447,
+          13447
+        ]
+      },
+      {
+        "Id": 95,
+        "MenuItemId": 40,
+        "DocumentId": 33,
+        "_sql_lines": [
+          13448,
+          13448
+        ]
+      },
+      {
+        "Id": 96,
+        "MenuItemId": 42,
+        "DocumentId": 34,
+        "_sql_lines": [
+          13449,
+          13449
+        ]
+      },
+      {
+        "Id": 97,
+        "MenuItemId": 43,
+        "DocumentId": 35,
+        "_sql_lines": [
+          13450,
+          13450
+        ]
+      },
+      {
+        "Id": 98,
+        "MenuItemId": 45,
+        "DocumentId": 36,
+        "_sql_lines": [
+          13451,
+          13451
+        ]
+      },
+      {
+        "Id": 99,
+        "MenuItemId": 46,
+        "DocumentId": 37,
+        "_sql_lines": [
+          13452,
+          13452
+        ]
+      },
+      {
+        "Id": 100,
+        "MenuItemId": 47,
+        "DocumentId": 38,
+        "_sql_lines": [
+          13453,
+          13453
+        ]
+      },
+      {
+        "Id": 101,
+        "MenuItemId": 48,
+        "DocumentId": 39,
+        "_sql_lines": [
+          13454,
+          13454
+        ]
+      },
+      {
+        "Id": 102,
+        "MenuItemId": 49,
+        "DocumentId": 40,
+        "_sql_lines": [
+          13455,
+          13455
+        ]
+      },
+      {
+        "Id": 103,
+        "MenuItemId": 50,
+        "DocumentId": 41,
+        "_sql_lines": [
+          13456,
+          13456
+        ]
+      },
+      {
+        "Id": 104,
+        "MenuItemId": 52,
+        "DocumentId": 42,
+        "_sql_lines": [
+          13457,
+          13457
+        ]
+      },
+      {
+        "Id": 105,
+        "MenuItemId": 53,
+        "DocumentId": 43,
+        "_sql_lines": [
+          13458,
+          13458
+        ]
+      },
+      {
+        "Id": 106,
+        "MenuItemId": 54,
+        "DocumentId": 44,
+        "_sql_lines": [
+          13459,
+          13459
+        ]
+      },
+      {
+        "Id": 107,
+        "MenuItemId": 55,
+        "DocumentId": 45,
+        "_sql_lines": [
+          13460,
+          13460
+        ]
+      },
+      {
+        "Id": 108,
+        "MenuItemId": 56,
+        "DocumentId": 46,
+        "_sql_lines": [
+          13461,
+          13461
+        ]
+      },
+      {
+        "Id": 109,
+        "MenuItemId": 57,
+        "DocumentId": 47,
+        "_sql_lines": [
+          13462,
+          13462
+        ]
+      },
+      {
+        "Id": 110,
+        "MenuItemId": 58,
+        "DocumentId": 48,
+        "_sql_lines": [
+          13463,
+          13463
+        ]
+      },
+      {
+        "Id": 111,
+        "MenuItemId": 59,
+        "DocumentId": 49,
+        "_sql_lines": [
+          13464,
+          13464
+        ]
+      },
+      {
+        "Id": 112,
+        "MenuItemId": 61,
+        "DocumentId": 50,
+        "_sql_lines": [
+          13465,
+          13465
+        ]
+      },
+      {
+        "Id": 113,
+        "MenuItemId": 62,
+        "DocumentId": 51,
+        "_sql_lines": [
+          13466,
+          13466
+        ]
+      },
+      {
+        "Id": 114,
+        "MenuItemId": 63,
+        "DocumentId": 52,
+        "_sql_lines": [
+          13467,
+          13467
+        ]
+      },
+      {
+        "Id": 115,
+        "MenuItemId": 64,
+        "DocumentId": 53,
+        "_sql_lines": [
+          13468,
+          13468
+        ]
+      },
+      {
+        "Id": 116,
+        "MenuItemId": 65,
+        "DocumentId": 54,
+        "_sql_lines": [
+          13469,
+          13469
+        ]
+      },
+      {
+        "Id": 117,
+        "MenuItemId": 66,
+        "DocumentId": 55,
+        "_sql_lines": [
+          13470,
+          13470
+        ]
+      },
+      {
+        "Id": 118,
+        "MenuItemId": 68,
+        "DocumentId": 56,
+        "_sql_lines": [
+          13471,
+          13471
+        ]
+      },
+      {
+        "Id": 119,
+        "MenuItemId": 69,
+        "DocumentId": 57,
+        "_sql_lines": [
+          13472,
+          13472
+        ]
+      },
+      {
+        "Id": 120,
+        "MenuItemId": 70,
+        "DocumentId": 58,
+        "_sql_lines": [
+          13473,
+          13473
+        ]
+      },
+      {
+        "Id": 121,
+        "MenuItemId": 71,
+        "DocumentId": 59,
+        "_sql_lines": [
+          13474,
+          13474
+        ]
+      },
+      {
+        "Id": 122,
+        "MenuItemId": 73,
+        "DocumentId": 60,
+        "_sql_lines": [
+          13475,
+          13475
+        ]
+      },
+      {
+        "Id": 123,
+        "MenuItemId": 74,
+        "DocumentId": 61,
+        "_sql_lines": [
+          13476,
+          13476
+        ]
+      },
+      {
+        "Id": 124,
+        "MenuItemId": 75,
+        "DocumentId": 62,
+        "_sql_lines": [
+          13477,
+          13477
+        ]
+      },
+      {
+        "Id": 128,
+        "MenuItemId": 77,
+        "DocumentId": 63,
+        "_sql_lines": [
+          13478,
+          13478
+        ]
+      },
+      {
+        "Id": 129,
+        "MenuItemId": 79,
+        "DocumentId": 64,
+        "_sql_lines": [
+          13479,
+          13479
+        ]
+      },
+      {
+        "Id": 130,
+        "MenuItemId": 80,
+        "DocumentId": 65,
+        "_sql_lines": [
+          13480,
+          13480
+        ]
+      },
+      {
+        "Id": 131,
+        "MenuItemId": 81,
+        "DocumentId": 66,
+        "_sql_lines": [
+          13481,
+          13481
+        ]
+      },
+      {
+        "Id": 132,
+        "MenuItemId": 82,
+        "DocumentId": 67,
+        "_sql_lines": [
+          13482,
+          13482
+        ]
+      },
+      {
+        "Id": 133,
+        "MenuItemId": 83,
+        "DocumentId": 69,
+        "_sql_lines": [
+          13483,
+          13483
+        ]
+      },
+      {
+        "Id": 666,
+        "MenuItemId": 88,
+        "DocumentId": 80,
+        "_sql_lines": [
+          13484,
+          13484
+        ]
+      },
+      {
+        "Id": 667,
+        "MenuItemId": 90,
+        "DocumentId": 81,
+        "_sql_lines": [
+          13485,
+          13485
+        ]
+      },
+      {
+        "Id": 668,
+        "MenuItemId": 91,
+        "DocumentId": 82,
+        "_sql_lines": [
+          13486,
+          13486
+        ]
+      },
+      {
+        "Id": 669,
+        "MenuItemId": 93,
+        "DocumentId": 83,
+        "_sql_lines": [
+          13487,
+          13487
+        ]
+      },
+      {
+        "Id": 670,
+        "MenuItemId": 94,
+        "DocumentId": 84,
+        "_sql_lines": [
+          13488,
+          13488
+        ]
+      },
+      {
+        "Id": 671,
+        "MenuItemId": 96,
+        "DocumentId": 85,
+        "_sql_lines": [
+          13489,
+          13489
+        ]
+      },
+      {
+        "Id": 672,
+        "MenuItemId": 98,
+        "DocumentId": 86,
+        "_sql_lines": [
+          13490,
+          13490
+        ]
+      },
+      {
+        "Id": 673,
+        "MenuItemId": 99,
+        "DocumentId": 87,
+        "_sql_lines": [
+          13491,
+          13491
+        ]
+      },
+      {
+        "Id": 674,
+        "MenuItemId": 101,
+        "DocumentId": 88,
+        "_sql_lines": [
+          13492,
+          13492
+        ]
+      },
+      {
+        "Id": 675,
+        "MenuItemId": 102,
+        "DocumentId": 89,
+        "_sql_lines": [
+          13493,
+          13493
+        ]
+      },
+      {
+        "Id": 676,
+        "MenuItemId": 104,
+        "DocumentId": 90,
+        "_sql_lines": [
+          13494,
+          13494
+        ]
+      },
+      {
+        "Id": 677,
+        "MenuItemId": 105,
+        "DocumentId": 91,
+        "_sql_lines": [
+          13495,
+          13495
+        ]
+      },
+      {
+        "Id": 678,
+        "MenuItemId": 106,
+        "DocumentId": 92,
+        "_sql_lines": [
+          13496,
+          13496
+        ]
+      },
+      {
+        "Id": 679,
+        "MenuItemId": 107,
+        "DocumentId": 93,
+        "_sql_lines": [
+          13497,
+          13497
+        ]
+      },
+      {
+        "Id": 680,
+        "MenuItemId": 108,
+        "DocumentId": 94,
+        "_sql_lines": [
+          13498,
+          13498
+        ]
+      },
+      {
+        "Id": 681,
+        "MenuItemId": 109,
+        "DocumentId": 95,
+        "_sql_lines": [
+          13499,
+          13499
+        ]
+      },
+      {
+        "Id": 682,
+        "MenuItemId": 111,
+        "DocumentId": 96,
+        "_sql_lines": [
+          13500,
+          13500
+        ]
+      },
+      {
+        "Id": 683,
+        "MenuItemId": 112,
+        "DocumentId": 97,
+        "_sql_lines": [
+          13501,
+          13501
+        ]
+      },
+      {
+        "Id": 684,
+        "MenuItemId": 113,
+        "DocumentId": 98,
+        "_sql_lines": [
+          13502,
+          13502
+        ]
+      },
+      {
+        "Id": 685,
+        "MenuItemId": 114,
+        "DocumentId": 99,
+        "_sql_lines": [
+          13503,
+          13503
+        ]
+      },
+      {
+        "Id": 686,
+        "MenuItemId": 115,
+        "DocumentId": 100,
+        "_sql_lines": [
+          13504,
+          13504
+        ]
+      },
+      {
+        "Id": 687,
+        "MenuItemId": 116,
+        "DocumentId": 101,
+        "_sql_lines": [
+          13505,
+          13505
+        ]
+      },
+      {
+        "Id": 688,
+        "MenuItemId": 117,
+        "DocumentId": 102,
+        "_sql_lines": [
+          13506,
+          13506
+        ]
+      },
+      {
+        "Id": 689,
+        "MenuItemId": 119,
+        "DocumentId": 103,
+        "_sql_lines": [
+          13507,
+          13507
+        ]
+      },
+      {
+        "Id": 690,
+        "MenuItemId": 120,
+        "DocumentId": 104,
+        "_sql_lines": [
+          13508,
+          13508
+        ]
+      },
+      {
+        "Id": 691,
+        "MenuItemId": 121,
+        "DocumentId": 105,
+        "_sql_lines": [
+          13509,
+          13509
+        ]
+      },
+      {
+        "Id": 692,
+        "MenuItemId": 122,
+        "DocumentId": 106,
+        "_sql_lines": [
+          13510,
+          13510
+        ]
+      },
+      {
+        "Id": 693,
+        "MenuItemId": 123,
+        "DocumentId": 107,
+        "_sql_lines": [
+          13511,
+          13511
+        ]
+      },
+      {
+        "Id": 694,
+        "MenuItemId": 125,
+        "DocumentId": 108,
+        "_sql_lines": [
+          13512,
+          13512
+        ]
+      },
+      {
+        "Id": 695,
+        "MenuItemId": 127,
+        "DocumentId": 109,
+        "_sql_lines": [
+          13513,
+          13513
+        ]
+      },
+      {
+        "Id": 696,
+        "MenuItemId": 128,
+        "DocumentId": 110,
+        "_sql_lines": [
+          13514,
+          13514
+        ]
+      },
+      {
+        "Id": 697,
+        "MenuItemId": 129,
+        "DocumentId": 111,
+        "_sql_lines": [
+          13516,
+          13516
+        ]
+      },
+      {
+        "Id": 698,
+        "MenuItemId": 131,
+        "DocumentId": 112,
+        "_sql_lines": [
+          13517,
+          13517
+        ]
+      },
+      {
+        "Id": 699,
+        "MenuItemId": 132,
+        "DocumentId": 113,
+        "_sql_lines": [
+          13518,
+          13518
+        ]
+      },
+      {
+        "Id": 700,
+        "MenuItemId": 133,
+        "DocumentId": 114,
+        "_sql_lines": [
+          13519,
+          13519
+        ]
+      },
+      {
+        "Id": 701,
+        "MenuItemId": 135,
+        "DocumentId": 115,
+        "_sql_lines": [
+          13520,
+          13520
+        ]
+      },
+      {
+        "Id": 702,
+        "MenuItemId": 142,
+        "DocumentId": 120,
+        "_sql_lines": [
+          13521,
+          13521
+        ]
+      },
+      {
+        "Id": 703,
+        "MenuItemId": 145,
+        "DocumentId": 122,
+        "_sql_lines": [
+          13522,
+          13522
+        ]
+      },
+      {
+        "Id": 704,
+        "MenuItemId": 146,
+        "DocumentId": 123,
+        "_sql_lines": [
+          13523,
+          13523
+        ]
+      },
+      {
+        "Id": 705,
+        "MenuItemId": 147,
+        "DocumentId": 124,
+        "_sql_lines": [
+          13524,
+          13524
+        ]
+      },
+      {
+        "Id": 706,
+        "MenuItemId": 148,
+        "DocumentId": 125,
+        "_sql_lines": [
+          13525,
+          13525
+        ]
+      },
+      {
+        "Id": 707,
+        "MenuItemId": 149,
+        "DocumentId": 126,
+        "_sql_lines": [
+          13526,
+          13526
+        ]
+      },
+      {
+        "Id": 708,
+        "MenuItemId": 150,
+        "DocumentId": 127,
+        "_sql_lines": [
+          13527,
+          13527
+        ]
+      },
+      {
+        "Id": 709,
+        "MenuItemId": 151,
+        "DocumentId": 128,
+        "_sql_lines": [
+          13528,
+          13528
+        ]
+      },
+      {
+        "Id": 710,
+        "MenuItemId": 152,
+        "DocumentId": 129,
+        "_sql_lines": [
+          13529,
+          13529
+        ]
+      },
+      {
+        "Id": 711,
+        "MenuItemId": 154,
+        "DocumentId": 130,
+        "_sql_lines": [
+          13530,
+          13530
+        ]
+      },
+      {
+        "Id": 712,
+        "MenuItemId": 155,
+        "DocumentId": 131,
+        "_sql_lines": [
+          13531,
+          13531
+        ]
+      },
+      {
+        "Id": 713,
+        "MenuItemId": 156,
+        "DocumentId": 132,
+        "_sql_lines": [
+          13532,
+          13532
+        ]
+      },
+      {
+        "Id": 714,
+        "MenuItemId": 157,
+        "DocumentId": 133,
+        "_sql_lines": [
+          13533,
+          13533
+        ]
+      },
+      {
+        "Id": 715,
+        "MenuItemId": 158,
+        "DocumentId": 134,
+        "_sql_lines": [
+          13534,
+          13534
+        ]
+      },
+      {
+        "Id": 716,
+        "MenuItemId": 159,
+        "DocumentId": 135,
+        "_sql_lines": [
+          13535,
+          13535
+        ]
+      },
+      {
+        "Id": 717,
+        "MenuItemId": 160,
+        "DocumentId": 136,
+        "_sql_lines": [
+          13536,
+          13536
+        ]
+      },
+      {
+        "Id": 718,
+        "MenuItemId": 161,
+        "DocumentId": 137,
+        "_sql_lines": [
+          13537,
+          13537
+        ]
+      },
+      {
+        "Id": 719,
+        "MenuItemId": 164,
+        "DocumentId": 138,
+        "_sql_lines": [
+          13538,
+          13538
+        ]
+      },
+      {
+        "Id": 720,
+        "MenuItemId": 165,
+        "DocumentId": 139,
+        "_sql_lines": [
+          13539,
+          13539
+        ]
+      },
+      {
+        "Id": 721,
+        "MenuItemId": 166,
+        "DocumentId": 140,
+        "_sql_lines": [
+          13540,
+          13540
+        ]
+      },
+      {
+        "Id": 722,
+        "MenuItemId": 167,
+        "DocumentId": 141,
+        "_sql_lines": [
+          13541,
+          13541
+        ]
+      },
+      {
+        "Id": 723,
+        "MenuItemId": 168,
+        "DocumentId": 142,
+        "_sql_lines": [
+          13542,
+          13542
+        ]
+      },
+      {
+        "Id": 724,
+        "MenuItemId": 169,
+        "DocumentId": 143,
+        "_sql_lines": [
+          13543,
+          13543
+        ]
+      },
+      {
+        "Id": 725,
+        "MenuItemId": 170,
+        "DocumentId": 144,
+        "_sql_lines": [
+          13544,
+          13544
+        ]
+      },
+      {
+        "Id": 726,
+        "MenuItemId": 171,
+        "DocumentId": 146,
+        "_sql_lines": [
+          13545,
+          13545
+        ]
+      },
+      {
+        "Id": 727,
+        "MenuItemId": 174,
+        "DocumentId": 148,
+        "_sql_lines": [
+          13546,
+          13546
+        ]
+      }
+    ],
+    "Role": [
+      {
+        "Id": 1,
+        "Name": "MSFT",
+        "Description": "MSFT team",
+        "Status": 1,
+        "CreateTime": "2025-05-19T06:10:59.847",
+        "_sql_lines": [
+          13707,
+          13707
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "Partner",
+        "Description": "Partner ",
+        "Status": 1,
+        "CreateTime": "2025-05-19T06:10:59.847",
+        "_sql_lines": [
+          13708,
+          13708
+        ]
+      },
+      {
+        "Id": 3,
+        "Name": "21V",
+        "Description": "21V",
+        "Status": 1,
+        "CreateTime": "2025-05-19T06:10:59.847",
+        "_sql_lines": [
+          13709,
+          13709
+        ]
+      }
+    ],
+    "Role_MenuItem": [
+      {
+        "Id": 125,
+        "RoleId": 1,
+        "MenuItemId": 1,
+        "_sql_lines": [
+          13714,
+          13714
+        ]
+      },
+      {
+        "Id": 126,
+        "RoleId": 1,
+        "MenuItemId": 4,
+        "_sql_lines": [
+          13715,
+          13715
+        ]
+      },
+      {
+        "Id": 127,
+        "RoleId": 1,
+        "MenuItemId": 7,
+        "_sql_lines": [
+          13716,
+          13716
+        ]
+      },
+      {
+        "Id": 128,
+        "RoleId": 1,
+        "MenuItemId": 8,
+        "_sql_lines": [
+          13717,
+          13717
+        ]
+      },
+      {
+        "Id": 129,
+        "RoleId": 1,
+        "MenuItemId": 11,
+        "_sql_lines": [
+          13718,
+          13718
+        ]
+      },
+      {
+        "Id": 130,
+        "RoleId": 1,
+        "MenuItemId": 12,
+        "_sql_lines": [
+          13719,
+          13719
+        ]
+      },
+      {
+        "Id": 131,
+        "RoleId": 1,
+        "MenuItemId": 13,
+        "_sql_lines": [
+          13720,
+          13720
+        ]
+      },
+      {
+        "Id": 132,
+        "RoleId": 1,
+        "MenuItemId": 14,
+        "_sql_lines": [
+          13721,
+          13721
+        ]
+      },
+      {
+        "Id": 133,
+        "RoleId": 1,
+        "MenuItemId": 15,
+        "_sql_lines": [
+          13722,
+          13722
+        ]
+      },
+      {
+        "Id": 134,
+        "RoleId": 1,
+        "MenuItemId": 16,
+        "_sql_lines": [
+          13723,
+          13723
+        ]
+      },
+      {
+        "Id": 135,
+        "RoleId": 1,
+        "MenuItemId": 17,
+        "_sql_lines": [
+          13724,
+          13724
+        ]
+      },
+      {
+        "Id": 136,
+        "RoleId": 1,
+        "MenuItemId": 21,
+        "_sql_lines": [
+          13725,
+          13725
+        ]
+      },
+      {
+        "Id": 137,
+        "RoleId": 1,
+        "MenuItemId": 22,
+        "_sql_lines": [
+          13726,
+          13726
+        ]
+      },
+      {
+        "Id": 138,
+        "RoleId": 1,
+        "MenuItemId": 23,
+        "_sql_lines": [
+          13727,
+          13727
+        ]
+      },
+      {
+        "Id": 139,
+        "RoleId": 1,
+        "MenuItemId": 24,
+        "_sql_lines": [
+          13728,
+          13728
+        ]
+      },
+      {
+        "Id": 140,
+        "RoleId": 1,
+        "MenuItemId": 25,
+        "_sql_lines": [
+          13729,
+          13729
+        ]
+      },
+      {
+        "Id": 141,
+        "RoleId": 1,
+        "MenuItemId": 26,
+        "_sql_lines": [
+          13730,
+          13730
+        ]
+      },
+      {
+        "Id": 142,
+        "RoleId": 1,
+        "MenuItemId": 27,
+        "_sql_lines": [
+          13731,
+          13731
+        ]
+      },
+      {
+        "Id": 143,
+        "RoleId": 1,
+        "MenuItemId": 28,
+        "_sql_lines": [
+          13732,
+          13732
+        ]
+      },
+      {
+        "Id": 144,
+        "RoleId": 1,
+        "MenuItemId": 29,
+        "_sql_lines": [
+          13733,
+          13733
+        ]
+      },
+      {
+        "Id": 145,
+        "RoleId": 1,
+        "MenuItemId": 30,
+        "_sql_lines": [
+          13734,
+          13734
+        ]
+      },
+      {
+        "Id": 146,
+        "RoleId": 1,
+        "MenuItemId": 31,
+        "_sql_lines": [
+          13735,
+          13735
+        ]
+      },
+      {
+        "Id": 147,
+        "RoleId": 1,
+        "MenuItemId": 32,
+        "_sql_lines": [
+          13736,
+          13736
+        ]
+      },
+      {
+        "Id": 148,
+        "RoleId": 1,
+        "MenuItemId": 33,
+        "_sql_lines": [
+          13737,
+          13737
+        ]
+      },
+      {
+        "Id": 149,
+        "RoleId": 1,
+        "MenuItemId": 34,
+        "_sql_lines": [
+          13738,
+          13738
+        ]
+      },
+      {
+        "Id": 150,
+        "RoleId": 1,
+        "MenuItemId": 36,
+        "_sql_lines": [
+          13739,
+          13739
+        ]
+      },
+      {
+        "Id": 151,
+        "RoleId": 1,
+        "MenuItemId": 37,
+        "_sql_lines": [
+          13740,
+          13740
+        ]
+      },
+      {
+        "Id": 152,
+        "RoleId": 2,
+        "MenuItemId": 1,
+        "_sql_lines": [
+          13741,
+          13741
+        ]
+      },
+      {
+        "Id": 153,
+        "RoleId": 2,
+        "MenuItemId": 4,
+        "_sql_lines": [
+          13742,
+          13742
+        ]
+      },
+      {
+        "Id": 154,
+        "RoleId": 2,
+        "MenuItemId": 7,
+        "_sql_lines": [
+          13743,
+          13743
+        ]
+      },
+      {
+        "Id": 155,
+        "RoleId": 2,
+        "MenuItemId": 8,
+        "_sql_lines": [
+          13744,
+          13744
+        ]
+      },
+      {
+        "Id": 156,
+        "RoleId": 2,
+        "MenuItemId": 11,
+        "_sql_lines": [
+          13745,
+          13745
+        ]
+      },
+      {
+        "Id": 157,
+        "RoleId": 2,
+        "MenuItemId": 12,
+        "_sql_lines": [
+          13746,
+          13746
+        ]
+      },
+      {
+        "Id": 158,
+        "RoleId": 2,
+        "MenuItemId": 13,
+        "_sql_lines": [
+          13747,
+          13747
+        ]
+      },
+      {
+        "Id": 159,
+        "RoleId": 2,
+        "MenuItemId": 14,
+        "_sql_lines": [
+          13748,
+          13748
+        ]
+      },
+      {
+        "Id": 160,
+        "RoleId": 2,
+        "MenuItemId": 15,
+        "_sql_lines": [
+          13749,
+          13749
+        ]
+      },
+      {
+        "Id": 161,
+        "RoleId": 2,
+        "MenuItemId": 16,
+        "_sql_lines": [
+          13750,
+          13750
+        ]
+      },
+      {
+        "Id": 162,
+        "RoleId": 2,
+        "MenuItemId": 17,
+        "_sql_lines": [
+          13751,
+          13751
+        ]
+      },
+      {
+        "Id": 163,
+        "RoleId": 2,
+        "MenuItemId": 21,
+        "_sql_lines": [
+          13752,
+          13752
+        ]
+      },
+      {
+        "Id": 164,
+        "RoleId": 2,
+        "MenuItemId": 22,
+        "_sql_lines": [
+          13753,
+          13753
+        ]
+      },
+      {
+        "Id": 165,
+        "RoleId": 2,
+        "MenuItemId": 23,
+        "_sql_lines": [
+          13754,
+          13754
+        ]
+      },
+      {
+        "Id": 166,
+        "RoleId": 2,
+        "MenuItemId": 24,
+        "_sql_lines": [
+          13755,
+          13755
+        ]
+      },
+      {
+        "Id": 167,
+        "RoleId": 2,
+        "MenuItemId": 25,
+        "_sql_lines": [
+          13756,
+          13756
+        ]
+      },
+      {
+        "Id": 168,
+        "RoleId": 2,
+        "MenuItemId": 26,
+        "_sql_lines": [
+          13757,
+          13757
+        ]
+      },
+      {
+        "Id": 169,
+        "RoleId": 2,
+        "MenuItemId": 27,
+        "_sql_lines": [
+          13758,
+          13758
+        ]
+      },
+      {
+        "Id": 170,
+        "RoleId": 2,
+        "MenuItemId": 28,
+        "_sql_lines": [
+          13759,
+          13759
+        ]
+      },
+      {
+        "Id": 171,
+        "RoleId": 2,
+        "MenuItemId": 29,
+        "_sql_lines": [
+          13760,
+          13760
+        ]
+      },
+      {
+        "Id": 172,
+        "RoleId": 2,
+        "MenuItemId": 30,
+        "_sql_lines": [
+          13761,
+          13761
+        ]
+      },
+      {
+        "Id": 173,
+        "RoleId": 2,
+        "MenuItemId": 31,
+        "_sql_lines": [
+          13762,
+          13762
+        ]
+      },
+      {
+        "Id": 174,
+        "RoleId": 2,
+        "MenuItemId": 32,
+        "_sql_lines": [
+          13763,
+          13763
+        ]
+      },
+      {
+        "Id": 175,
+        "RoleId": 2,
+        "MenuItemId": 33,
+        "_sql_lines": [
+          13764,
+          13764
+        ]
+      },
+      {
+        "Id": 176,
+        "RoleId": 2,
+        "MenuItemId": 34,
+        "_sql_lines": [
+          13765,
+          13765
+        ]
+      },
+      {
+        "Id": 177,
+        "RoleId": 2,
+        "MenuItemId": 36,
+        "_sql_lines": [
+          13766,
+          13766
+        ]
+      },
+      {
+        "Id": 178,
+        "RoleId": 2,
+        "MenuItemId": 37,
+        "_sql_lines": [
+          13767,
+          13767
+        ]
+      },
+      {
+        "Id": 179,
+        "RoleId": 3,
+        "MenuItemId": 1,
+        "_sql_lines": [
+          13768,
+          13768
+        ]
+      },
+      {
+        "Id": 180,
+        "RoleId": 3,
+        "MenuItemId": 4,
+        "_sql_lines": [
+          13769,
+          13769
+        ]
+      },
+      {
+        "Id": 181,
+        "RoleId": 3,
+        "MenuItemId": 7,
+        "_sql_lines": [
+          13770,
+          13770
+        ]
+      },
+      {
+        "Id": 182,
+        "RoleId": 3,
+        "MenuItemId": 8,
+        "_sql_lines": [
+          13771,
+          13771
+        ]
+      },
+      {
+        "Id": 183,
+        "RoleId": 3,
+        "MenuItemId": 11,
+        "_sql_lines": [
+          13772,
+          13772
+        ]
+      },
+      {
+        "Id": 184,
+        "RoleId": 3,
+        "MenuItemId": 12,
+        "_sql_lines": [
+          13773,
+          13773
+        ]
+      },
+      {
+        "Id": 185,
+        "RoleId": 3,
+        "MenuItemId": 13,
+        "_sql_lines": [
+          13774,
+          13774
+        ]
+      },
+      {
+        "Id": 186,
+        "RoleId": 3,
+        "MenuItemId": 14,
+        "_sql_lines": [
+          13775,
+          13775
+        ]
+      },
+      {
+        "Id": 187,
+        "RoleId": 3,
+        "MenuItemId": 15,
+        "_sql_lines": [
+          13776,
+          13776
+        ]
+      },
+      {
+        "Id": 188,
+        "RoleId": 3,
+        "MenuItemId": 16,
+        "_sql_lines": [
+          13777,
+          13777
+        ]
+      },
+      {
+        "Id": 189,
+        "RoleId": 3,
+        "MenuItemId": 17,
+        "_sql_lines": [
+          13778,
+          13778
+        ]
+      },
+      {
+        "Id": 190,
+        "RoleId": 3,
+        "MenuItemId": 21,
+        "_sql_lines": [
+          13779,
+          13779
+        ]
+      },
+      {
+        "Id": 191,
+        "RoleId": 3,
+        "MenuItemId": 22,
+        "_sql_lines": [
+          13780,
+          13780
+        ]
+      },
+      {
+        "Id": 192,
+        "RoleId": 3,
+        "MenuItemId": 23,
+        "_sql_lines": [
+          13781,
+          13781
+        ]
+      },
+      {
+        "Id": 193,
+        "RoleId": 3,
+        "MenuItemId": 24,
+        "_sql_lines": [
+          13782,
+          13782
+        ]
+      },
+      {
+        "Id": 194,
+        "RoleId": 3,
+        "MenuItemId": 25,
+        "_sql_lines": [
+          13783,
+          13783
+        ]
+      },
+      {
+        "Id": 195,
+        "RoleId": 3,
+        "MenuItemId": 26,
+        "_sql_lines": [
+          13784,
+          13784
+        ]
+      },
+      {
+        "Id": 196,
+        "RoleId": 3,
+        "MenuItemId": 27,
+        "_sql_lines": [
+          13785,
+          13785
+        ]
+      },
+      {
+        "Id": 197,
+        "RoleId": 3,
+        "MenuItemId": 28,
+        "_sql_lines": [
+          13786,
+          13786
+        ]
+      },
+      {
+        "Id": 198,
+        "RoleId": 3,
+        "MenuItemId": 29,
+        "_sql_lines": [
+          13787,
+          13787
+        ]
+      },
+      {
+        "Id": 199,
+        "RoleId": 3,
+        "MenuItemId": 30,
+        "_sql_lines": [
+          13788,
+          13788
+        ]
+      },
+      {
+        "Id": 200,
+        "RoleId": 3,
+        "MenuItemId": 31,
+        "_sql_lines": [
+          13789,
+          13789
+        ]
+      },
+      {
+        "Id": 201,
+        "RoleId": 3,
+        "MenuItemId": 32,
+        "_sql_lines": [
+          13790,
+          13790
+        ]
+      },
+      {
+        "Id": 202,
+        "RoleId": 3,
+        "MenuItemId": 33,
+        "_sql_lines": [
+          13791,
+          13791
+        ]
+      },
+      {
+        "Id": 203,
+        "RoleId": 3,
+        "MenuItemId": 34,
+        "_sql_lines": [
+          13792,
+          13792
+        ]
+      },
+      {
+        "Id": 204,
+        "RoleId": 3,
+        "MenuItemId": 36,
+        "_sql_lines": [
+          13793,
+          13793
+        ]
+      },
+      {
+        "Id": 205,
+        "RoleId": 3,
+        "MenuItemId": 37,
+        "_sql_lines": [
+          13794,
+          13794
+        ]
+      },
+      {
+        "Id": 206,
+        "RoleId": 1,
+        "MenuItemId": 38,
+        "_sql_lines": [
+          13795,
+          13795
+        ]
+      },
+      {
+        "Id": 207,
+        "RoleId": 2,
+        "MenuItemId": 38,
+        "_sql_lines": [
+          13796,
+          13796
+        ]
+      },
+      {
+        "Id": 208,
+        "RoleId": 3,
+        "MenuItemId": 38,
+        "_sql_lines": [
+          13797,
+          13797
+        ]
+      },
+      {
+        "Id": 212,
+        "RoleId": 1,
+        "MenuItemId": 76,
+        "_sql_lines": [
+          13798,
+          13798
+        ]
+      },
+      {
+        "Id": 213,
+        "RoleId": 2,
+        "MenuItemId": 76,
+        "_sql_lines": [
+          13799,
+          13799
+        ]
+      },
+      {
+        "Id": 214,
+        "RoleId": 3,
+        "MenuItemId": 76,
+        "_sql_lines": [
+          13800,
+          13800
+        ]
+      },
+      {
+        "Id": 215,
+        "RoleId": 1,
+        "MenuItemId": 77,
+        "_sql_lines": [
+          13801,
+          13801
+        ]
+      },
+      {
+        "Id": 216,
+        "RoleId": 2,
+        "MenuItemId": 77,
+        "_sql_lines": [
+          13802,
+          13802
+        ]
+      },
+      {
+        "Id": 217,
+        "RoleId": 3,
+        "MenuItemId": 77,
+        "_sql_lines": [
+          13803,
+          13803
+        ]
+      },
+      {
+        "Id": 830,
+        "RoleId": 1,
+        "MenuItemId": 92,
+        "_sql_lines": [
+          13804,
+          13804
+        ]
+      },
+      {
+        "Id": 831,
+        "RoleId": 1,
+        "MenuItemId": 93,
+        "_sql_lines": [
+          13805,
+          13805
+        ]
+      },
+      {
+        "Id": 832,
+        "RoleId": 1,
+        "MenuItemId": 94,
+        "_sql_lines": [
+          13806,
+          13806
+        ]
+      },
+      {
+        "Id": 833,
+        "RoleId": 1,
+        "MenuItemId": 99,
+        "_sql_lines": [
+          13807,
+          13807
+        ]
+      },
+      {
+        "Id": 834,
+        "RoleId": 1,
+        "MenuItemId": 103,
+        "_sql_lines": [
+          13808,
+          13808
+        ]
+      },
+      {
+        "Id": 835,
+        "RoleId": 1,
+        "MenuItemId": 104,
+        "_sql_lines": [
+          13809,
+          13809
+        ]
+      },
+      {
+        "Id": 836,
+        "RoleId": 1,
+        "MenuItemId": 105,
+        "_sql_lines": [
+          13810,
+          13810
+        ]
+      },
+      {
+        "Id": 837,
+        "RoleId": 1,
+        "MenuItemId": 106,
+        "_sql_lines": [
+          13811,
+          13811
+        ]
+      },
+      {
+        "Id": 838,
+        "RoleId": 1,
+        "MenuItemId": 107,
+        "_sql_lines": [
+          13812,
+          13812
+        ]
+      },
+      {
+        "Id": 839,
+        "RoleId": 1,
+        "MenuItemId": 108,
+        "_sql_lines": [
+          13814,
+          13814
+        ]
+      },
+      {
+        "Id": 840,
+        "RoleId": 1,
+        "MenuItemId": 109,
+        "_sql_lines": [
+          13815,
+          13815
+        ]
+      },
+      {
+        "Id": 841,
+        "RoleId": 1,
+        "MenuItemId": 110,
+        "_sql_lines": [
+          13816,
+          13816
+        ]
+      },
+      {
+        "Id": 842,
+        "RoleId": 1,
+        "MenuItemId": 111,
+        "_sql_lines": [
+          13817,
+          13817
+        ]
+      },
+      {
+        "Id": 843,
+        "RoleId": 1,
+        "MenuItemId": 112,
+        "_sql_lines": [
+          13818,
+          13818
+        ]
+      },
+      {
+        "Id": 844,
+        "RoleId": 1,
+        "MenuItemId": 113,
+        "_sql_lines": [
+          13819,
+          13819
+        ]
+      },
+      {
+        "Id": 845,
+        "RoleId": 1,
+        "MenuItemId": 114,
+        "_sql_lines": [
+          13820,
+          13820
+        ]
+      },
+      {
+        "Id": 846,
+        "RoleId": 1,
+        "MenuItemId": 115,
+        "_sql_lines": [
+          13821,
+          13821
+        ]
+      },
+      {
+        "Id": 847,
+        "RoleId": 1,
+        "MenuItemId": 116,
+        "_sql_lines": [
+          13822,
+          13822
+        ]
+      },
+      {
+        "Id": 848,
+        "RoleId": 1,
+        "MenuItemId": 117,
+        "_sql_lines": [
+          13823,
+          13823
+        ]
+      },
+      {
+        "Id": 849,
+        "RoleId": 1,
+        "MenuItemId": 118,
+        "_sql_lines": [
+          13824,
+          13824
+        ]
+      },
+      {
+        "Id": 850,
+        "RoleId": 1,
+        "MenuItemId": 119,
+        "_sql_lines": [
+          13825,
+          13825
+        ]
+      },
+      {
+        "Id": 851,
+        "RoleId": 1,
+        "MenuItemId": 120,
+        "_sql_lines": [
+          13826,
+          13826
+        ]
+      },
+      {
+        "Id": 852,
+        "RoleId": 1,
+        "MenuItemId": 121,
+        "_sql_lines": [
+          13827,
+          13827
+        ]
+      },
+      {
+        "Id": 853,
+        "RoleId": 1,
+        "MenuItemId": 122,
+        "_sql_lines": [
+          13828,
+          13828
+        ]
+      },
+      {
+        "Id": 854,
+        "RoleId": 1,
+        "MenuItemId": 123,
+        "_sql_lines": [
+          13829,
+          13829
+        ]
+      },
+      {
+        "Id": 855,
+        "RoleId": 1,
+        "MenuItemId": 124,
+        "_sql_lines": [
+          13830,
+          13830
+        ]
+      },
+      {
+        "Id": 856,
+        "RoleId": 1,
+        "MenuItemId": 125,
+        "_sql_lines": [
+          13831,
+          13831
+        ]
+      },
+      {
+        "Id": 857,
+        "RoleId": 1,
+        "MenuItemId": 126,
+        "_sql_lines": [
+          13832,
+          13832
+        ]
+      },
+      {
+        "Id": 858,
+        "RoleId": 1,
+        "MenuItemId": 127,
+        "_sql_lines": [
+          13833,
+          13833
+        ]
+      },
+      {
+        "Id": 859,
+        "RoleId": 1,
+        "MenuItemId": 128,
+        "_sql_lines": [
+          13834,
+          13834
+        ]
+      },
+      {
+        "Id": 860,
+        "RoleId": 1,
+        "MenuItemId": 129,
+        "_sql_lines": [
+          13835,
+          13835
+        ]
+      },
+      {
+        "Id": 861,
+        "RoleId": 1,
+        "MenuItemId": 131,
+        "_sql_lines": [
+          13836,
+          13836
+        ]
+      },
+      {
+        "Id": 862,
+        "RoleId": 1,
+        "MenuItemId": 132,
+        "_sql_lines": [
+          13837,
+          13837
+        ]
+      },
+      {
+        "Id": 863,
+        "RoleId": 2,
+        "MenuItemId": 92,
+        "_sql_lines": [
+          13838,
+          13838
+        ]
+      },
+      {
+        "Id": 864,
+        "RoleId": 2,
+        "MenuItemId": 93,
+        "_sql_lines": [
+          13839,
+          13839
+        ]
+      },
+      {
+        "Id": 865,
+        "RoleId": 2,
+        "MenuItemId": 94,
+        "_sql_lines": [
+          13840,
+          13840
+        ]
+      },
+      {
+        "Id": 866,
+        "RoleId": 2,
+        "MenuItemId": 99,
+        "_sql_lines": [
+          13841,
+          13841
+        ]
+      },
+      {
+        "Id": 867,
+        "RoleId": 2,
+        "MenuItemId": 103,
+        "_sql_lines": [
+          13842,
+          13842
+        ]
+      },
+      {
+        "Id": 868,
+        "RoleId": 2,
+        "MenuItemId": 104,
+        "_sql_lines": [
+          13843,
+          13843
+        ]
+      },
+      {
+        "Id": 869,
+        "RoleId": 2,
+        "MenuItemId": 105,
+        "_sql_lines": [
+          13844,
+          13844
+        ]
+      },
+      {
+        "Id": 870,
+        "RoleId": 2,
+        "MenuItemId": 106,
+        "_sql_lines": [
+          13845,
+          13845
+        ]
+      },
+      {
+        "Id": 871,
+        "RoleId": 2,
+        "MenuItemId": 107,
+        "_sql_lines": [
+          13846,
+          13846
+        ]
+      },
+      {
+        "Id": 872,
+        "RoleId": 2,
+        "MenuItemId": 108,
+        "_sql_lines": [
+          13847,
+          13847
+        ]
+      },
+      {
+        "Id": 873,
+        "RoleId": 2,
+        "MenuItemId": 109,
+        "_sql_lines": [
+          13848,
+          13848
+        ]
+      },
+      {
+        "Id": 874,
+        "RoleId": 2,
+        "MenuItemId": 110,
+        "_sql_lines": [
+          13849,
+          13849
+        ]
+      },
+      {
+        "Id": 875,
+        "RoleId": 2,
+        "MenuItemId": 111,
+        "_sql_lines": [
+          13850,
+          13850
+        ]
+      },
+      {
+        "Id": 876,
+        "RoleId": 2,
+        "MenuItemId": 112,
+        "_sql_lines": [
+          13851,
+          13851
+        ]
+      },
+      {
+        "Id": 877,
+        "RoleId": 2,
+        "MenuItemId": 113,
+        "_sql_lines": [
+          13852,
+          13852
+        ]
+      },
+      {
+        "Id": 878,
+        "RoleId": 2,
+        "MenuItemId": 114,
+        "_sql_lines": [
+          13853,
+          13853
+        ]
+      },
+      {
+        "Id": 879,
+        "RoleId": 2,
+        "MenuItemId": 115,
+        "_sql_lines": [
+          13854,
+          13854
+        ]
+      },
+      {
+        "Id": 880,
+        "RoleId": 2,
+        "MenuItemId": 116,
+        "_sql_lines": [
+          13855,
+          13855
+        ]
+      },
+      {
+        "Id": 881,
+        "RoleId": 2,
+        "MenuItemId": 117,
+        "_sql_lines": [
+          13856,
+          13856
+        ]
+      },
+      {
+        "Id": 882,
+        "RoleId": 2,
+        "MenuItemId": 118,
+        "_sql_lines": [
+          13857,
+          13857
+        ]
+      },
+      {
+        "Id": 883,
+        "RoleId": 2,
+        "MenuItemId": 119,
+        "_sql_lines": [
+          13858,
+          13858
+        ]
+      },
+      {
+        "Id": 884,
+        "RoleId": 2,
+        "MenuItemId": 120,
+        "_sql_lines": [
+          13859,
+          13859
+        ]
+      },
+      {
+        "Id": 885,
+        "RoleId": 2,
+        "MenuItemId": 121,
+        "_sql_lines": [
+          13860,
+          13860
+        ]
+      },
+      {
+        "Id": 886,
+        "RoleId": 2,
+        "MenuItemId": 122,
+        "_sql_lines": [
+          13861,
+          13861
+        ]
+      },
+      {
+        "Id": 887,
+        "RoleId": 2,
+        "MenuItemId": 123,
+        "_sql_lines": [
+          13862,
+          13862
+        ]
+      },
+      {
+        "Id": 888,
+        "RoleId": 2,
+        "MenuItemId": 124,
+        "_sql_lines": [
+          13863,
+          13863
+        ]
+      },
+      {
+        "Id": 889,
+        "RoleId": 2,
+        "MenuItemId": 125,
+        "_sql_lines": [
+          13864,
+          13864
+        ]
+      },
+      {
+        "Id": 890,
+        "RoleId": 2,
+        "MenuItemId": 126,
+        "_sql_lines": [
+          13865,
+          13865
+        ]
+      },
+      {
+        "Id": 891,
+        "RoleId": 2,
+        "MenuItemId": 127,
+        "_sql_lines": [
+          13866,
+          13866
+        ]
+      },
+      {
+        "Id": 892,
+        "RoleId": 2,
+        "MenuItemId": 128,
+        "_sql_lines": [
+          13867,
+          13867
+        ]
+      },
+      {
+        "Id": 893,
+        "RoleId": 2,
+        "MenuItemId": 129,
+        "_sql_lines": [
+          13868,
+          13868
+        ]
+      },
+      {
+        "Id": 894,
+        "RoleId": 2,
+        "MenuItemId": 131,
+        "_sql_lines": [
+          13869,
+          13869
+        ]
+      },
+      {
+        "Id": 895,
+        "RoleId": 2,
+        "MenuItemId": 132,
+        "_sql_lines": [
+          13870,
+          13870
+        ]
+      },
+      {
+        "Id": 896,
+        "RoleId": 3,
+        "MenuItemId": 92,
+        "_sql_lines": [
+          13871,
+          13871
+        ]
+      },
+      {
+        "Id": 897,
+        "RoleId": 3,
+        "MenuItemId": 93,
+        "_sql_lines": [
+          13872,
+          13872
+        ]
+      },
+      {
+        "Id": 898,
+        "RoleId": 3,
+        "MenuItemId": 94,
+        "_sql_lines": [
+          13873,
+          13873
+        ]
+      },
+      {
+        "Id": 899,
+        "RoleId": 3,
+        "MenuItemId": 99,
+        "_sql_lines": [
+          13874,
+          13874
+        ]
+      },
+      {
+        "Id": 900,
+        "RoleId": 3,
+        "MenuItemId": 103,
+        "_sql_lines": [
+          13875,
+          13875
+        ]
+      },
+      {
+        "Id": 901,
+        "RoleId": 3,
+        "MenuItemId": 104,
+        "_sql_lines": [
+          13876,
+          13876
+        ]
+      },
+      {
+        "Id": 902,
+        "RoleId": 3,
+        "MenuItemId": 105,
+        "_sql_lines": [
+          13877,
+          13877
+        ]
+      },
+      {
+        "Id": 903,
+        "RoleId": 3,
+        "MenuItemId": 106,
+        "_sql_lines": [
+          13878,
+          13878
+        ]
+      },
+      {
+        "Id": 904,
+        "RoleId": 3,
+        "MenuItemId": 107,
+        "_sql_lines": [
+          13879,
+          13879
+        ]
+      },
+      {
+        "Id": 905,
+        "RoleId": 3,
+        "MenuItemId": 108,
+        "_sql_lines": [
+          13880,
+          13880
+        ]
+      },
+      {
+        "Id": 906,
+        "RoleId": 3,
+        "MenuItemId": 109,
+        "_sql_lines": [
+          13881,
+          13881
+        ]
+      },
+      {
+        "Id": 907,
+        "RoleId": 3,
+        "MenuItemId": 110,
+        "_sql_lines": [
+          13882,
+          13882
+        ]
+      },
+      {
+        "Id": 908,
+        "RoleId": 3,
+        "MenuItemId": 111,
+        "_sql_lines": [
+          13883,
+          13883
+        ]
+      },
+      {
+        "Id": 909,
+        "RoleId": 3,
+        "MenuItemId": 112,
+        "_sql_lines": [
+          13884,
+          13884
+        ]
+      },
+      {
+        "Id": 910,
+        "RoleId": 3,
+        "MenuItemId": 113,
+        "_sql_lines": [
+          13885,
+          13885
+        ]
+      },
+      {
+        "Id": 911,
+        "RoleId": 3,
+        "MenuItemId": 114,
+        "_sql_lines": [
+          13886,
+          13886
+        ]
+      },
+      {
+        "Id": 912,
+        "RoleId": 3,
+        "MenuItemId": 115,
+        "_sql_lines": [
+          13887,
+          13887
+        ]
+      },
+      {
+        "Id": 913,
+        "RoleId": 3,
+        "MenuItemId": 116,
+        "_sql_lines": [
+          13888,
+          13888
+        ]
+      },
+      {
+        "Id": 914,
+        "RoleId": 3,
+        "MenuItemId": 117,
+        "_sql_lines": [
+          13889,
+          13889
+        ]
+      },
+      {
+        "Id": 915,
+        "RoleId": 3,
+        "MenuItemId": 118,
+        "_sql_lines": [
+          13890,
+          13890
+        ]
+      },
+      {
+        "Id": 916,
+        "RoleId": 3,
+        "MenuItemId": 119,
+        "_sql_lines": [
+          13891,
+          13891
+        ]
+      },
+      {
+        "Id": 917,
+        "RoleId": 3,
+        "MenuItemId": 120,
+        "_sql_lines": [
+          13892,
+          13892
+        ]
+      },
+      {
+        "Id": 918,
+        "RoleId": 3,
+        "MenuItemId": 121,
+        "_sql_lines": [
+          13893,
+          13893
+        ]
+      },
+      {
+        "Id": 919,
+        "RoleId": 3,
+        "MenuItemId": 122,
+        "_sql_lines": [
+          13894,
+          13894
+        ]
+      },
+      {
+        "Id": 920,
+        "RoleId": 3,
+        "MenuItemId": 123,
+        "_sql_lines": [
+          13895,
+          13895
+        ]
+      },
+      {
+        "Id": 921,
+        "RoleId": 3,
+        "MenuItemId": 124,
+        "_sql_lines": [
+          13896,
+          13896
+        ]
+      },
+      {
+        "Id": 922,
+        "RoleId": 3,
+        "MenuItemId": 125,
+        "_sql_lines": [
+          13897,
+          13897
+        ]
+      },
+      {
+        "Id": 923,
+        "RoleId": 3,
+        "MenuItemId": 126,
+        "_sql_lines": [
+          13898,
+          13898
+        ]
+      },
+      {
+        "Id": 924,
+        "RoleId": 3,
+        "MenuItemId": 127,
+        "_sql_lines": [
+          13899,
+          13899
+        ]
+      },
+      {
+        "Id": 925,
+        "RoleId": 3,
+        "MenuItemId": 128,
+        "_sql_lines": [
+          13900,
+          13900
+        ]
+      },
+      {
+        "Id": 926,
+        "RoleId": 3,
+        "MenuItemId": 129,
+        "_sql_lines": [
+          13901,
+          13901
+        ]
+      },
+      {
+        "Id": 927,
+        "RoleId": 3,
+        "MenuItemId": 131,
+        "_sql_lines": [
+          13902,
+          13902
+        ]
+      },
+      {
+        "Id": 928,
+        "RoleId": 3,
+        "MenuItemId": 132,
+        "_sql_lines": [
+          13903,
+          13903
+        ]
+      },
+      {
+        "Id": 929,
+        "RoleId": 1,
+        "MenuItemId": 174,
+        "_sql_lines": [
+          13904,
+          13904
+        ]
+      },
+      {
+        "Id": 931,
+        "RoleId": 2,
+        "MenuItemId": 174,
+        "_sql_lines": [
+          13905,
+          13905
+        ]
+      },
+      {
+        "Id": 932,
+        "RoleId": 3,
+        "MenuItemId": 174,
+        "_sql_lines": [
+          13906,
+          13906
+        ]
+      },
+      {
+        "Id": 933,
+        "RoleId": 1,
+        "MenuItemId": 172,
+        "_sql_lines": [
+          13907,
+          13907
+        ]
+      },
+      {
+        "Id": 934,
+        "RoleId": 2,
+        "MenuItemId": 172,
+        "_sql_lines": [
+          13908,
+          13908
+        ]
+      },
+      {
+        "Id": 935,
+        "RoleId": 3,
+        "MenuItemId": 172,
+        "_sql_lines": [
+          13909,
+          13909
+        ]
+      }
+    ],
+    "Document": [
+      {
+        "Id": 1,
+        "Title": "21VCA-E 新商务模式介绍",
+        "TitleEn": "Introduction to 21VCA-E New Commerce",
+        "Slug": "introduction-to-new-commerce",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          127,
+          131
+        ]
+      },
+      {
+        "Id": 2,
+        "Title": "21VCA-E、OSPA渠道区别",
+        "TitleEn": "21VCA/OSPA Differences in Channels",
+        "Slug": "differences-21vca-ospa",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          132,
+          418
+        ]
+      },
+      {
+        "Id": 3,
+        "Title": "由世纪互联运营的Microsoft Azure产品",
+        "TitleEn": "Microsoft Azure Operated by 21Vianet",
+        "Slug": "azure-21v-operated",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          419,
+          470
+        ]
+      },
+      {
+        "Id": 4,
+        "Title": "21VCA-E客户协议术语",
+        "TitleEn": "Terms Definition of 21VCA",
+        "Slug": "21v-agreement-definition-terms",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          471,
+          566
+        ]
+      },
+      {
+        "Id": 5,
+        "Title": "21VCA-E账单和发票术语",
+        "TitleEn": "Terms Definition of 21VCA Billing and Invoice",
+        "Slug": "terms-definition-21v",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          567,
+          848
+        ]
+      },
+      {
+        "Id": 6,
+        "Title": "21VCA-E、OSPA价目表获取及术语说明",
+        "TitleEn": "How to Get Price List",
+        "Slug": "terms-obtaining-pl",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          849,
+          1153
+        ]
+      },
+      {
+        "Id": 7,
+        "Title": "联系合作伙伴",
+        "TitleEn": "Contact Partner",
+        "Slug": "contact-partner",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          1154,
+          1158
+        ]
+      },
+      {
+        "Id": 8,
+        "Title": "合作伙伴上线",
+        "TitleEn": "Partner Onboarding",
+        "Slug": "partner-onboarding",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          1159,
+          2203
+        ]
+      },
+      {
+        "Id": 9,
+        "Title": "合作伙伴信用审核",
+        "TitleEn": "Partner Credit Check",
+        "Slug": "partner-credit-check",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2204,
+          2222
+        ]
+      },
+      {
+        "Id": 10,
+        "Title": "合作伙伴奖励",
+        "TitleEn": "Partner Incentive",
+        "Slug": "partner-incentive",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2223,
+          2237
+        ]
+      },
+      {
+        "Id": 11,
+        "Title": "合作伙伴下线",
+        "TitleEn": "Partner Offboarding",
+        "Slug": "partner-offboarding",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2238,
+          2242
+        ]
+      },
+      {
+        "Id": 12,
+        "Title": "需求沟通",
+        "TitleEn": "Requirement Communication",
+        "Slug": "requirement-communication",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2243,
+          2243
+        ]
+      },
+      {
+        "Id": 13,
+        "Title": "供应商入库支持",
+        "TitleEn": "Supplier Onboarding Support",
+        "Slug": "supplier-onboarding-support",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2244,
+          2267
+        ]
+      },
+      {
+        "Id": 14,
+        "Title": "世纪互联客户协议",
+        "TitleEn": "21Vianet Customer Agreement",
+        "Slug": "21vianet-customer-agreement",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2268,
+          2348
+        ]
+      },
+      {
+        "Id": 15,
+        "Title": "签署世纪互联客户协议",
+        "TitleEn": "Transaction",
+        "Slug": "transaction",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2349,
+          2364
+        ]
+      },
+      {
+        "Id": 16,
+        "Title": "下单总流程概览",
+        "TitleEn": "Ordering Process",
+        "Slug": "ordering-process",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2365,
+          2466
+        ]
+      },
+      {
+        "Id": 17,
+        "Title": "世纪互联蓝云先章流程",
+        "TitleEn": "21Vianet Sign First",
+        "Slug": "prior-signature-21v",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2467,
+          2491
+        ]
+      },
+      {
+        "Id": 18,
+        "Title": "COCP",
+        "TitleEn": "COCP",
+        "Slug": "cocp",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2492,
+          2687
+        ]
+      },
+      {
+        "Id": 19,
+        "Title": "CICR",
+        "TitleEn": "CICR",
+        "Slug": "cicr",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2688,
+          2778
+        ]
+      },
+      {
+        "Id": 20,
+        "Title": "COEN",
+        "TitleEn": "COEN",
+        "Slug": "coen",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2779,
+          2848
+        ]
+      },
+      {
+        "Id": 21,
+        "Title": "暂停Billing Profile",
+        "TitleEn": "Cancel Billing Profile",
+        "Slug": "cancel-billing-profile",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2849,
+          2874
+        ]
+      },
+      {
+        "Id": 22,
+        "Title": "报价的创建",
+        "TitleEn": "Quote Creation",
+        "Slug": "creation-of-quote",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2875,
+          2877
+        ]
+      },
+      {
+        "Id": 23,
+        "Title": "信用审核Credit check",
+        "TitleEn": "Credit Check",
+        "Slug": "credit-check",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2878,
+          2940
+        ]
+      },
+      {
+        "Id": 24,
+        "Title": "填写信息表",
+        "TitleEn": "Fill in the Information Form",
+        "Slug": "fill-info-form",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2941,
+          2984
+        ]
+      },
+      {
+        "Id": 25,
+        "Title": "合同的生成",
+        "TitleEn": "Contract Creation",
+        "Slug": "creation-of-contract",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          2985,
+          3005
+        ]
+      },
+      {
+        "Id": 26,
+        "Title": "订单的审核",
+        "TitleEn": "Order to Cash",
+        "Slug": "order-to-cash",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3006,
+          3076
+        ]
+      },
+      {
+        "Id": 27,
+        "Title": "协议/订单的生效",
+        "TitleEn": "Effectiveness",
+        "Slug": "agreement-effectiveness-billing",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3077,
+          3108
+        ]
+      },
+      {
+        "Id": 28,
+        "Title": "发票及付款",
+        "TitleEn": "Invoice and Payment",
+        "Slug": "invoice-and-payment",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3109,
+          3129
+        ]
+      },
+      {
+        "Id": 29,
+        "Title": "Hermes",
+        "TitleEn": "Hermes",
+        "Slug": "tools-hermes",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3130,
+          3132
+        ]
+      },
+      {
+        "Id": 30,
+        "Title": "NCE业务操作平台",
+        "TitleEn": "NCE业务操作平台",
+        "Slug": "tools-nce-ops",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3133,
+          3168
+        ]
+      },
+      {
+        "Id": 31,
+        "Title": "蓝云发票管理系统",
+        "TitleEn": "21Vianet Fapiao System ",
+        "Slug": "tools-invoice-mgt-system",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3169,
+          3278
+        ]
+      },
+      {
+        "Id": 32,
+        "Title": "E-Sign 世纪互联电子签章系统",
+        "TitleEn": "21Vianet E-Sign System",
+        "Slug": "tools-21v-esign-system",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3279,
+          3339
+        ]
+      },
+      {
+        "Id": 33,
+        "Title": "常见问题",
+        "TitleEn": "FAQ",
+        "Slug": "sales-faq",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3340,
+          3434
+        ]
+      },
+      {
+        "Id": 34,
+        "Title": "21VCA-E账户结构",
+        "TitleEn": "21VCA-E Account Structure",
+        "Slug": "structure-21vca-account",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3435,
+          3484
+        ]
+      },
+      {
+        "Id": 35,
+        "Title": "各级别账户权限",
+        "TitleEn": "Account Permissions at All Levels",
+        "Slug": "accout-permissions",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          3485,
+          4301
+        ]
+      },
+      {
+        "Id": 36,
+        "Title": "Org ID创建",
+        "TitleEn": "Org ID Creation",
+        "Slug": "orgid-creation",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4302,
+          4388
+        ]
+      },
+      {
+        "Id": 37,
+        "Title": "Tenant ID查询",
+        "TitleEn": "Find Tenant ID",
+        "Slug": "find-tenantid",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4389,
+          4401
+        ]
+      },
+      {
+        "Id": 38,
+        "Title": "如何新增计费账户所有者(Billing account owner)",
+        "TitleEn": "How to Add a Billing Account Owner",
+        "Slug": "add-biiling-account-owner",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4402,
+          4448
+        ]
+      },
+      {
+        "Id": 39,
+        "Title": "如何新增billing profile角色账户",
+        "TitleEn": "How to Add a Billing Profile Role Account",
+        "Slug": "add-billing-profile-accounts",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4449,
+          4479
+        ]
+      },
+      {
+        "Id": 40,
+        "Title": "如何添加关联的计费租户",
+        "TitleEn": "How to Connect Billing Tenants",
+        "Slug": "add-billing-tenant",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4480,
+          4659
+        ]
+      },
+      {
+        "Id": 41,
+        "Title": "如何创建发票科目（invoice section）",
+        "TitleEn": "How to Create an Invoice Section",
+        "Slug": "create-invoice-section",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4660,
+          4720
+        ]
+      },
+      {
+        "Id": 42,
+        "Title": "什么是Azure预留（RI）？",
+        "TitleEn": "What Are Azure Reserved Instances(RI)?",
+        "Slug": "what-azure-ri",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4721,
+          4722
+        ]
+      },
+      {
+        "Id": 43,
+        "Title": "为何购买预留项？",
+        "TitleEn": "Why Purchase Reserved Instances?",
+        "Slug": "why-azure-ri",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4723,
+          4723
+        ]
+      },
+      {
+        "Id": 44,
+        "Title": "购买预留实例（RI）",
+        "TitleEn": "Purcharse Reserved Instances(RI)",
+        "Slug": "purchase-ri",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4724,
+          4849
+        ]
+      },
+      {
+        "Id": 45,
+        "Title": "授予对租户下所有RI的访问权限",
+        "TitleEn": "Granting Tenants Access to All RIs",
+        "Slug": "grant-access-to-ri",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4850,
+          4894
+        ]
+      },
+      {
+        "Id": 46,
+        "Title": "更改预留范围",
+        "TitleEn": "Change the Reservation Scope",
+        "Slug": "change-scope-of-ri",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4895,
+          4912
+        ]
+      },
+      {
+        "Id": 47,
+        "Title": "设置RI的续订",
+        "TitleEn": "RI Renewal",
+        "Slug": "set-up-ri-renewal",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4913,
+          4955
+        ]
+      },
+      {
+        "Id": 48,
+        "Title": "实例大小灵活性",
+        "TitleEn": "Virtual Machine Size Flexibility with Reserved VM Instances",
+        "Slug": "instance-size-flexibility",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4956,
+          4978
+        ]
+      },
+      {
+        "Id": 49,
+        "Title": "如何查看RI的利用率",
+        "TitleEn": "How to Check the Utilization Rate of RI",
+        "Slug": "view-ri-utilization",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          4979,
+          5000
+        ]
+      },
+      {
+        "Id": 50,
+        "Title": "什么是Azure 节省计划（Savings Plan）",
+        "TitleEn": "What Is Azure Savings Plan",
+        "Slug": "what-azure-savings-Plans",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5001,
+          5001
+        ]
+      },
+      {
+        "Id": 51,
+        "Title": "为什么要购买节省计划",
+        "TitleEn": "Why Purchase a Savings Plan",
+        "Slug": "why-purchase-sp",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5002,
+          5006
+        ]
+      },
+      {
+        "Id": 52,
+        "Title": "Savings Plan涵盖哪些计算产品",
+        "TitleEn": "What Compute Products Does the Savings Plan Cover",
+        "Slug": "compute-products-covered-sp",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5007,
+          5065
+        ]
+      },
+      {
+        "Id": 53,
+        "Title": "如何购买Savings Plan",
+        "TitleEn": "How to Purchase a Savings Plan",
+        "Slug": "how-purchase-sp",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5066,
+          5076
+        ]
+      },
+      {
+        "Id": 54,
+        "Title": "如何查看Savings Plan的利用率",
+        "TitleEn": "How to Check Savings Plan Utilization After Purchase",
+        "Slug": "view-sp-utilization",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5077,
+          5085
+        ]
+      },
+      {
+        "Id": 55,
+        "Title": "Savings Plan的退款政策",
+        "TitleEn": "Refund Policy for Savings Plan",
+        "Slug": "refound-policy-sp",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5086,
+          5086
+        ]
+      },
+      {
+        "Id": 56,
+        "Title": "Partner如何设置Markup",
+        "TitleEn": "How to Set Up Markup in Partner Role",
+        "Slug": "set-up-markup-partner-role",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5087,
+          5102
+        ]
+      },
+      {
+        "Id": 57,
+        "Title": "链接合作伙伴 ID",
+        "TitleEn": "Link to a Partner ID",
+        "Slug": "link-partner-id",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5103,
+          5114
+        ]
+      },
+      {
+        "Id": 58,
+        "Title": "如何下载账单",
+        "TitleEn": "How to Download Usage Report",
+        "Slug": "download-usage-report",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5115,
+          5145
+        ]
+      },
+      {
+        "Id": 59,
+        "Title": "摊销成本账单",
+        "TitleEn": "Amortized Usage Report",
+        "Slug": "amortized-cost-billing",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5146,
+          5422
+        ]
+      },
+      {
+        "Id": 60,
+        "Title": "订阅的状态",
+        "TitleEn": "Subscription Status",
+        "Slug": "sub-status",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5423,
+          5431
+        ]
+      },
+      {
+        "Id": 61,
+        "Title": "创建订阅",
+        "TitleEn": "Create Subscription",
+        "Slug": "create-sub",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5432,
+          5432
+        ]
+      },
+      {
+        "Id": 62,
+        "Title": "取消订阅",
+        "TitleEn": "Cancel Subscription",
+        "Slug": "cancel-sub",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5433,
+          5473
+        ]
+      },
+      {
+        "Id": 63,
+        "Title": "21VCA-E Playbook访问权限",
+        "TitleEn": "21VCA-E Playbook Access Permissions",
+        "Slug": "pb-21vca-access-permissions",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          5474,
+          6442
+        ]
+      },
+      {
+        "Id": 64,
+        "Title": "如何解读账单",
+        "TitleEn": "Understanding Usage Report\r\n",
+        "Slug": "understanding-usage-report",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          6443,
+          7172
+        ]
+      },
+      {
+        "Id": 65,
+        "Title": "使用导出功能导出账单",
+        "TitleEn": "Use the Export Function to Export the Billing",
+        "Slug": "export-billing",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          7173,
+          7782
+        ]
+      },
+      {
+        "Id": 66,
+        "Title": "确定要购买的预留项\r\n",
+        "TitleEn": "Determine what to purchase\r\n",
+        "Slug": "determine-what-to-purchase",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          7783,
+          8349
+        ]
+      },
+      {
+        "Id": 67,
+        "Title": "RI常见问题解答\r\n",
+        "TitleEn": "RI FAQ\r\n",
+        "Slug": "ri-faq",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          8350,
+          8523
+        ]
+      },
+      {
+        "Id": 69,
+        "Title": "Saving Plan常见问题解答\r\n",
+        "TitleEn": "Saving Plan FAQ\r\n",
+        "Slug": "saving-plan-faq",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          8524,
+          8636
+        ]
+      },
+      {
+        "Id": 80,
+        "Title": "由世纪互联运营的微软智能云",
+        "TitleEn": "Microsoft Cloud Products Operated by 21Vianet",
+        "Slug": "microsoft-cloud-products-operated-by-21vianet-1-1",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8637,
+          8713
+        ]
+      },
+      {
+        "Id": 81,
+        "Title": "OSPA业务模式介绍",
+        "TitleEn": "Introduction to OSPA",
+        "Slug": "introduction-to-ospa",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8714,
+          8770
+        ]
+      },
+      {
+        "Id": 82,
+        "Title": "OSPA客户协议术语",
+        "TitleEn": "Terms Definition of OSPA",
+        "Slug": "terms-definition-of-ospa",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8771,
+          8798
+        ]
+      },
+      {
+        "Id": 83,
+        "Title": "付款通知书",
+        "TitleEn": "Payment Notification",
+        "Slug": "payment-notification",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8799,
+          8938
+        ]
+      },
+      {
+        "Id": 84,
+        "Title": "发票",
+        "TitleEn": "Invoices",
+        "Slug": "invoices",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8939,
+          8945
+        ]
+      },
+      {
+        "Id": 85,
+        "Title": "相关方和报价流程",
+        "TitleEn": "Relevant Parties and Quotation Process",
+        "Slug": "relevant-parties-and-quotation-process",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8946,
+          8951
+        ]
+      },
+      {
+        "Id": 86,
+        "Title": "需求沟通",
+        "TitleEn": "Requirements Communication",
+        "Slug": "requirements-communication",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8952,
+          8953
+        ]
+      },
+      {
+        "Id": 87,
+        "Title": "供应商入库支持",
+        "TitleEn": "Supplier Onboarding Support",
+        "Slug": "ospa-supplier-onboarding-support",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8954,
+          8980
+        ]
+      },
+      {
+        "Id": 88,
+        "Title": "世纪互联在线服务高级协议",
+        "TitleEn": "21Vianet Online Services Premium Agreement",
+        "Slug": "21vianet-online-services-premium-agreement",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          8981,
+          9082
+        ]
+      },
+      {
+        "Id": 89,
+        "Title": "签署世纪互联在线服务高级协议",
+        "TitleEn": "Sign the 21Vianet Online Services Premium Agreement",
+        "Slug": "sign-the-21vianet-online-services-premium-agreement",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9083,
+          9108
+        ]
+      },
+      {
+        "Id": 90,
+        "Title": "下单流程概述",
+        "TitleEn": "Ordering Process",
+        "Slug": "ospa-ordering-process",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9109,
+          9143
+        ]
+      },
+      {
+        "Id": 91,
+        "Title": "下单要求简述",
+        "TitleEn": "Brief Description of Order Requirements",
+        "Slug": "brief-description-of-order-requirements",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9144,
+          9213
+        ]
+      },
+      {
+        "Id": 92,
+        "Title": "合同文件列表",
+        "TitleEn": "List of Contract Packages",
+        "Slug": "list-of-contract-packages",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9214,
+          9495
+        ]
+      },
+      {
+        "Id": 93,
+        "Title": "订单类型",
+        "TitleEn": "Order Types",
+        "Slug": "order-types",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9496,
+          9509
+        ]
+      },
+      {
+        "Id": 94,
+        "Title": "账单类型",
+        "TitleEn": "Invoicing Types",
+        "Slug": "invoicing-types",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9510,
+          9531
+        ]
+      },
+      {
+        "Id": 95,
+        "Title": "签署方式",
+        "TitleEn": "Signature",
+        "Slug": "signature",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9532,
+          9596
+        ]
+      },
+      {
+        "Id": 96,
+        "Title": "信用审核总览",
+        "TitleEn": "Credit Check",
+        "Slug": "credit-check-overview",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9597,
+          9598
+        ]
+      },
+      {
+        "Id": 97,
+        "Title": "Direct Model OSPA信用审核申请",
+        "TitleEn": "Direct Model OSPA Credit Check",
+        "Slug": "direct-model-ospa-credit-check",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9599,
+          9656
+        ]
+      },
+      {
+        "Id": 98,
+        "Title": "Indirect Model OSPA信用审核申请",
+        "TitleEn": "Indirect Model OSPA Credit Check",
+        "Slug": "indirect-model-ospa-credit-check",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9657,
+          9688
+        ]
+      },
+      {
+        "Id": 99,
+        "Title": "合同的生成",
+        "TitleEn": "Contract Creation",
+        "Slug": "contract-creation",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9689,
+          9697
+        ]
+      },
+      {
+        "Id": 100,
+        "Title": "订单的审核",
+        "TitleEn": "Order to Cash",
+        "Slug": "ospa-order-to-cash",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9698,
+          9792
+        ]
+      },
+      {
+        "Id": 101,
+        "Title": "协议生效、账单生成的邮件通知",
+        "TitleEn": "Agreement Execution, Order Confirmation and Notification",
+        "Slug": "effectiveness-of-order-confirmation",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9793,
+          9834
+        ]
+      },
+      {
+        "Id": 102,
+        "Title": "发票及付款",
+        "TitleEn": "Invoice and Payment",
+        "Slug": "ospa-invoice-and-payment",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9835,
+          9867
+        ]
+      },
+      {
+        "Id": 103,
+        "Title": "特殊流程总览",
+        "TitleEn": "Special Process",
+        "Slug": "special-process-overview",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9868,
+          9869
+        ]
+      },
+      {
+        "Id": 104,
+        "Title": "世纪互联先章流程",
+        "TitleEn": "21Vianet Sign First",
+        "Slug": "21vianet-sign-first",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9870,
+          9901
+        ]
+      },
+      {
+        "Id": 105,
+        "Title": "CICR",
+        "TitleEn": "CICR-Contact Information Change Request",
+        "Slug": "cicr-contact-information-change-request",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9902,
+          9980
+        ]
+      },
+      {
+        "Id": 106,
+        "Title": "COEN",
+        "TitleEn": "COEN-Change of Entity Name",
+        "Slug": "coen-change-of-entity-name",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          9981,
+          10043
+        ]
+      },
+      {
+        "Id": 107,
+        "Title": "COCP",
+        "TitleEn": "COCP-Change of Contract Partner",
+        "Slug": "cocp-change-of-contract-partner",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10044,
+          10130
+        ]
+      },
+      {
+        "Id": 108,
+        "Title": "EST服务期限延期介绍",
+        "TitleEn": "Introduction to Extended Service Term",
+        "Slug": "introduction-to-est",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10131,
+          10196
+        ]
+      },
+      {
+        "Id": 109,
+        "Title": "超额介绍",
+        "TitleEn": "Introduction of Overage",
+        "Slug": "introduction-of-overage",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10197,
+          10231
+        ]
+      },
+      {
+        "Id": 110,
+        "Title": "直接支付",
+        "TitleEn": "Proceed to Pay the Incurred Overage",
+        "Slug": "proceed-to-pay-the-incurred-overage",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10232,
+          10254
+        ]
+      },
+      {
+        "Id": 111,
+        "Title": "超额折抵",
+        "TitleEn": "Offset the Overage",
+        "Slug": "offset-the-overage",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10256,
+          10261
+        ]
+      },
+      {
+        "Id": 112,
+        "Title": "Hermes",
+        "TitleEn": "Hermes",
+        "Slug": "hermes",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10262,
+          10272
+        ]
+      },
+      {
+        "Id": 113,
+        "Title": "世纪互联蓝云发票系统",
+        "TitleEn": "21Vianet Fapiao System",
+        "Slug": "21vianet-fapiao-system",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10273,
+          10477
+        ]
+      },
+      {
+        "Id": 114,
+        "Title": "世纪互联蓝云电子签系统E-Sign",
+        "TitleEn": "21Vianet E-Sign System",
+        "Slug": "21vianet-e-sign-system",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10478,
+          10490
+        ]
+      },
+      {
+        "Id": 115,
+        "Title": "常见问题解答",
+        "TitleEn": "FAQ",
+        "Slug": "ospa-faq-answers",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10491,
+          10585
+        ]
+      },
+      {
+        "Id": 120,
+        "Title": "联系合作伙伴",
+        "TitleEn": "Contact Partner",
+        "Slug": "ospa-contact-partner",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10586,
+          10591
+        ]
+      },
+      {
+        "Id": 122,
+        "Title": "企业门户中的角色",
+        "TitleEn": "Roles in enterprise portal",
+        "Slug": "roles-in-enterprise-portal",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10592,
+          10750
+        ]
+      },
+      {
+        "Id": 123,
+        "Title": "如何添加企业管理员",
+        "TitleEn": "How to add an enterprise administrator",
+        "Slug": "how-to-add-an-enterprise-administrator",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10751,
+          10791
+        ]
+      },
+      {
+        "Id": 124,
+        "Title": "如何添加账户管理员",
+        "TitleEn": "How to add an account administrator",
+        "Slug": "how-to-add-an-account-administrator",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10792,
+          10826
+        ]
+      },
+      {
+        "Id": 125,
+        "Title": "创建部门",
+        "TitleEn": "How to create a department",
+        "Slug": "how-to-create-a-department",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10827,
+          10865
+        ]
+      },
+      {
+        "Id": 126,
+        "Title": "添加部门管理员",
+        "TitleEn": "How to add a department administrator",
+        "Slug": "how-to-add-a-department-administrator",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10866,
+          10942
+        ]
+      },
+      {
+        "Id": 127,
+        "Title": "将账户关联到部门",
+        "TitleEn": "Associate the account to the department",
+        "Slug": "associate-the-account-to-the-department",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10943,
+          10981
+        ]
+      },
+      {
+        "Id": 128,
+        "Title": "如何删除账户",
+        "TitleEn": "How to delete an account",
+        "Slug": "how-to-delete-an-account",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10982,
+          10992
+        ]
+      },
+      {
+        "Id": 129,
+        "Title": "跨合约迁移账户",
+        "TitleEn": "Migrate account across contracts",
+        "Slug": "migrate-account-across-contracts",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          10993,
+          11015
+        ]
+      },
+      {
+        "Id": 130,
+        "Title": "如何下载使用量报告",
+        "TitleEn": "How to download usage report",
+        "Slug": "how-to-download-usage-report",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11016,
+          11161
+        ]
+      },
+      {
+        "Id": 131,
+        "Title": "看懂使用量报告",
+        "TitleEn": "Understand the usage report",
+        "Slug": "understand-the-usage-report",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11162,
+          11276
+        ]
+      },
+      {
+        "Id": 132,
+        "Title": "看懂使用量摘要",
+        "TitleEn": "Understand the usage summary",
+        "Slug": "understand-the-usage-summary",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11277,
+          11384
+        ]
+      },
+      {
+        "Id": 133,
+        "Title": "部门开支配额",
+        "TitleEn": "Allocate quotas for departments",
+        "Slug": "allocate-quotas-for-departments",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11385,
+          11471
+        ]
+      },
+      {
+        "Id": 134,
+        "Title": "添加通知联系人",
+        "TitleEn": "Add a notification contact",
+        "Slug": "add-a-notification-contact",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11472,
+          11502
+        ]
+      },
+      {
+        "Id": 135,
+        "Title": "查看 CPP（Compute Pre-Purchase）",
+        "TitleEn": "View CPP (Compute Pre-Purchase)",
+        "Slug": "view-cpp-compute-pre-purchase",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11503,
+          11577
+        ]
+      },
+      {
+        "Id": 136,
+        "Title": "看懂价目表",
+        "TitleEn": "Understand the price list",
+        "Slug": "understand-the-price-list",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11578,
+          11626
+        ]
+      },
+      {
+        "Id": 137,
+        "Title": "间接在线高级服务协议（Indirect OSPA）账单问题",
+        "TitleEn": "Indirect Online Service Provider Agreement (Indirect OSPA) billing issues",
+        "Slug": "indirect-online-service-provider-agreement-indirect-ospa-billing-issues",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11627,
+          11627
+        ]
+      },
+      {
+        "Id": 138,
+        "Title": "如何添加订阅",
+        "TitleEn": "How to add a subscription",
+        "Slug": "how-to-add-a-subscription",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11628,
+          11716
+        ]
+      },
+      {
+        "Id": 139,
+        "Title": "如何查看企业协议订阅",
+        "TitleEn": "How to view enterprise agreement subscriptions",
+        "Slug": "how-to-view-enterprise-agreement-subscriptions",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11717,
+          11759
+        ]
+      },
+      {
+        "Id": 140,
+        "Title": "企业门户中转让订阅",
+        "TitleEn": "Transfer subscription in enterprise portal",
+        "Slug": "transfer-subscription-in-enterprise-portal",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11760,
+          11920
+        ]
+      },
+      {
+        "Id": 141,
+        "Title": "取消订阅",
+        "TitleEn": "How to cancel a subscription",
+        "Slug": "how-to-cancel-a-subscription",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11921,
+          11987
+        ]
+      },
+      {
+        "Id": 142,
+        "Title": "激活已取消的订阅",
+        "TitleEn": "Activate the canceled subscription",
+        "Slug": "activate-the-canceled-subscription",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          11988,
+          12026
+        ]
+      },
+      {
+        "Id": 143,
+        "Title": "Microsoft 365订阅管理",
+        "TitleEn": "Microsoft 365 Subscription Management",
+        "Slug": "m365-subscription-management",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          12027,
+          12027
+        ]
+      },
+      {
+        "Id": 144,
+        "Title": "参考说明",
+        "TitleEn": "Disclaimer",
+        "Slug": "disclaimer",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          12028,
+          12028
+        ]
+      },
+      {
+        "Id": 146,
+        "Title": "Azure 预留交换策略的变化",
+        "TitleEn": "Changes to the Azure reservation exchange policy",
+        "Slug": "change-reservation-exchange-policy",
+        "BusinessCategory": 0,
+        "Status": 1,
+        "_sql_lines": [
+          12029,
+          12245
+        ]
+      },
+      {
+        "Id": 148,
+        "Title": "OSPA Playbook访问权限",
+        "TitleEn": "OSPA Playbook Access Permissions",
+        "Slug": "pb-ospa-access-permissions",
+        "BusinessCategory": 1,
+        "Status": 1,
+        "_sql_lines": [
+          12246,
+          13234
+        ]
+      }
+    ]
+  }
+}

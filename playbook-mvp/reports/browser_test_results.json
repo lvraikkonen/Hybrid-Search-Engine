@@ -1,0 +1,226 @@
+{
+  "status": "PASS",
+  "browser": "Chromium headless (/usr/bin/chromium)",
+  "method": "Real DOM rendering and interaction via Playwright set_content; file:// and localhost navigation are blocked by runner policy",
+  "checks": [
+    {
+      "name": "initial_document_and_user",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "20_mock_users",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "2600_acl_pairs",
+      "passed": true,
+      "detail": {
+        "checked": 2600,
+        "passed": 2600,
+        "errors": []
+      }
+    },
+    {
+      "name": "20_users_menu_exact_sets",
+      "passed": true,
+      "detail": {
+        "pb_msft_01": 130,
+        "pb_msft_02": 130,
+        "pb_msft_03": 130,
+        "pb_msft_04": 130,
+        "pb_21v_01": 130,
+        "pb_21v_02": 130,
+        "pb_21v_03": 130,
+        "pb_21v_04": 130,
+        "pb_partner_nce_01": 102,
+        "pb_partner_nce_02": 102,
+        "pb_partner_nce_03": 102,
+        "pb_partner_nce_04": 102,
+        "pb_partner_ospa_01": 104,
+        "pb_partner_ospa_02": 104,
+        "pb_partner_ospa_03": 104,
+        "pb_partner_ospa_04": 104,
+        "pb_partner_both_01": 130,
+        "pb_partner_both_02": 130,
+        "pb_partner_both_03": 130,
+        "pb_partner_both_04": 130
+      }
+    },
+    {
+      "name": "ospa_search_hides_nce_25",
+      "passed": true,
+      "detail": [
+        99,
+        148
+      ]
+    },
+    {
+      "name": "ospa_doc99_body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "english_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bilingual_two_panes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_bilingual_view",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "metadata_shows_direct_link",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "switch_clears_forbidden_document",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "switch_clears_hidden_modal_content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nce_search_hides_ospa_99",
+      "passed": true,
+      "detail": [
+        25,
+        63
+      ]
+    },
+    {
+      "name": "nce_doc25_body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hash_target_no_bypass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "public_cross_business_access",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "markdown_inside_html_cells",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal_domain_link",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing_image_placeholder",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "merged_table_rendered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "notice_not_fabricated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "azure_portal_no_fake_url",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "download_original_md_roundtrip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "20_identity_cards",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identity_group_filter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identity_card_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visible_audit_report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "260_language_bodies_rendered",
+      "passed": true,
+      "detail": {
+        "rendered": 260,
+        "failures": []
+      }
+    },
+    {
+      "name": "mobile_layout_no_page_overflow",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "viewport": 390,
+        "sidebarRight": 0
+      }
+    },
+    {
+      "name": "mobile_drawer_opens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile_select_closes_drawer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile_bilingual_no_overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile_wide_table_contained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_runtime_page_errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_runtime_network_requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "check_count": 35,
+  "acl_pairs": 2600,
+  "rendered_language_bodies": 260,
+  "upstream_calls": 0,
+  "es_dls_tested": false,
+  "direct_file_navigation_tested": false
+}
